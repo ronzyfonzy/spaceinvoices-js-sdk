@@ -1,0 +1,28 @@
+{
+  "name": "spaceinvoices-api-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/spaceInvoices.js",
+  "scripts": {
+    "test": "mocha --require babel-register ./src/**/*.test.js",
+    "clean": "rimraf lib/*",
+    "precompile": "yarn run clean",
+    "compile": "yarn run compile:babel",
+    "compile:babel": "babel src --out-dir lib"
+  },
+  "author": "Robert Tajnšek",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "mocha": "^5.0.1",
+    "rimraf": "^2.6.2"
+  }
+}
