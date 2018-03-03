@@ -1,12 +1,21 @@
 import BaseModel from "./baseModel";
+import { MDocument } from "../models";
 
 export default class Document extends BaseModel {
   /** 
    * 
-   * @returns {Promise<object[]>}
+   * @returns {Promise<MDocument[]>|object[]}
    */
-  static list(organizationId) {
-    return this.call(`/organizations/${organizationId}/documents`);
+  static list(organizationId, transform = true) {
+    return this.call(`/organizations/${organizationId}/documents`).then((data) => {
+      if (transform) {
+        return data.map((object) => {
+          return new MDocument(object);
+        });
+      } else {
+        return data;
+      }
+    });
   }
 
   /** 

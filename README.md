@@ -5,10 +5,6 @@
 ```
 yarn
 ```
-OR
-```
-npm i
-```
 
 ### Usage
 
@@ -17,11 +13,15 @@ Include module
 import SpaceInvoices from "./spaceInvoices";
 let spaceInvoices = new SpaceInvoices(${host}, ${accountId}, ${apiToken});
 
-// List Organizations
 spaceInvoices.organization.list().then(organizations => {
-  console.log("organizations", organizations);
+  console.log('organizations', organizations);
+  let organization = organizations.pop();
+
+  organization.listDocuments().then((documents) => {
+    console.log('documents from organization', documents);
+  })
 }).catch((err) => {
-  console.error("ERROR", err);
+  console.error("Error", err);
 });
 ```
 
@@ -29,8 +29,4 @@ spaceInvoices.organization.list().then(organizations => {
 
 ```
 yarn run test
-```
-OR
-```
-npm run test
 ```

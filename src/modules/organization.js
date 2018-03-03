@@ -1,12 +1,21 @@
 import BaseModel from "./baseModel";
+import { MOrganization } from "../models";
 
 export default class Organization extends BaseModel {
   /** 
    * 
-   * @returns {Promise<object[]>}
+   * @returns {Promise<MOrganization[]>}
    */
-  static list() {
-    return this.call("/accounts/${accountId}/organizations");
+  static list(transform = true) {
+    return this.call("/accounts/${accountId}/organizations").then((data) => {
+      if (transform) {
+        return data.map((object) => {
+          return new MOrganization(object);
+        });
+      } else {
+        return data;
+      }
+    });
   }
 
   /** 
