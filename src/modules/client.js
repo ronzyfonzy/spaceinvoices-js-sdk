@@ -1,28 +1,45 @@
 import BaseModule from "./baseModule";
+import { MClient } from "../models";
 
-export default class Client extends BaseModule {
+class Client extends BaseModule {
+
+  constructor() {
+    super();
+    this.transformModel = MClient;
+  }
+
   /** 
    * 
-   * @returns {Promise<object[]>}
+   * @returns {Promise<MClient[]>}
    */
-  static list(organizationId) {
+  list(organizationId) {
     return this.call(`/organizations/${organizationId}/clients`);
   }
 
   /** 
+   * @param {string} organizationId
+   * @param {string} term
+   * 
+   * @returns {Promise<MClient[]>}
+   */
+  search(organizationId, term) {
+    return this.call(`/organizations/${organizationId}/search-clients?term=${term}`);
+  }
+
+  /** 
   * 
-  * @returns {Promise<object>}
+  * @returns {Promise<MClient>}
   */
-  static get(clientId) {
+  get(clientId) {
     return this.call(`/clients/${clientId}`);
   }
 
   /** 
    * @param {object} data
    * 
-   * @returns {Promise<object>}
+   * @returns {Promise<MClient>}
    */
-  static create(organizationId, data) {
+  create(organizationId, data) {
     return this.call(`/organizations/${organizationId}/clients`, "POST", data);
   }
 
@@ -30,18 +47,20 @@ export default class Client extends BaseModule {
    * @param {string} clientId
    * @param {object} data
    * 
-   * @returns {Promise<object>}
+   * @returns {Promise<MClient>}
    */
-  static update(clientId, data) {
+  update(clientId, data) {
     return this.call(`/clients/${clientId}`, "PUT", data);
   }
 
   /** 
    * @param {string} clientId
    * 
-   * @returns {Promise<object>}
+   * @returns {Promise<MClient>}
    */
-  static delete(clientId) {
+  delete(clientId) {
     return this.call(`/clients/${clientId}`, "DELETE");
   }
 }
+
+export default new Client();

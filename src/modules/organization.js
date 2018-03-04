@@ -1,37 +1,35 @@
 import BaseModule from "./baseModule";
 import { MOrganization } from "../models";
 
-export default class Organization extends BaseModule {
+class Organization extends BaseModule {
+
+  constructor() {
+    super();
+    this.transformModel = MOrganization;
+  }
+
   /** 
    * 
    * @returns {Promise<MOrganization[]>}
    */
-  static list(transform = true) {
-    return this.call("/accounts/${accountId}/organizations").then((data) => {
-      if (transform) {
-        return data.map((object) => {
-          return new MOrganization(object);
-        });
-      } else {
-        return data;
-      }
-    });
+  list() {
+    return this.call("/accounts/${accountId}/organizations");
   }
 
   /** 
   * 
-  * @returns {Promise<object>}
+  * @returns {Promise<MOrganization>}
   */
-  static get(organizationId) {
+  get(organizationId) {
     return this.call(`/organizations/${organizationId}`);
   }
 
   /** 
    * @param {object} data
    * 
-   * @returns {Promise<object>}
+   * @returns {Promise<MOrganization>}
    */
-  static create(data) {
+  create(data) {
     return this.call("/accounts/${accountId}/organizations", "POST", data);
   }
 
@@ -39,18 +37,20 @@ export default class Organization extends BaseModule {
    * @param {string} organizationId
    * @param {object} data
    * 
-   * @returns {Promise<object>}
+   * @returns {Promise<MOrganization>}
    */
-  static update(organizationId, data) {
+  update(organizationId, data) {
     return this.call(`/organizations/${organizationId}`, "PUT", data);
   }
 
   /** 
    * @param {string} organizationId
    * 
-   * @returns {Promise<object>}
+   * @returns {Promise<MOrganization>}
    */
-  static delete(organizationId) {
+  delete(organizationId) {
     return this.call(`/organizations/${organizationId}`, "DELETE");
   }
 }
+
+export default new Organization();

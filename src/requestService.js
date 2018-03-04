@@ -1,16 +1,23 @@
+import { RequestError } from "./errors";
 import rp from "request-promise";
 
 class RequestService {
   /**
    * Initialize
    * @param {string} host
-   * @param {string} accountId
    * @param {string} apiToken
+   * @param {string} accountId
    */
-  init(host, accountId, apiToken) {
+  init(host, apiToken, accountId) {
     this.host = host;
-    this.accountId = accountId;
     this.apiToken = apiToken;
+    this.accountId = accountId;
+    this.requester = rp.defaults({
+      baseUrl: this.host,
+      headers: {
+        Authorization: this.apiToken
+      }
+    });
   }
 
   /**
@@ -25,32 +32,29 @@ class RequestService {
     let requestProps = {
       method,
       uri: this.createUri(endpoint),
-      headers: {
-        Authorization: this.apiToken
-      }
     };
 
-    if (data && this.requestHasBody(method)) {
+    if (data && ["GET", "DELETE"].indexOf(method)) {
       requestProps.body = data;
       requestProps.json = true;
     }
 
-    return rp(requestProps).then((data) => {
-      return JSON.parse(data);
+    return this.requester(requestProps).then((response) => {
+      return JSON.parse(response);
     });
   }
 
-  requestHasBody(method) {
-    return ["GET", "DELETE"].indexOf(method);
-  }
-
   /**
+   * Will be deprecated one the account model will be working
+   * 
    * @param {string} endpoint
-   * @returns {string} 
+   * @returns {string}
    */
   createUri(endpoint) {
-    let replacedEndpoint = endpoint.replace("${accountId}", this.accountId);
-    return `${this.host}${replacedEndpoint}`;
+    if (!endpoint) {
+      throw new RequestError("No endpoint specified");
+    }
+    return endpoint.replace("${accountId}", this.accountId);
   }
 }
 

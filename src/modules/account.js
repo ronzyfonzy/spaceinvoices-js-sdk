@@ -1,13 +1,13 @@
 import BaseModule from "./baseModule";
 
-export default class Account extends BaseModule {
+class Account extends BaseModule {
   /**
   * 
   * @param {string} accountId 
   * 
   * @returns {Promise<object>}
   */
-  static get(accountId) {
+  get(accountId) {
     return this.call(`/accounts/${accountId}`);
   }
 
@@ -18,7 +18,7 @@ export default class Account extends BaseModule {
   * 
   * @returns {Promise<object>}
   */
-  static authenticate(email, password) {
+  authenticate(email, password) {
     return this.call("/accounts/login", "POST", { email, password });
   }
 
@@ -29,7 +29,7 @@ export default class Account extends BaseModule {
   * 
   * @returns {Promise<object>}
   */
-  static authenticate(email, password) {
+  authenticate(email, password) {
     return this.call("/accounts", "POST", { email, password });
   }
 
@@ -40,9 +40,11 @@ export default class Account extends BaseModule {
   
   * @returns {Promise<boolean>}
   */
-  static isEmailUnique(email) {
+  isEmailUnique(email) {
     return this.call(`/accounts/is-unique?email=${email}`).then((data) => {
       return data.isUnique;
     });
   }
 }
+
+export default new Account();

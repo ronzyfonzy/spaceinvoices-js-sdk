@@ -1,7 +1,7 @@
-export { default as Account } from "./account";
-export { default as Client } from "./client";
-export { default as Company } from "./company";
-export { default as Currency } from "./currency";
-export { default as Document } from "./document";
-export { default as Item } from "./item";
-export { default as Organization } from "./organization";
+export { default as account } from "./account";
+export { default as client } from "./client";
+export { default as company } from "./company";
+export { default as currency } from "./currency";
+export { default as document } from "./document";
+export { default as item } from "./item";
+export { default as organization } from "./organization";

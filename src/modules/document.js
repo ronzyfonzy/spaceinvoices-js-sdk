@@ -1,37 +1,35 @@
 import BaseModule from "./baseModule";
 import { MDocument } from "../models";
 
-export default class Document extends BaseModule {
+class Document extends BaseModule {
+
+  constructor() {
+    super();
+    this.transformModel = MDocument;
+  }
+
   /** 
    * 
-   * @returns {Promise<MDocument[]>|object[]}
+   * @returns {Promise<MDocument[]>}
    */
-  static list(organizationId, transform = true) {
-    return this.call(`/organizations/${organizationId}/documents`).then((data) => {
-      if (transform) {
-        return data.map((object) => {
-          return new MDocument(object);
-        });
-      } else {
-        return data;
-      }
-    });
+  list(organizationId, transform = true) {
+    return this.call(`/organizations/${organizationId}/documents`);
   }
 
   /** 
   * 
-  * @returns {Promise<object>}
+  * @returns {Promise<MDocument>}
   */
-  static get(documentId) {
+  get(documentId) {
     return this.call(`/documents/${documentId}`);
   }
 
   /** 
    * @param {object} data
    * 
-   * @returns {Promise<object>}
+   * @returns {Promise<MDocument>}
    */
-  static create(organizationId, data) {
+  create(organizationId, data) {
     return this.call(`/organizations/${organizationId}/documents`, "POST", data);
   }
 
@@ -39,18 +37,20 @@ export default class Document extends BaseModule {
    * @param {string} documentId
    * @param {object} data
    * 
-   * @returns {Promise<object>}
+   * @returns {Promise<MDocument>}
    */
-  static update(documentId, data) {
+  update(documentId, data) {
     return this.call(`/documents/${documentId}`, "PUT", data);
   }
 
   /** 
    * @param {string} documentId
    * 
-   * @returns {Promise<object>}
+   * @returns {Promise<MDocument>}
    */
-  static delete(documentId) {
+  delete(documentId) {
     return this.call(`/documents/${documentId}`, "DELETE");
   }
 }
+
+export default new Document();

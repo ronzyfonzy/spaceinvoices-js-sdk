@@ -1,11 +1,11 @@
 import BaseModule from "./baseModule";
 
-export default class Company extends BaseModule {
+class Company extends BaseModule {
   /** 
    * 
    * @returns {Promise<object[]>}
    */
-  static list(organizationId) {
+  list(organizationId) {
     return this.call(`/companies`);
   }
 
@@ -13,7 +13,9 @@ export default class Company extends BaseModule {
    * 
    * @returns {Promise<object[]>}
    */
-  static search(term) {
+  search(term) {
     return this.call(`/companies/search?term=${term}`);
   }
 }
+
+export default new Company();

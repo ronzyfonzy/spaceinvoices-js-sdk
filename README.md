@@ -11,7 +11,7 @@ yarn
 Include module
 ```javascript
 import SpaceInvoices from "./spaceInvoices";
-let spaceInvoices = new SpaceInvoices(${accountId}, ${apiToken});
+let spaceInvoices = new SpaceInvoices(${apiToken}, ${accountId});
 
 spaceInvoices.organization.list().then(organizations => {
   console.log('organizations', organizations);
@@ -25,8 +25,14 @@ spaceInvoices.organization.list().then(organizations => {
 });
 ```
 
+### Compile
+
+```
+yarn compile
+```
+
 ### Test
 
 ```
-yarn run test
+yarn test
 ```

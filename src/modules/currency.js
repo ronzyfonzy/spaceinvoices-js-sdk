@@ -1,11 +1,13 @@
 import BaseModule from "./baseModule";
 
-export default class Currency extends BaseModule {
+class Currency extends BaseModule {
   /** 
    * 
    * @returns {Promise<object[]>}
    */
-  static list() {
+  list() {
     return this.call("/currencies");
   }
 }
+
+export default new Currency();

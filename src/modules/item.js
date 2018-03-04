@@ -1,36 +1,43 @@
 import BaseModule from "./baseModule";
+import { MItem } from "../models";
 
-export default class Item extends BaseModule {
+class Item extends BaseModule {
+
+  constructor() {
+    super();
+    this.transformModel = MItem;
+  }
+
   /** 
    * 
-   * @returns {Promise<object[]>}
+   * @returns {Promise<MItem[]>}
    */
-  static list(organizationId) {
+  list(organizationId) {
     return this.call(`/organizations/${organizationId}/items`);
   }
 
   /** 
    * 
-   * @returns {Promise<object[]>}
+   * @returns {Promise<MItem[]>}
    */
-  static search(organizationId, term) {
+  search(organizationId, term) {
     return this.call(`/organizations/${organizationId}/search-items?term=${term}`);
   }
 
   /** 
   * 
-  * @returns {Promise<object>}
+  * @returns {Promise<MItem>}
   */
-  static get(itemId) {
+  get(itemId) {
     return this.call(`/items/${itemId}`);
   }
 
   /** 
    * @param {object} data
    * 
-   * @returns {Promise<object>}
+   * @returns {Promise<MItem>}
    */
-  static create(organizationId, data) {
+  create(organizationId, data) {
     return this.call(`/organizations/${organizationId}/items`, "POST", data);
   }
 
@@ -38,18 +45,20 @@ export default class Item extends BaseModule {
    * @param {string} itemId
    * @param {object} data
    * 
-   * @returns {Promise<object>}
+   * @returns {Promise<MItem>}
    */
-  static update(itemId, data) {
+  update(itemId, data) {
     return this.call(`/items/${itemId}`, "PUT", data);
   }
 
   /** 
    * @param {string} itemId
    * 
-   * @returns {Promise<object>}
+   * @returns {Promise<MItem>}
    */
-  static delete(itemId) {
+  delete(itemId) {
     return this.call(`/items/${itemId}`, "DELETE");
   }
 }
+
+export default new Item();
