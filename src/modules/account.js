@@ -1,6 +1,6 @@
-import BaseModel from "./baseModel";
+import BaseModule from "./baseModule";
 
-export default class Account extends BaseModel {
+export default class Account extends BaseModule {
   /**
   * 
   * @param {string} accountId 
@@ -37,7 +37,7 @@ export default class Account extends BaseModel {
   /**
   * 
   * @param {string} email 
-
+  
   * @returns {Promise<boolean>}
   */
   static isEmailUnique(email) {

@@ -1,7 +1,5 @@
-export default class MDocument {
-  constructor(data) {
-    this.id = data.id;
+import BaseModel from "./baseModel";
 
-    this.data = data;
-  }
+export default class MDocument extends BaseModel {
+
 }

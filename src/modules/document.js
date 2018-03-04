@@ -1,7 +1,7 @@
-import BaseModel from "./baseModel";
+import BaseModule from "./baseModule";
 import { MDocument } from "../models";
 
-export default class Document extends BaseModel {
+export default class Document extends BaseModule {
   /** 
    * 
    * @returns {Promise<MDocument[]>|object[]}

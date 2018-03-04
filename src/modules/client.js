@@ -1,6 +1,6 @@
-import BaseModel from "./baseModel";
+import BaseModule from "./baseModule";
 
-export default class Client extends BaseModel {
+export default class Client extends BaseModule {
   /** 
    * 
    * @returns {Promise<object[]>}

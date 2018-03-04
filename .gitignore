@@ -2,4 +2,5 @@
 .vscode
 node_modules
 config.js
+index.js
 yarn-error.log

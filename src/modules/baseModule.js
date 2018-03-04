@@ -1,6 +1,6 @@
-import { rs } from "../requestService";
+import { requestService } from "../requestService";
 
-export default class BaseModel {
+export default class BaseModule {
   /**
    *
    * @param {string} method
@@ -10,6 +10,6 @@ export default class BaseModel {
    * @returns {Promise<any>}
    */
   static call(endpoint, method = "GET", data = null) {
-    return rs.call(endpoint, method, data);
+    return requestService.call(endpoint, method, data).then();
   }
 }

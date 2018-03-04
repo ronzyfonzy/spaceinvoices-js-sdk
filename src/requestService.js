@@ -54,4 +54,4 @@ class RequestService {
   }
 }
 
-export const rs = new RequestService();
+export const requestService = new RequestService();

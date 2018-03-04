@@ -1,10 +1,11 @@
-import { rs as requestService } from "./requestService";
+import { requestService } from "./requestService";
 import * as modules from "./modules";
 
 export default class SpaceInvoices {
 
-  constructor(host, accountId, apiToken) {
+  constructor(accountId, apiToken, host = "https://api.spaceinvoices.com/v1") {
     requestService.init(host, accountId, apiToken)
+    modules.org
   }
 
   get account() { return modules.Account; }

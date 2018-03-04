@@ -5,6 +5,7 @@
   "main": "lib/spaceInvoices.js",
   "scripts": {
     "test": "mocha --require babel-register ./test/**/*.test.js",
+    "runrun": "babel-node ./index.js",
     "clean": "rimraf lib/*",
     "precompile": "yarn run clean",
     "compile": "yarn run compile:babel",

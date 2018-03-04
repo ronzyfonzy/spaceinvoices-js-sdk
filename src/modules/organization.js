@@ -1,7 +1,7 @@
-import BaseModel from "./baseModel";
+import BaseModule from "./baseModule";
 import { MOrganization } from "../models";
 
-export default class Organization extends BaseModel {
+export default class Organization extends BaseModule {
   /** 
    * 
    * @returns {Promise<MOrganization[]>}

@@ -1,6 +1,6 @@
-import BaseModel from "./baseModel";
+import BaseModule from "./baseModule";
 
-export default class Currency extends BaseModel {
+export default class Currency extends BaseModule {
   /** 
    * 
    * @returns {Promise<object[]>}

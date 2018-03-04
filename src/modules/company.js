@@ -1,6 +1,6 @@
-import BaseModel from "./baseModel";
+import BaseModule from "./baseModule";
 
-export default class Company extends BaseModel {
+export default class Company extends BaseModule {
   /** 
    * 
    * @returns {Promise<object[]>}
