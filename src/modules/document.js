@@ -1,5 +1,5 @@
 import BaseModule from "./baseModule";
-import { MDocument } from "../models";
+import { MDocument, MPayment } from "../models";
 
 class Document extends BaseModule {
 
@@ -50,6 +50,14 @@ class Document extends BaseModule {
    */
   delete(documentId) {
     return this.call(`/documents/${documentId}`, "DELETE");
+  }
+
+  /** 
+   * 
+   * @returns {Promise<MPayment>}
+   */
+  payments() {
+    return this.call(`/documents/${documentId}/payments`);
   }
 }
 

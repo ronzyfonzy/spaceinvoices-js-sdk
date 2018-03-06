@@ -1,4 +1,4 @@
-import { RequestError } from "./errors";
+import { RequestError, ResponseError } from "./errors";
 import rp from "request-promise";
 
 class RequestService {
@@ -35,12 +35,18 @@ class RequestService {
     };
 
     if (data && ["GET", "DELETE"].indexOf(method)) {
-      requestProps.body = data;
-      requestProps.json = true;
+      requestProps = Object.assign(requestProps, {
+        body: data,
+        json: true,
+        resolveWithFullResponse: true,
+        simple: true,
+      });
     }
 
-    return this.requester(requestProps).then((response) => {
-      return JSON.parse(response);
+    return this.requester(requestProps).then(response => {
+      return response.body;
+    }).catch(response => {
+      return Promise.reject(new ResponseError(response));
     });
   }
 

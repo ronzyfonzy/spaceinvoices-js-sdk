@@ -29,7 +29,7 @@ class Account extends BaseModule {
   * 
   * @returns {Promise<object>}
   */
-  authenticate(email, password) {
+  create(email, password) {
     return this.call("/accounts", "POST", { email, password });
   }
 

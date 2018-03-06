@@ -1,5 +1,3 @@
 import BaseModel from "./baseModel";
 
-export default class MClient extends BaseModel {
-
-}
+export default class MClient extends BaseModel { }

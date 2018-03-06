@@ -5,3 +5,6 @@ export { default as currency } from "./currency";
 export { default as document } from "./document";
 export { default as item } from "./item";
 export { default as organization } from "./organization";
+export { default as payment } from "./payment";
+export { default as recurrence } from "./recurrence";
+export { default as tax } from "./tax";

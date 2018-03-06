@@ -1,5 +1,3 @@
 import BaseModel from "./baseModel";
 
-export default class MItem extends BaseModel {
-
-}
+export default class MItem extends BaseModel { }

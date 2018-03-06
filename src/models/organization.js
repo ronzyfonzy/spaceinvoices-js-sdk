@@ -1,5 +1,5 @@
 import BaseModel from "./baseModel";
-import { document, client, item } from "../modules";
+import { document, client, item, payment, recurrence, tax } from "../modules";
 
 export default class MOrganization extends BaseModel {
   /** 
@@ -64,5 +64,37 @@ export default class MOrganization extends BaseModel {
    */
   searchItem(term) {
     return item.search(this.id, term);
+  }
+
+  /** 
+   * 
+   * @returns {Promise<MPayment[]>}
+   */
+  listPayments() {
+    return payment.list(this.id);
+  }
+
+  /** 
+   * 
+   * @returns {Promise<MRecurrence[]>}
+   */
+  listRecurrences() {
+    return recurrence.listFromOrganization(this.id);
+  }
+
+  /** 
+   * 
+   * @returns {Promise<MTax[]>}
+   */
+  listTaxes() {
+    return tax.list(this.id);
+  }
+
+  /** 
+   * 
+   * @returns {Promise<MTax>}
+   */
+  createTax(data) {
+    return tax.create(this.id, data);
   }
 }

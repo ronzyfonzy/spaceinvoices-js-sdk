@@ -9,11 +9,12 @@ class Organization extends BaseModule {
   }
 
   /** 
+   * @param {string} accountId
    * 
    * @returns {Promise<MOrganization[]>}
    */
-  list() {
-    return this.call("/accounts/${accountId}/organizations");
+  list(accountId) {
+    return this.call(`/accounts/${accountId}/organizations`);
   }
 
   /** 
