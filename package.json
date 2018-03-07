@@ -4,7 +4,8 @@
   "description": "",
   "main": "lib/spaceInvoices.js",
   "scripts": {
-    "test": "standard ./src/**/*.js ./test/**/*.js && mocha --require babel-register ./test/**/*.test.js",
+    "test": "yarn lint && mocha --require babel-register ./test/**/*.test.js",
+    "lint": "standard-markdown && standard ./src/**/*.js ./test/**/*.js",
     "coverage": "cross-env NODE_ENV=test nyc --reporter=text --reporter=text-summary mocha test/*.js",
     "coverage:travis": "cross-env NODE_ENV=test nyc --reporter=lcovonly mocha ./test/**/*.js && codecov",
     "runrun": "babel-node ./index.js",
@@ -36,7 +37,8 @@
     "mocha": "^5.0.1",
     "nyc": "^11.4.1",
     "rimraf": "^2.6.2",
-    "standard": "^11.0.0"
+    "standard": "^11.0.0",
+    "standard-markdown": "^4.0.2"
   },
   "config": {
     "commitizen": {

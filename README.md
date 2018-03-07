@@ -17,19 +17,27 @@ yarn
 
 Include module
 ```javascript
-import SpaceInvoices from "./spaceInvoices";
-let spaceInvoices = new SpaceInvoices(${apiToken}, ${accountId});
+import dotenv from 'dotenv'
+import SpaceInvoices from './src/spaceInvoices'
 
-spaceInvoices.organization.list().then(organizations => {
-  console.log('organizations', organizations);
-  let organization = organizations.pop();
+dotenv.config()
 
-  organization.listDocuments().then((documents) => {
-    console.log('documents from organization', documents);
+let spaceInvoices = new SpaceInvoices(process.env.API_TOKEN)
+
+spaceInvoices.account.authenticate(process.env.TEST_EMAIL, process.env.TEST_PASSWORD).then(account => {
+  console.log('account', account)
+  account.listOrganizations().then(organizations => {
+    console.log('organizations', organizations)
+    let organization = organizations.pop()
+    if (organization) {
+      organization.listDocuments().then((documents) => {
+        console.log('documents from organization', documents)
+      })
+    }
+  }).catch((err) => {
+    console.error('Error', err.message)
   })
-}).catch((err) => {
-  console.error("Error", err);
-});
+})
 ```
 
 ### Compile
