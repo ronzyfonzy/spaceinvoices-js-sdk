@@ -2,6 +2,10 @@ export class RequestError extends Error {
 
 };
 export class ResponseError extends Error {
+  /**
+   * 
+   * @param {object} error 
+   */
   constructor(error) {
     super();
     this.name = error.response.body.error.name;

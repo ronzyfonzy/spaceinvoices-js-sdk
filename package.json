@@ -5,11 +5,11 @@
   "main": "lib/spaceInvoices.js",
   "scripts": {
     "test": "mocha --require babel-register ./test/**/*.test.js",
+    "coverage": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text --reporter=text-summary mocha test/*.js",
     "runrun": "babel-node ./index.js",
     "clean": "rimraf lib/*",
     "precompile": "yarn run clean",
-    "compile": "yarn run compile:babel",
-    "compile:babel": "babel src --out-dir lib"
+    "compile": "babel src --out-dir lib"
   },
   "author": "Robert Tajnšek",
   "license": "MIT",
@@ -20,10 +20,16 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
+    "babel-plugin-istanbul": "^4.1.5",
     "babel-preset-env": "^1.6.1",
     "babel-register": "^6.26.0",
     "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "cross-env": "^5.1.3",
+    "eslint": "^4.18.2",
+    "istanbul": "^0.4.5",
     "mocha": "^5.0.1",
+    "nyc": "^11.4.1",
     "rimraf": "^2.6.2"
   }
 }

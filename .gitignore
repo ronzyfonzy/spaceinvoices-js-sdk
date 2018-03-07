@@ -1,6 +1,8 @@
 .idea
 .vscode
+.nyc_output
 node_modules
+coverage
 config.js
 index.js
 yarn-error.log

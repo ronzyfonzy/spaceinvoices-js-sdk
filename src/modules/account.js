@@ -1,6 +1,13 @@
 import BaseModule from "./baseModule";
+import { MAccount } from "../models";
 
 class Account extends BaseModule {
+
+  constructor() {
+    super();
+    this.transformModel = MAccount;
+  }
+
   /**
   * 
   * @param {string} accountId 
@@ -16,7 +23,7 @@ class Account extends BaseModule {
   * @param {string} email 
   * @param {string} password 
   * 
-  * @returns {Promise<object>}
+  * @returns {Promise<MAccount>}
   */
   authenticate(email, password) {
     return this.call("/accounts/login", "POST", { email, password });

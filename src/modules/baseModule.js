@@ -29,8 +29,10 @@ export default class BaseModule {
       return data.map((item) => {
         return new this.transformModel(item);
       });
-    } else {
+    } else if (typeof data === "object") {
       return new this.transformModel(data);
+    } else {
+      return undefined;
     }
   }
 }

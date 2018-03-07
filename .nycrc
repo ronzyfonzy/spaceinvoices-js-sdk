@@ -1,0 +1,12 @@
+{
+  "require": [
+    "babel-register"
+  ],
+  "sourceMap": false,
+  "instrument": false,
+  "exclude": [
+    "index.js",
+    "lib",
+    "test"
+  ]
+}

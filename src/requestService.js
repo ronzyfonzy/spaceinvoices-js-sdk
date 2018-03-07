@@ -32,14 +32,14 @@ class RequestService {
     let requestProps = {
       method,
       uri: this.createUri(endpoint),
+      resolveWithFullResponse: true,
+      simple: true,
+      json: true,
     };
 
-    if (data && ["GET", "DELETE"].indexOf(method)) {
+    if (data) {
       requestProps = Object.assign(requestProps, {
         body: data,
-        json: true,
-        resolveWithFullResponse: true,
-        simple: true,
       });
     }
 
