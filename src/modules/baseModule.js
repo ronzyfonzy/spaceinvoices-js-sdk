@@ -1,9 +1,8 @@
-import { requestService } from "../requestService";
+import { requestService } from '../requestService'
 
 export default class BaseModule {
-
-  constructor() {
-    this.transformModel = null;
+  constructor () {
+    this.TransformModel = null
   }
 
   /**
@@ -14,25 +13,25 @@ export default class BaseModule {
    *
    * @returns {Promise<any>}
    */
-  call(endpoint, method = "GET", data = null) {
+  call (endpoint, method = 'GET', data = null) {
     return requestService.call(endpoint, method, data).then((data) => {
       if (this.transformModel !== null) {
-        return this._transform(data);
+        return this._transform(data)
       } else {
-        return data;
+        return data
       }
-    });
+    })
   }
 
-  _transform(data) {
+  _transform (data) {
     if (Array.isArray(data)) {
       return data.map((item) => {
-        return new this.transformModel(item);
-      });
-    } else if (typeof data === "object") {
-      return new this.transformModel(data);
+        return new this.TransformModel(item)
+      })
+    } else if (typeof data === 'object') {
+      return new this.TransformModel(data)
     } else {
-      return undefined;
+      return undefined
     }
   }
 }

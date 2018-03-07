@@ -1,5 +1,5 @@
-import { RequestError, ResponseError } from "./errors";
-import rp from "request-promise";
+import { RequestError, ResponseError } from './errors'
+import rp from 'request-promise'
 
 class RequestService {
   /**
@@ -8,16 +8,16 @@ class RequestService {
    * @param {string} apiToken
    * @param {string} accountId
    */
-  init(host, apiToken, accountId) {
-    this.host = host;
-    this.apiToken = apiToken;
-    this.accountId = accountId;
+  init (host, apiToken, accountId) {
+    this.host = host
+    this.apiToken = apiToken
+    this.accountId = accountId
     this.requester = rp.defaults({
       baseUrl: this.host,
       headers: {
         Authorization: this.apiToken
       }
-    });
+    })
   }
 
   /**
@@ -28,40 +28,31 @@ class RequestService {
    *
    * @returns {Promise}
    */
-  call(endpoint, method = "GET", data = null) {
+  call (endpoint, method = 'GET', data = null) {
     let requestProps = {
       method,
-      uri: this.createUri(endpoint),
+      uri: endpoint,
       resolveWithFullResponse: true,
       simple: true,
-      json: true,
-    };
+      json: true
+    }
 
     if (data) {
       requestProps = Object.assign(requestProps, {
-        body: data,
-      });
+        body: data
+      })
     }
 
     return this.requester(requestProps).then(response => {
-      return response.body;
+      return response.body
     }).catch(response => {
-      return Promise.reject(new ResponseError(response));
-    });
-  }
-
-  /**
-   * Will be deprecated one the account model will be working
-   * 
-   * @param {string} endpoint
-   * @returns {string}
-   */
-  createUri(endpoint) {
-    if (!endpoint) {
-      throw new RequestError("No endpoint specified");
-    }
-    return endpoint.replace("${accountId}", this.accountId);
+      if (response.statusCode >= 400 && response.statusCode < 50) {
+        return Promise.reject(new RequestError(response))
+      } else {
+        return Promise.reject(new ResponseError(response))
+      }
+    })
   }
 }
 
-export const requestService = new RequestService();
+export const requestService = new RequestService()

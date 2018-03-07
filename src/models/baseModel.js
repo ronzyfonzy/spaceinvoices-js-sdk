@@ -1,15 +1,14 @@
 export default class BaseModel {
-
-  constructor(data) {
-    this.data = data;
-    this.parseData();
+  constructor (data) {
+    this.data = data
+    this.parseData()
   }
 
-  parseData() {
+  parseData () {
     this.setId()
   }
 
-  setId(data) {
-    this.id = this.data.id;
+  setId (data) {
+    this.id = this.data.id
   }
 }

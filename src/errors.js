@@ -1,17 +1,18 @@
 export class RequestError extends Error {
 
-};
+}
+
 export class ResponseError extends Error {
   /**
-   * 
-   * @param {object} error 
+   *
+   * @param {object} error
    */
-  constructor(error) {
-    super();
-    this.name = error.response.body.error.name;
-    this.statusCode = error.response.body.error.statusCode;
-    this.code = error.response.body.error.code;
-    this.message = error.response.body.error.message;
-    this.stack = error.response.body.error.stack.split("\n");
+  constructor (error) {
+    super()
+    this.name = error.response.body.error.name
+    this.statusCode = error.response.body.error.statusCode
+    this.code = error.response.body.error.code
+    this.message = error.response.body.error.message
+    this.stack = error.response.body.error.stack.split('\n')
   }
-};
+}

@@ -4,13 +4,15 @@
   "description": "",
   "main": "lib/spaceInvoices.js",
   "scripts": {
-    "test": "mocha --require babel-register ./test/**/*.test.js",
+    "test": "standard ./src/**/*.js ./test/**/*.js && mocha --require babel-register ./test/**/*.test.js",
     "coverage": "cross-env NODE_ENV=test nyc --reporter=text --reporter=text-summary mocha test/*.js",
     "coverage:travis": "cross-env NODE_ENV=test nyc --reporter=lcovonly mocha ./test/**/*.js && codecov",
     "runrun": "babel-node ./index.js",
     "clean": "rimraf lib/*",
     "precompile": "yarn run clean",
-    "compile": "babel src --out-dir lib"
+    "compile": "babel src --out-dir lib",
+    "commit": "git add . && git-cz",
+    "gitit": "yarn test && yarn compile && yarn commit"
   },
   "author": "Robert Tajnšek",
   "license": "MIT",
@@ -33,6 +35,20 @@
     "istanbul": "^0.4.5",
     "mocha": "^5.0.1",
     "nyc": "^11.4.1",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.2",
+    "standard": "^11.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "standard": {
+    "env": [
+      "mocha"
+    ],
+    "ignore": [
+      "lib"
+    ]
   }
 }
