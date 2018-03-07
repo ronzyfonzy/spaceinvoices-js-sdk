@@ -1,6 +1,7 @@
 .idea
 .vscode
 .nyc_output
+.env
 node_modules
 coverage
 config.js
