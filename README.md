@@ -2,7 +2,8 @@
 
 [![Build Status](https://travis-ci.org/ronzyfonzy/spaceinvoices-api-client.svg?branch=master)](https://travis-ci.org/ronzyfonzy/spaceinvoices-api-client)
 [![codecov](https://codecov.io/gh/ronzyfonzy/spaceinvoices-api-client/branch/master/graph/badge.svg)](https://codecov.io/gh/ronzyfonzy/spaceinvoices-api-client)
-[![Dependency Status](https://david-dm.org/ronzyfonzy/spaceinvoices-api-client.svg)](https://codecov.io/gh/ronzyfonzy/spaceinvoices-api-client)
+[![dependencies Status](https://david-dm.org/ronzyfonzy/spaceinvoices-api-client/status.svg)](https://david-dm.org/ronzyfonzy/spaceinvoices-api-client)
+[![devDependencies Status](https://david-dm.org/ronzyfonzy/spaceinvoices-api-client/dev-status.svg)](https://david-dm.org/ronzyfonzy/spaceinvoices-api-client?type=dev)
 
 ### Instalation
 
