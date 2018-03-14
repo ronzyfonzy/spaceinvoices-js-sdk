@@ -1,7 +1,50 @@
 import BaseModel from './baseModel'
-import { document, client, item, payment, recurrence, tax } from '../modules'
+import { organization, document, client, item, payment, recurrence, tax } from '../modules'
 
 export default class MOrganization extends BaseModel {
+  constructor (data) {
+    super(data)
+    this.module = organization
+    if (data) {
+      /**
+       * @type {String}
+       */
+      this.locale = data.locale
+      /**
+       * @type {String}
+       */
+      this.brand = data.brand
+      /**
+       * @type {number}
+       */
+      this.supportPin = data.supportPin
+      /**
+       * @type {String}
+       */
+      this.name = data.name
+      /**
+       * @type {String}
+       */
+      this.address = data.address
+      /**
+       * @type {String}
+       */
+      this.city = data.city
+      /**
+       * @type {String}
+       */
+      this.country = data.country
+      /**
+       * @type {String}
+       */
+      this.IBAN = data.IBAN
+      /**
+       * @type {String}
+       */
+      this.bank = data.bank
+    }
+  }
+
   /**
    *
    * @returns {Promise<MDocument[]>}

@@ -46,10 +46,10 @@ class RequestService {
     return this.requester(requestProps).then(response => {
       return response.body
     }).catch(response => {
-      if (response.statusCode >= 400 && response.statusCode < 50) {
-        return Promise.reject(new RequestError(response))
+      if (response.statusCode >= 400 && response.statusCode < 500) {
+        return Promise.reject(new RequestError(response.response.body.error))
       } else {
-        return Promise.reject(new ResponseError(response))
+        return Promise.reject(new ResponseError(response.response.body.error))
       }
     })
   }

@@ -4,8 +4,9 @@
   "description": "",
   "main": "lib/spaceInvoices.js",
   "scripts": {
-    "test": "yarn lint && mocha --require babel-register ./test/**/*.test.js",
+    "test": "mocha --require babel-register ./test/**/*.test.js",
     "lint": "standard-markdown && standard ./src/**/*.js ./test/**/*.js",
+    "test:full": "yarn lint && yarn test",
     "coverage": "cross-env NODE_ENV=test nyc --reporter=text --reporter=text-summary mocha test/*.js",
     "coverage:travis": "cross-env NODE_ENV=test nyc --reporter=lcovonly mocha ./test/**/*.js && codecov",
     "runrun": "babel-node ./index.js",
@@ -18,6 +19,7 @@
   "author": "Robert Tajnšek",
   "license": "MIT",
   "dependencies": {
+    "es6-error": "^4.1.1",
     "request": "^2.83.0",
     "request-promise": "^4.2.2"
   },

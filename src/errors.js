@@ -1,18 +1,12 @@
-export class RequestError extends Error {
+import ExtendableError from 'es6-error'
 
-}
-
-export class ResponseError extends Error {
-  /**
-   *
-   * @param {object} error
-   */
+class APIError extends ExtendableError {
   constructor (error) {
-    super()
-    this.name = error.response.body.error.name
-    this.statusCode = error.response.body.error.statusCode
-    this.code = error.response.body.error.code
-    this.message = error.response.body.error.message
-    this.stack = error.response.body.error.stack.split('\n')
+    super(error.message)
+    this.code = error.code
+    this.stackApi = error.stack
   }
 }
+
+export class RequestError extends APIError { }
+export class ResponseError extends APIError { }

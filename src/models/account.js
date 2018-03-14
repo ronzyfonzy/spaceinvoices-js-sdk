@@ -7,10 +7,19 @@ export default class MAccount extends BaseModel {
   }
 
   /**
-  *
-  * @returns {Promise<MOrganization[]>}
+  * @inheritDoc
   */
   listOrganizations () {
     return organization.list(this.id)
+  }
+
+  /**
+   *
+   * @param {object} data
+   *
+   * @returns {Promise<MOrganization>}
+   */
+  createOrganization (data) {
+    return organization.create(this.id, data)
   }
 }
