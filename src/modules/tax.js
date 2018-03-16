@@ -23,7 +23,7 @@ class Tax extends BaseModule {
    * @returns {Promise<MTax>}
    */
   create (organizationId, data) {
-    return this.call(`/organizations/${organizationId}/taxes`, 'POST', data)
+    return this.call(`/organizations/${organizationId}/taxes`, data, 'POST')
   }
 
   /**
@@ -33,7 +33,7 @@ class Tax extends BaseModule {
    * @returns {Promise<object>}
    */
   addRate (taxId, data) {
-    return this.call(`/taxes/${taxId}/taxRates`, 'POST', data)
+    return this.call(`/taxes/${taxId}/taxRates`, data, 'POST')
   }
 
   /**
@@ -43,7 +43,7 @@ class Tax extends BaseModule {
    * @returns {Promise<MTax>}
    */
   update (taxId, data) {
-    return this.call(`/taxes/${taxId}`, 'PUT', data)
+    return this.call(`/taxes/${taxId}`, data, 'PUT')
   }
 
   /**
@@ -52,7 +52,7 @@ class Tax extends BaseModule {
    * @returns {Promise<MTax>}
    */
   delete (taxId) {
-    return this.call(`/taxes/${taxId}`, 'DELETE')
+    return this.call(`/taxes/${taxId}`, null, 'DELETE')
   }
 }
 

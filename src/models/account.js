@@ -2,6 +2,9 @@ import BaseModel from './baseModel'
 import { organization } from '../modules'
 
 export default class MAccount extends BaseModel {
+  /**
+   * @inheritDoc
+   */
   setId () {
     this.id = this.data.userId
   }
@@ -9,8 +12,8 @@ export default class MAccount extends BaseModel {
   /**
   * @inheritDoc
   */
-  listOrganizations () {
-    return organization.list(this.id)
+  listOrganizations (filter = null) {
+    return organization.list(this.id, filter)
   }
 
   /**

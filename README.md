@@ -18,7 +18,7 @@ yarn
 Include module
 ```javascript
 import dotenv from 'dotenv'
-import SpaceInvoices from './src/spaceInvoices'
+import { SpaceInvoices, siFilter } from './src/spaceInvoices'
 
 dotenv.config()
 
@@ -26,17 +26,30 @@ let spaceInvoices = new SpaceInvoices(process.env.API_TOKEN)
 
 spaceInvoices.account.authenticate(process.env.TEST_EMAIL, process.env.TEST_PASSWORD).then(account => {
   console.log('account', account)
+
+  // Example 1: List All Organizations
   account.listOrganizations().then(organizations => {
-    console.log('organizations', organizations)
+    console.log('allOrganizations', organizations.length)
     let organization = organizations.pop()
+
     if (organization) {
       organization.listDocuments().then((documents) => {
         console.log('documents from organization', documents)
       })
     }
-  }).catch((err) => {
-    console.error('Error', err.message)
   })
+
+  // Example 1: List Filtered Organizations
+
+  let filter = siFilter()
+    .where('locale').eq('en')
+    .and('supportPin').gte(10000)
+
+  account.listOrganizations(filter).then(organizations => {
+    console.log('filteredOrganizations', organizations.length)
+  })
+}).catch((error) => {
+  console.error('Error', error)
 })
 ```
 

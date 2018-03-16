@@ -25,7 +25,7 @@ class Account extends BaseModule {
   * @returns {Promise<MAccount>}
   */
   authenticate (email, password) {
-    return this.call('/accounts/login', 'POST', { email, password })
+    return this.call('/accounts/login', { email, password }, 'POST')
   }
 
   /**
@@ -36,7 +36,7 @@ class Account extends BaseModule {
   * @returns {Promise<object>}
   */
   create (email, password) {
-    return this.call('/accounts', 'POST', { email, password })
+    return this.call('/accounts', { email, password }, 'POST')
   }
 
   /**

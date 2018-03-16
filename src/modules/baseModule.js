@@ -1,5 +1,4 @@
-import { requestService } from '../requestService'
-
+import { requestService, FilterBuilder } from '../services' // eslint-disable-line no-unused-vars
 export default class BaseModule {
   constructor () {
     this.TransformModel = null
@@ -7,14 +6,20 @@ export default class BaseModule {
 
   /**
    *
-   * @param {string} method
    * @param {string} endpoint
-   * @param {object} data
+   * @param {string} method
+   * @param {(object|FilterBuilder)} data
    *
    * @returns {Promise<any>}
    */
-  call (endpoint, method = 'GET', data = null) {
-    return requestService.call(endpoint, method, data).then((data) => {
+  call (endpoint, data = null, method = 'GET') {
+    let filter = null
+    if (data !== null && data.constructor !== undefined && data.constructor.name === 'FilterBuilder') {
+      filter = data
+      data = null
+    }
+
+    return requestService.call(endpoint, method, data, filter).then((data) => {
       if (this.transformModel !== null) {
         return this._transform(data)
       } else {

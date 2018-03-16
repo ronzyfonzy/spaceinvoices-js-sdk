@@ -1,5 +1,6 @@
 import BaseModule from './baseModule'
 import { MOrganization } from '../models'
+import { FilterBuilder } from '../services' // eslint-disable-line no-unused-vars
 
 class Organization extends BaseModule {
   constructor () {
@@ -9,11 +10,12 @@ class Organization extends BaseModule {
 
   /**
    * @param {string} accountId
+   * @param {(null|FilterBuilder)} [filter=null] filter
    *
    * @returns {Promise<MOrganization[]>}
    */
-  list (accountId) {
-    return this.call(`/accounts/${accountId}/organizations`)
+  list (accountId, filter = null) {
+    return this.call(`/accounts/${accountId}/organizations`, filter)
   }
 
   /**
@@ -31,7 +33,7 @@ class Organization extends BaseModule {
    * @returns {Promise<MOrganization>}
    */
   create (accountId, data) {
-    return this.call(`/accounts/${accountId}/organizations`, 'POST', data)
+    return this.call(`/accounts/${accountId}/organizations`, data, 'POST')
   }
 
   /**
@@ -41,7 +43,7 @@ class Organization extends BaseModule {
    * @returns {Promise<MOrganization>}
    */
   update (organizationId, data) {
-    return this.call(`/organizations/${organizationId}`, 'PUT', data)
+    return this.call(`/organizations/${organizationId}`, data, 'PUT')
   }
 
   /**
@@ -50,7 +52,7 @@ class Organization extends BaseModule {
    * @returns {Promise<MOrganization>}
    */
   delete (organizationId) {
-    return this.call(`/organizations/${organizationId}`, 'DELETE')
+    return this.call(`/organizations/${organizationId}`, null, 'DELETE')
   }
 }
 

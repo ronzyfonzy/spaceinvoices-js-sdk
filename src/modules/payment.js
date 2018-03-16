@@ -32,7 +32,7 @@ class Payment extends BaseModule {
    * @returns {Promise<MPayment>}
    */
   create (documentId, data) {
-    return this.call(`/documents/${documentId}/payments`, 'POST', data)
+    return this.call(`/documents/${documentId}/payments`, data, 'POST')
   }
 
   /**
@@ -42,7 +42,7 @@ class Payment extends BaseModule {
    * @returns {Promise<MPayment>}
    */
   update (paymentId, data) {
-    return this.call(`/payments/${paymentId}`, 'PUT', data)
+    return this.call(`/payments/${paymentId}`, data, 'PUT')
   }
 
   /**
@@ -51,7 +51,7 @@ class Payment extends BaseModule {
    * @returns {Promise<MPayment>}
    */
   delete (paymentId) {
-    return this.call(`/payments/${paymentId}`, 'DELETE')
+    return this.call(`/payments/${paymentId}`, null, 'DELETE')
   }
 }
 

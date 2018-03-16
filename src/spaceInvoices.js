@@ -1,7 +1,7 @@
-import { requestService } from './requestService'
+import { requestService, FilterBuilder } from './services'
 import * as modules from './modules'
 
-export default class SpaceInvoices {
+export class SpaceInvoices {
   /**
    *
    * @param {string} apiToken - Token needed for calling the API
@@ -27,4 +27,8 @@ export default class SpaceInvoices {
   get document () { return modules.document }
   get item () { return modules.item }
   get organization () { return modules.organization }
+}
+
+export function siFilter () {
+  return new FilterBuilder()
 }

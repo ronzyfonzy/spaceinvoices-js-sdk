@@ -32,7 +32,7 @@ class Recurrence extends BaseModule {
    * @returns {Promise<MRecurrence>}
    */
   create (documentId, data) {
-    return this.call(`/documents/${documentId}/recurrences`, 'POST', data)
+    return this.call(`/documents/${documentId}/recurrences`, data, 'POST')
   }
 
   /**
@@ -41,7 +41,7 @@ class Recurrence extends BaseModule {
    * @returns {Promise<MRecurrence>}
    */
   delete (reccurenceId) {
-    return this.call(`/recurrences/${reccurenceId}`, 'DELETE')
+    return this.call(`/recurrences/${reccurenceId}`, null, 'DELETE')
   }
 }
 

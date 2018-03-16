@@ -39,7 +39,7 @@ class Client extends BaseModule {
   * @returns {Promise<MClient>}
   */
   create (organizationId, data) {
-    return this.call(`/organizations/${organizationId}/clients`, 'POST', data)
+    return this.call(`/organizations/${organizationId}/clients`, data, 'POST')
   }
 
   /**
@@ -49,7 +49,7 @@ class Client extends BaseModule {
   * @returns {Promise<MClient>}
   */
   update (clientId, data) {
-    return this.call(`/clients/${clientId}`, 'PUT', data)
+    return this.call(`/clients/${clientId}`, data, 'PUT')
   }
 
   /**

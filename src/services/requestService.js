@@ -1,4 +1,5 @@
-import { RequestError, ResponseError } from './errors'
+import { RequestError, ServerError } from '../errors'
+import FilterBuilder from './filterBuilder' // eslint-disable-line no-unused-vars
 import rp from 'request-promise'
 
 class RequestService {
@@ -22,13 +23,18 @@ class RequestService {
 
   /**
    *
-   * @param {string} method
    * @param {string} endpoint
-   * @param {object} data
+   * @param {string} method
+   * @param {(null|object)} data
+   * @param {(null|FilterBuilder)} filter
    *
-   * @returns {Promise}
+   * @returns {Promise<(Array|Object|RequestError|ResponseError)>}
    */
-  call (endpoint, method = 'GET', data = null) {
+  call (endpoint, method = 'GET', data = null, filter = null) {
+    if (filter !== null) {
+      endpoint = filter.buildUri(endpoint)
+    }
+
     let requestProps = {
       method,
       uri: endpoint,
@@ -47,9 +53,9 @@ class RequestService {
       return response.body
     }).catch(response => {
       if (response.statusCode >= 400 && response.statusCode < 500) {
-        return Promise.reject(new RequestError(response.response.body.error))
+        return Promise.reject(new RequestError(response.statusCode, response.response.body.error))
       } else {
-        return Promise.reject(new ResponseError(response.response.body.error))
+        return Promise.reject(new ServerError(response.statusCode, response.response.body.error))
       }
     })
   }

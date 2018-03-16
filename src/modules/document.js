@@ -29,7 +29,7 @@ class Document extends BaseModule {
    * @returns {Promise<MDocument>}
    */
   create (organizationId, data) {
-    return this.call(`/organizations/${organizationId}/documents`, 'POST', data)
+    return this.call(`/organizations/${organizationId}/documents`, data, 'POST')
   }
 
   /**
@@ -39,7 +39,7 @@ class Document extends BaseModule {
    * @returns {Promise<MDocument>}
    */
   update (documentId, data) {
-    return this.call(`/documents/${documentId}`, 'PUT', data)
+    return this.call(`/documents/${documentId}`, data, 'PUT')
   }
 
   /**
@@ -48,7 +48,7 @@ class Document extends BaseModule {
    * @returns {Promise<MDocument>}
    */
   delete (documentId) {
-    return this.call(`/documents/${documentId}`, 'DELETE')
+    return this.call(`/documents/${documentId}`, null, 'DELETE')
   }
 
   /**

@@ -37,7 +37,7 @@ class Item extends BaseModule {
    * @returns {Promise<MItem>}
    */
   create (organizationId, data) {
-    return this.call(`/organizations/${organizationId}/items`, 'POST', data)
+    return this.call(`/organizations/${organizationId}/items`, data, 'POST')
   }
 
   /**
@@ -47,7 +47,7 @@ class Item extends BaseModule {
    * @returns {Promise<MItem>}
    */
   update (itemId, data) {
-    return this.call(`/items/${itemId}`, 'PUT', data)
+    return this.call(`/items/${itemId}`, data, 'PUT')
   }
 
   /**
@@ -56,7 +56,7 @@ class Item extends BaseModule {
    * @returns {Promise<MItem>}
    */
   delete (itemId) {
-    return this.call(`/items/${itemId}`, 'DELETE')
+    return this.call(`/items/${itemId}`, null, 'DELETE')
   }
 }
 
