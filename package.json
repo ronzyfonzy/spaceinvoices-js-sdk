@@ -7,7 +7,7 @@
     "test": "mocha --require babel-register ./test/**/*.test.js",
     "lint": "standard-markdown && standard ./src/**/*.js ./test/**/*.js",
     "test:full": "yarn lint && yarn test",
-    "coverage": "cross-env NODE_ENV=test nyc --reporter=text --reporter=text-summary mocha test/*.js",
+    "coverage": "cross-env NODE_ENV=test nyc --reporter=text --reporter=text-summary mocha test/**/*.js",
     "coverage:travis": "cross-env NODE_ENV=test nyc --reporter=lcovonly mocha ./test/**/*.js && codecov",
     "runrun": "babel-node ./index.js",
     "clean": "rimraf lib/*",
