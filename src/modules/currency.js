@@ -1,9 +1,12 @@
 import BaseModule from './baseModule'
 
+/**
+ * @extends {BaseModule}
+ */
 class Currency extends BaseModule {
   /**
    *
-   * @returns {Promise<object[]>}
+   * @returns {Promise<Object[]>}
    */
   list () {
     return this.call('/currencies')

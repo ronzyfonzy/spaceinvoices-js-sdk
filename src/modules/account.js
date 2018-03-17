@@ -1,6 +1,9 @@
 import BaseModule from './baseModule'
 import { MAccount } from '../models'
 
+/**
+ * @extends {BaseModule}
+ */
 class Account extends BaseModule {
   constructor () {
     super()

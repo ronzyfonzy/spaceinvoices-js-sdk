@@ -24,6 +24,7 @@ class Document extends BaseModule {
   }
 
   /**
+   * @param {string} organizationId
    * @param {object} data
    *
    * @returns {Promise<MDocument>}

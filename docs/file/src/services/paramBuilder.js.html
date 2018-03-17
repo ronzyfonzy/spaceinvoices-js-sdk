@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/services/paramBuilder.js | spaceinvoices-api-client</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/errors.js~APIError.html">APIError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/errors.js~RequestError.html">RequestError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/errors.js~ServerError.html">ServerError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/spaceInvoices.js~SpaceInvoices.html">SpaceInvoices</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-siFilter">siFilter</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#models">models</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/account.js~MAccount.html">MAccount</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/baseModel.js~BaseModel.html">BaseModel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/client.js~MClient.html">MClient</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/company.js~MCompany.html">MCompany</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/currency.js~MCurrency.html">MCurrency</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/document.js~MDocument.html">MDocument</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/item.js~MItem.html">MItem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/organization.js~MOrganization.html">MOrganization</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/payment.js~MPayment.html">MPayment</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/recurrence.js~MRecurrence.html">MRecurrence</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/tax.js~MTax.html">MTax</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#modules">modules</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/modules/account.js~Account.html">Account</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/modules/baseModule.js~BaseModule.html">BaseModule</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/modules/client.js~Client.html">Client</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/modules/company.js~Company.html">Company</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/modules/currency.js~Currency.html">Currency</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/modules/document.js~Document.html">Document</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/modules/item.js~Item.html">Item</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/modules/organization.js~Organization.html">Organization</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/modules/payment.js~Payment.html">Payment</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/modules/recurrence.js~Recurrence.html">Recurrence</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/modules/tax.js~Tax.html">Tax</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-account">account</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-client">client</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-company">company</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-currency">currency</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-document">document</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-item">item</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-organization">organization</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-payment">payment</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-recurrence">recurrence</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-tax">tax</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services">services</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/services/filterBuilder.js~FilterBuilder.html">FilterBuilder</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/services/paramBuilder.js~ParamBuilder.html">ParamBuilder</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/services/requestService.js~RequestService.html">RequestService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-requestService">requestService</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/services/paramBuilder.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import FilterBuilder from &apos;./filterBuilder&apos; // eslint-disable-line no-unused-vars
+
+export default class ParamBuilder {
+  /**
+   *
+   * @param {FilterBuilder} filter
+   */
+  constructor (filter) {
+    this._filter = filter
+  }
+
+  /**
+   * Equivalence
+   * @param {*} value
+   *
+   * @returns {FilterBuilder}
+   */
+  eq (value) {
+    this._setValue(value)
+    return this._filter
+  }
+
+  /**
+   * Not equal (!=)
+   * @param {*} value
+   */
+  neq (value) {
+    this._setValue({ neq: value })
+    return this._filter
+  }
+
+  /**
+   * Numerical greather than (&gt;)
+   * Valid for numberical and date values. For Geopoint values, the units are in miles by default.
+   *
+   * @param {string|number|Date} value
+   */
+  gt (value) {
+    this._setValue({ gt: value })
+    return this._filter
+  }
+
+  /**
+   * Numerical greater than of equal (&gt;=)
+   * Valid for numberical and date values. For Geopoint values, the units are in miles by default.
+   *
+   * @param {string|number|Date} value
+   */
+  gte (value) {
+    this._setValue({ gte: value })
+    return this._filter
+  }
+
+  /**
+   * Numerical less than (&lt;)
+   * Valid only for numerical and date values. For Geopoint values, the units are in miles by default.
+   * @param {string|number|Date} value
+   */
+  lt (value) {
+    this._setValue({ lt: value })
+    return this._filter
+  }
+
+  /**
+   * Numerical less than or equal (&lt;=)
+   * Valid only for numerical and date values. For Geopoint values, the units are in miles by default.
+   * @param {string|number|Date} value
+   */
+  lte (value) {
+    this._setValue({ lte: value })
+    return this._filter
+  }
+
+  /**
+   * True if the value is between the two specified values
+   * greater than or equal to first value and less than or equal to second value.
+   * @param {*} valFrom
+   * @param {*} valTo
+   */
+  between (valFrom, valTo) {
+    this._setValue({ between: [valFrom, valTo] })
+    return this._filter
+  }
+
+  /**
+   * In an array of values.
+   * @param {*} values
+   */
+  inq (...values) {
+    this._setValue({ inq: values })
+    return this._filter
+  }
+
+  /**
+   * Not in an array of values.
+   * @param {*} values
+   */
+  nin (...values) {
+    this._setValue({ nin: values })
+    return this._filter
+  }
+
+  /**
+   * For geolocations, return the closest points, sorted in order of distance.
+   * Use with limit to return the n closest points.
+   * maxDistance and unit can also be passed on same level as near to configure the search.
+   * @param {string} near
+   * @param {number} maxDistance
+   * @param {string} unit miles or meters. Default: miles
+   */
+  near (near, maxDistance = null, unit = null) {
+    let value = near
+    if (maxDistance) {
+      value = Object.assign({}, { near, maxDistance })
+    }
+    if (unit) {
+      value = Object.assign({}, { near, maxDistance, unit })
+    }
+    this._setValue(value)
+    return this._filter
+  }
+
+  /**
+   * LIKE operators for use with regular expressions
+   * @param {string} value
+   */
+  like (value) {
+    this._setValue({like: value})
+    return this._filter
+  }
+
+  /**
+   * NOT LIKE operators for use with regular expressions
+   * @param {string} value
+   */
+  nlike (value) {
+    this._setValue({nlike: value})
+    return this._filter
+  }
+
+  /**
+   * Regular expression
+   * @param {string} regexp
+   */
+  regexp (regexp) {
+    this._setValue({ regexp })
+    return this._filter
+  }
+
+  /**
+   * Sets the value to the filter builder
+   * @param {*} value
+   */
+  _setValue (value) {
+    let fields = this._filter._where
+
+    if (this._filter._where.and !== undefined) {
+      fields = this._filter._where.and[this._filter._where.and.length - 1]
+    } else if (this._filter._where.or !== undefined) {
+      fields = this._filter._where.or[this._filter._where.or.length - 1]
+    }
+
+    for (var key of Object.keys(fields)) {
+      fields[key] = value
+    }
+  }
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.4)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

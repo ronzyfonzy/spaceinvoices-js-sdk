@@ -1,5 +1,8 @@
 import BaseModule from './baseModule'
 
+/**
+ * @extends {BaseModule}
+ */
 class Company extends BaseModule {
   /**
    *

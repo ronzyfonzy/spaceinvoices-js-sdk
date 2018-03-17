@@ -1,6 +1,9 @@
 import BaseModule from './baseModule'
 import { MClient } from '../models'
 
+/**
+ * @extends {BaseModule}
+ */
 class Client extends BaseModule {
   constructor () {
     super()
@@ -9,7 +12,7 @@ class Client extends BaseModule {
 
   /**
   *
-  * @returns {Promise<MClient[]>}
+  * @returns {Promise<MClient[], ResponseError|ServerError>}
   */
   list (organizationId) {
     return this.call(`/organizations/${organizationId}/clients`)
@@ -19,7 +22,7 @@ class Client extends BaseModule {
   * @param {string} organizationId
   * @param {string} term
   *
-  * @returns {Promise<MClient[]>}
+  * @returns {Promise<MClient[], ResponseError|ServerError>}
   */
   search (organizationId, term) {
     return this.call(`/organizations/${organizationId}/search-clients?term=${term}`)
@@ -27,16 +30,17 @@ class Client extends BaseModule {
 
   /**
   *
-  * @returns {Promise<MClient>}
+  * @returns {Promise<MClient, APIError>}
   */
   get (clientId) {
     return this.call(`/clients/${clientId}`)
   }
 
   /**
+  * @param {string} organizationId
   * @param {object} data
   *
-  * @returns {Promise<MClient>}
+  * @returns {Promise<MClient, APIError>}
   */
   create (organizationId, data) {
     return this.call(`/organizations/${organizationId}/clients`, data, 'POST')
@@ -46,7 +50,7 @@ class Client extends BaseModule {
   * @param {string} clientId
   * @param {object} data
   *
-  * @returns {Promise<MClient>}
+  * @returns {Promise<MClient, APIError>}
   */
   update (clientId, data) {
     return this.call(`/clients/${clientId}`, data, 'PUT')
@@ -55,7 +59,7 @@ class Client extends BaseModule {
   /**
   * @param {string} clientId
   *
-  * @returns {Promise<MClient>}
+  * @returns {Promise<MClient, APIError>}
   */
   delete (clientId) {
     return this.call(`/clients/${clientId}`, 'DELETE')

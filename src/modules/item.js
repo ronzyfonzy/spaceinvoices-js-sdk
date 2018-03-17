@@ -32,6 +32,7 @@ class Item extends BaseModule {
   }
 
   /**
+   * @param {string} organizationId
    * @param {object} data
    *
    * @returns {Promise<MItem>}

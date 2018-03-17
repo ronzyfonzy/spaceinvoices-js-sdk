@@ -25,10 +25,10 @@ class RequestService {
    *
    * @param {string} endpoint
    * @param {string} method
-   * @param {(null|object)} data
-   * @param {(null|FilterBuilder)} filter
+   * @param {null|object} data
+   * @param {null|FilterBuilder} filter
    *
-   * @returns {Promise<(Array|Object|RequestError|ResponseError)>}
+   * @returns {Promise<Object|Object[], RequestError|ServerError>}
    */
   call (endpoint, method = 'GET', data = null, filter = null) {
     if (filter !== null) {

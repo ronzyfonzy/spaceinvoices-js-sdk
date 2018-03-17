@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/services/filterBuilder.js | spaceinvoices-api-client</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/errors.js~APIError.html">APIError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/errors.js~RequestError.html">RequestError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/errors.js~ServerError.html">ServerError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/spaceInvoices.js~SpaceInvoices.html">SpaceInvoices</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-siFilter">siFilter</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#models">models</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/account.js~MAccount.html">MAccount</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/baseModel.js~BaseModel.html">BaseModel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/client.js~MClient.html">MClient</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/company.js~MCompany.html">MCompany</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/currency.js~MCurrency.html">MCurrency</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/document.js~MDocument.html">MDocument</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/item.js~MItem.html">MItem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/organization.js~MOrganization.html">MOrganization</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/payment.js~MPayment.html">MPayment</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/recurrence.js~MRecurrence.html">MRecurrence</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/tax.js~MTax.html">MTax</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#modules">modules</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/modules/account.js~Account.html">Account</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/modules/baseModule.js~BaseModule.html">BaseModule</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/modules/client.js~Client.html">Client</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/modules/company.js~Company.html">Company</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/modules/currency.js~Currency.html">Currency</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/modules/document.js~Document.html">Document</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/modules/item.js~Item.html">Item</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/modules/organization.js~Organization.html">Organization</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/modules/payment.js~Payment.html">Payment</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/modules/recurrence.js~Recurrence.html">Recurrence</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/modules/tax.js~Tax.html">Tax</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-account">account</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-client">client</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-company">company</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-currency">currency</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-document">document</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-item">item</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-organization">organization</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-payment">payment</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-recurrence">recurrence</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-tax">tax</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services">services</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/services/filterBuilder.js~FilterBuilder.html">FilterBuilder</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/services/paramBuilder.js~ParamBuilder.html">ParamBuilder</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/services/requestService.js~RequestService.html">RequestService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-requestService">requestService</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/services/filterBuilder.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import ParamBuilder from &apos;./paramBuilder&apos;
+import URI from &apos;urijs&apos;
+
+export default class FilterBuilder {
+  constructor () {
+    this._param = new ParamBuilder(this)
+    this.reset()
+  }
+
+  static new () {
+    return new this()
+  }
+
+  reset () {
+    this._where = {}
+    this._include = null
+    this._fields = null
+    this._limit = null
+    this._order = null
+    this._skip = null
+    this._deleted = null
+  }
+
+  /**
+   * Where query filter
+   * Accepts operators, see [Where operators](http://docs.spaceinvoices.com/?shell#where-operators) section for details.
+   * @param {*} fields
+   */
+  where (...fields) {
+    fields.forEach(field =&gt; {
+      this._where[field] = null
+    })
+    return this._param
+  }
+
+  /**
+   * Logical AND operator
+   * @param {string} fields
+   */
+  and (...fields) {
+    this._operator(&apos;and&apos;, fields)
+    return this._param
+  }
+
+  /**
+   * Logical OR operator
+   * @param {string} fields
+   */
+  or (...fields) {
+    this._operator(&apos;or&apos;, fields)
+    return this._param
+  }
+
+  _operator (operation, fields) {
+    if (this._where[operation] === undefined) {
+      let tmpWhere = Object.assign({}, this._where)
+      this._where = {}
+      this._where[operation] = [tmpWhere]
+    }
+    fields.forEach(field =&gt; {
+      let tmpWhere = {}
+      tmpWhere[field] = null
+      this._where[operation].push(tmpWhere)
+    })
+  }
+
+  /**
+   * Used to include related models
+   * @param {*} model
+   */
+  include (model) {
+    this._include = model
+    return this
+  }
+
+  /**
+   * Include or exclude certain fields
+   * @param {*} fields
+   */
+  fields (...fields) {
+    this._fields = {}
+    fields.forEach(field =&gt; {
+      this._fields[field] = true
+    })
+    return this
+  }
+
+  /**
+   * Limit amount of data returned
+   * @param {number} limit
+   */
+  limit (limit) {
+    this._limit = limit
+    return this
+  }
+
+  /**
+   * Order results by property
+   * @param {string} field
+   * @param {string} sort ASC or DESC
+   */
+  order (field, sort = &apos;ASC&apos;) {
+    this._order = { field, sort }
+    return this
+  }
+
+  /**
+   * Number of results to skip
+   * @param {number} skip
+   */
+  skip (skip) {
+    this._skip = skip
+    return this
+  }
+
+  /**
+   * Also return deleted records. Only available on models that implement soft delete
+   */
+  deleted () {
+    this._deleted = true
+    return this
+  }
+
+  buildObject () {
+    let filter = {}
+    if (this._where) {
+      filter.where = this._where
+    }
+    if (this._include) {
+      filter.include = this._include
+    }
+    if (this._fields) {
+      filter.fields = this._fields
+    }
+    if (this._limit) {
+      filter.limit = this._limit
+    }
+    if (this._order) {
+      filter.order = this._order
+    }
+    if (this._skip) {
+      filter.skip = this._skip
+    }
+    if (this._deleted) {
+      filter.deleted = this._deleted
+    }
+
+    return filter
+  }
+
+  buildUri (endpoint = &apos;&apos;, decode = false) {
+    let filter = { filter: this.buildObject() }
+
+    let filterFlatten = this._flattenFilter(filter)
+    let uriFilter = URI.buildQuery(filterFlatten)
+    let uri = URI(endpoint + (URI(endpoint).search() ? &apos;&amp;&apos; : &apos;?&apos;) + uriFilter)
+
+    if (decode) {
+      return URI.decode(uri.toString())
+    } else {
+      return uri.toString()
+    }
+  }
+
+  _flattenFilter (ob, lvl = 0) {
+    var toReturn = {}
+    for (var i in ob) {
+      if (!ob.hasOwnProperty(i)) continue
+
+      if ((typeof ob[i]) === &apos;object&apos;) {
+        var flatObject = this._flattenFilter(ob[i], ++lvl)
+        for (var x in flatObject) {
+          if (!flatObject.hasOwnProperty(x)) continue
+
+          if (lvl !== 1) {
+            toReturn[`[${i}]${x}`] = flatObject[x]
+          } else {
+            toReturn[`${i}${x}`] = flatObject[x]
+          }
+        }
+      } else {
+        toReturn[`[${i}]`] = ob[i]
+      }
+    }
+    return toReturn
+  }
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.4)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

@@ -10,7 +10,7 @@ class Organization extends BaseModule {
 
   /**
    * @param {string} accountId
-   * @param {(null|FilterBuilder)} [filter=null] filter
+   * @param {null|FilterBuilder} filter
    *
    * @returns {Promise<MOrganization[]>}
    */

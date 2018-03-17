@@ -7,10 +7,10 @@ export default class BaseModule {
   /**
    *
    * @param {string} endpoint
+   * @param {object|FilterBuilder} data
    * @param {string} method
-   * @param {(object|FilterBuilder)} data
    *
-   * @returns {Promise<any>}
+   * @returns {Promise}
    */
   call (endpoint, data = null, method = 'GET') {
     let filter = null

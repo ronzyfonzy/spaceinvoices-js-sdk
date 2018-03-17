@@ -1,0 +1,6485 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/errors.js",
+    "content": "import ExtendableError from 'es6-error'\n\nclass APIError extends ExtendableError {\n  constructor (statusCode, error) {\n    super(error.message)\n    this.statusCode = error.statusCode\n    this.code = error.code\n    this.stackApi = null\n    this.stackApi = error.stack\n  }\n\n  toString () {\n    return `${super.toString()}\\nStatusCode: ${this.statusCode}\\nApiStack: ${this.stackApi}\\nStack: ${this.stack}`\n  }\n}\n\nexport class RequestError extends APIError { }\nexport class ServerError extends APIError { }\n",
+    "static": true,
+    "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/errors.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "class",
+    "name": "APIError",
+    "memberof": "src/errors.js",
+    "static": true,
+    "longname": "src/errors.js~APIError",
+    "access": "public",
+    "export": false,
+    "importPath": "spaceinvoices-api-client/src/errors.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "es6-error~ExtendableError"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 50,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/errors.js~APIError",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/errors.js~APIError#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true
+  },
+  {
+    "__docId__": 51,
+    "kind": "member",
+    "name": "statusCode",
+    "memberof": "src/errors.js~APIError",
+    "static": false,
+    "longname": "src/errors.js~APIError#statusCode",
+    "access": "public",
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 52,
+    "kind": "member",
+    "name": "code",
+    "memberof": "src/errors.js~APIError",
+    "static": false,
+    "longname": "src/errors.js~APIError#code",
+    "access": "public",
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 53,
+    "kind": "member",
+    "name": "stackApi",
+    "memberof": "src/errors.js~APIError",
+    "static": false,
+    "longname": "src/errors.js~APIError#stackApi",
+    "access": "public",
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 55,
+    "kind": "method",
+    "name": "toString",
+    "memberof": "src/errors.js~APIError",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/errors.js~APIError#toString",
+    "access": "public",
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 56,
+    "kind": "class",
+    "name": "RequestError",
+    "memberof": "src/errors.js",
+    "static": true,
+    "longname": "src/errors.js~RequestError",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/errors.js",
+    "importStyle": "{RequestError}",
+    "description": null,
+    "lineNumber": 17,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "APIError"
+    ]
+  },
+  {
+    "__docId__": 57,
+    "kind": "class",
+    "name": "ServerError",
+    "memberof": "src/errors.js",
+    "static": true,
+    "longname": "src/errors.js~ServerError",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/errors.js",
+    "importStyle": "{ServerError}",
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "APIError"
+    ]
+  },
+  {
+    "__docId__": 58,
+    "kind": "file",
+    "name": "src/models/account.js",
+    "content": "import BaseModel from './baseModel'\nimport { organization } from '../modules'\n\nexport default class MAccount extends BaseModel {\n  /**\n   * @inheritDoc\n   */\n  setId () {\n    this.id = this.data.userId\n  }\n\n  /**\n   * @param {null|FilterBuilder} filter\n   *\n   * @returns {Promise<MOrganization[]>}\n   */\n  listOrganizations (filter = null) {\n    return organization.list(this.id, filter)\n  }\n\n  /**\n   *\n   * @param {object} data\n   *\n   * @returns {Promise<MOrganization>}\n   */\n  createOrganization (data) {\n    return organization.create(this.id, data)\n  }\n}\n",
+    "static": true,
+    "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/models/account.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 59,
+    "kind": "class",
+    "name": "MAccount",
+    "memberof": "src/models/account.js",
+    "static": true,
+    "longname": "src/models/account.js~MAccount",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/models/account.js",
+    "importStyle": "MAccount",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "src/models/baseModel.js~BaseModel"
+    ]
+  },
+  {
+    "__docId__": 60,
+    "kind": "method",
+    "name": "setId",
+    "memberof": "src/models/account.js~MAccount",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/models/account.js~MAccount#setId",
+    "access": "public",
+    "description": "",
+    "lineNumber": 8,
+    "unknown": [
+      {
+        "tagName": "@inheritDoc",
+        "tagValue": ""
+      }
+    ],
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 61,
+    "kind": "member",
+    "name": "id",
+    "memberof": "src/models/account.js~MAccount",
+    "static": false,
+    "longname": "src/models/account.js~MAccount#id",
+    "access": "public",
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 62,
+    "kind": "method",
+    "name": "listOrganizations",
+    "memberof": "src/models/account.js~MAccount",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/models/account.js~MAccount#listOrganizations",
+    "access": "public",
+    "description": "",
+    "lineNumber": 17,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MOrganization[]>}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "null",
+          "FilterBuilder"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "filter",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MOrganization[]>"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 63,
+    "kind": "method",
+    "name": "createOrganization",
+    "memberof": "src/models/account.js~MAccount",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/models/account.js~MAccount#createOrganization",
+    "access": "public",
+    "description": "",
+    "lineNumber": 27,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MOrganization>}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "data",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MOrganization>"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 64,
+    "kind": "file",
+    "name": "src/models/baseModel.js",
+    "content": "export default class BaseModel {\n  /**\n   *\n   * @param {object} data\n   */\n  constructor (data) {\n    this.data = data\n    this.module = null\n    this.parseData()\n  }\n\n  parseData () {\n    this.setId()\n  }\n\n  setId (data) {\n    this.id = this.data.id\n  }\n\n  /**\n   * @return {Promise<object>}\n   */\n  update () {\n    return this.module.update(this.id, this.data)\n  }\n\n  /**\n   * @return {Promise<object>}\n   */\n  delete () {\n    return this.module.delete(this.id)\n  }\n}\n",
+    "static": true,
+    "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/models/baseModel.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 65,
+    "kind": "class",
+    "name": "BaseModel",
+    "memberof": "src/models/baseModel.js",
+    "static": true,
+    "longname": "src/models/baseModel.js~BaseModel",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/models/baseModel.js",
+    "importStyle": "BaseModel",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 66,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/models/baseModel.js~BaseModel",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/models/baseModel.js~BaseModel#constructor",
+    "access": "public",
+    "description": "",
+    "lineNumber": 6,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "data",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "__docId__": 67,
+    "kind": "member",
+    "name": "data",
+    "memberof": "src/models/baseModel.js~BaseModel",
+    "static": false,
+    "longname": "src/models/baseModel.js~BaseModel#data",
+    "access": "public",
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 68,
+    "kind": "member",
+    "name": "module",
+    "memberof": "src/models/baseModel.js~BaseModel",
+    "static": false,
+    "longname": "src/models/baseModel.js~BaseModel#module",
+    "access": "public",
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 69,
+    "kind": "method",
+    "name": "parseData",
+    "memberof": "src/models/baseModel.js~BaseModel",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/models/baseModel.js~BaseModel#parseData",
+    "access": "public",
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 70,
+    "kind": "method",
+    "name": "setId",
+    "memberof": "src/models/baseModel.js~BaseModel",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/models/baseModel.js~BaseModel#setId",
+    "access": "public",
+    "description": null,
+    "lineNumber": 16,
+    "undocument": true,
+    "params": [
+      {
+        "name": "data",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 71,
+    "kind": "member",
+    "name": "id",
+    "memberof": "src/models/baseModel.js~BaseModel",
+    "static": false,
+    "longname": "src/models/baseModel.js~BaseModel#id",
+    "access": "public",
+    "description": null,
+    "lineNumber": 17,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 72,
+    "kind": "method",
+    "name": "update",
+    "memberof": "src/models/baseModel.js~BaseModel",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/models/baseModel.js~BaseModel#update",
+    "access": "public",
+    "description": "",
+    "lineNumber": 23,
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<object>"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
+  },
+  {
+    "__docId__": 73,
+    "kind": "method",
+    "name": "delete",
+    "memberof": "src/models/baseModel.js~BaseModel",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/models/baseModel.js~BaseModel#delete",
+    "access": "public",
+    "description": "",
+    "lineNumber": 30,
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<object>"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
+  },
+  {
+    "__docId__": 74,
+    "kind": "file",
+    "name": "src/models/client.js",
+    "content": "import BaseModel from './baseModel'\n\nexport default class MClient extends BaseModel { }\n",
+    "static": true,
+    "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/models/client.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 75,
+    "kind": "class",
+    "name": "MClient",
+    "memberof": "src/models/client.js",
+    "static": true,
+    "longname": "src/models/client.js~MClient",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/models/client.js",
+    "importStyle": "MClient",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "src/models/baseModel.js~BaseModel"
+    ]
+  },
+  {
+    "__docId__": 76,
+    "kind": "file",
+    "name": "src/models/company.js",
+    "content": "import BaseModel from './baseModel'\n\nexport default class MCompany extends BaseModel { }\n",
+    "static": true,
+    "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/models/company.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 77,
+    "kind": "class",
+    "name": "MCompany",
+    "memberof": "src/models/company.js",
+    "static": true,
+    "longname": "src/models/company.js~MCompany",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/models/company.js",
+    "importStyle": "MCompany",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "src/models/baseModel.js~BaseModel"
+    ]
+  },
+  {
+    "__docId__": 78,
+    "kind": "file",
+    "name": "src/models/currency.js",
+    "content": "import BaseModel from './baseModel'\n\nexport default class MCurrency extends BaseModel { }\n",
+    "static": true,
+    "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/models/currency.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 79,
+    "kind": "class",
+    "name": "MCurrency",
+    "memberof": "src/models/currency.js",
+    "static": true,
+    "longname": "src/models/currency.js~MCurrency",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/models/currency.js",
+    "importStyle": "MCurrency",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "src/models/baseModel.js~BaseModel"
+    ]
+  },
+  {
+    "__docId__": 80,
+    "kind": "file",
+    "name": "src/models/document.js",
+    "content": "import BaseModel from './baseModel'\nimport { payment, recurrence } from '../modules'\n\nexport default class MDocument extends BaseModel {\n  /**\n   *\n   * @returns {Promise<MPayment[]>}\n  */\n  listPayments () {\n    return payment.list(this.id)\n  }\n\n  /**\n   *\n   * @returns {Promise<MPayment>}\n  */\n  createPayment (data) {\n    return payment.create(this.id, data)\n  }\n\n  /**\n   *\n   * @returns {Promise<MRecurrence[]>}\n  */\n  listReccurences () {\n    return recurrence.listFromDocument(this.id)\n  }\n\n  /**\n   *\n   * @returns {Promise<MRecurrence>}\n  */\n  createReccurence (data) {\n    return recurrence.create(this.id, data)\n  }\n}\n",
+    "static": true,
+    "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/models/document.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 81,
+    "kind": "class",
+    "name": "MDocument",
+    "memberof": "src/models/document.js",
+    "static": true,
+    "longname": "src/models/document.js~MDocument",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/models/document.js",
+    "importStyle": "MDocument",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "src/models/baseModel.js~BaseModel"
+    ]
+  },
+  {
+    "__docId__": 82,
+    "kind": "method",
+    "name": "listPayments",
+    "memberof": "src/models/document.js~MDocument",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/models/document.js~MDocument#listPayments",
+    "access": "public",
+    "description": "",
+    "lineNumber": 9,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MPayment[]>}"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MPayment[]>"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
+  },
+  {
+    "__docId__": 83,
+    "kind": "method",
+    "name": "createPayment",
+    "memberof": "src/models/document.js~MDocument",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/models/document.js~MDocument#createPayment",
+    "access": "public",
+    "description": "",
+    "lineNumber": 17,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MPayment>}"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MPayment>"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": [
+      {
+        "name": "data",
+        "types": [
+          "*"
+        ]
+      }
+    ]
+  },
+  {
+    "__docId__": 84,
+    "kind": "method",
+    "name": "listReccurences",
+    "memberof": "src/models/document.js~MDocument",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/models/document.js~MDocument#listReccurences",
+    "access": "public",
+    "description": "",
+    "lineNumber": 25,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MRecurrence[]>}"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MRecurrence[]>"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
+  },
+  {
+    "__docId__": 85,
+    "kind": "method",
+    "name": "createReccurence",
+    "memberof": "src/models/document.js~MDocument",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/models/document.js~MDocument#createReccurence",
+    "access": "public",
+    "description": "",
+    "lineNumber": 33,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MRecurrence>}"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MRecurrence>"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": [
+      {
+        "name": "data",
+        "types": [
+          "*"
+        ]
+      }
+    ]
+  },
+  {
+    "__docId__": 86,
+    "kind": "file",
+    "name": "src/models/index.js",
+    "content": "export { default as MAccount } from './account'\nexport { default as MClient } from './client'\nexport { default as MCompany } from './company'\nexport { default as MCurrency } from './currency'\nexport { default as MDocument } from './document'\nexport { default as MItem } from './item'\nexport { default as MOrganization } from './organization'\nexport { default as MPayment } from './payment'\nexport { default as MRecurrence } from './recurrence'\nexport { default as MTax } from './tax'\n",
+    "static": true,
+    "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/models/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 87,
+    "kind": "file",
+    "name": "src/models/item.js",
+    "content": "import BaseModel from './baseModel'\n\nexport default class MItem extends BaseModel { }\n",
+    "static": true,
+    "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/models/item.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 88,
+    "kind": "class",
+    "name": "MItem",
+    "memberof": "src/models/item.js",
+    "static": true,
+    "longname": "src/models/item.js~MItem",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/models/item.js",
+    "importStyle": "MItem",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "src/models/baseModel.js~BaseModel"
+    ]
+  },
+  {
+    "__docId__": 89,
+    "kind": "file",
+    "name": "src/models/organization.js",
+    "content": "import BaseModel from './baseModel'\nimport { organization, document, client, item, payment, recurrence, tax } from '../modules'\n\nexport default class MOrganization extends BaseModel {\n  constructor (data) {\n    super(data)\n    this.module = organization\n    if (data) {\n      /**\n       * @type {String}\n       */\n      this.locale = data.locale\n      /**\n       * @type {String}\n       */\n      this.brand = data.brand\n      /**\n       * @type {number}\n       */\n      this.supportPin = data.supportPin\n      /**\n       * @type {String}\n       */\n      this.name = data.name\n      /**\n       * @type {String}\n       */\n      this.address = data.address\n      /**\n       * @type {String}\n       */\n      this.city = data.city\n      /**\n       * @type {String}\n       */\n      this.country = data.country\n      /**\n       * @type {String}\n       */\n      this.IBAN = data.IBAN\n      /**\n       * @type {String}\n       */\n      this.bank = data.bank\n    }\n  }\n\n  /**\n   *\n   * @returns {Promise<MDocument[]>}\n   */\n  listDocuments () {\n    return document.list(this.id)\n  }\n\n  /**\n   *\n   * @returns {Promise<MDocument>}\n   */\n  createDocument (data) {\n    return document.create(this.id, data)\n  }\n\n  /**\n   *\n   * @returns {Promise<MClient[]>}\n   */\n  listClients () {\n    return client.list(this.id)\n  }\n\n  /**\n   *\n   * @returns {Promise<MClient>}\n   */\n  createClient (data) {\n    return client.create(this.id, data)\n  }\n\n  /**\n   *\n   * @returns {Promise<MClient>}\n   */\n  searchClient (term) {\n    return client.search(this.id, term)\n  }\n\n  /**\n   *\n   * @returns {Promise<MItem[]>}\n   */\n  listItems () {\n    return item.list(this.id)\n  }\n\n  /**\n   *\n   * @returns {Promise<MItem>}\n   */\n  createItem (data) {\n    return item.create(this.id, data)\n  }\n\n  /**\n   *\n   * @returns {Promise<MItem>}\n   */\n  searchItem (term) {\n    return item.search(this.id, term)\n  }\n\n  /**\n   *\n   * @returns {Promise<MPayment[]>}\n   */\n  listPayments () {\n    return payment.list(this.id)\n  }\n\n  /**\n   *\n   * @returns {Promise<MRecurrence[]>}\n   */\n  listRecurrences () {\n    return recurrence.listFromOrganization(this.id)\n  }\n\n  /**\n   *\n   * @returns {Promise<MTax[]>}\n   */\n  listTaxes () {\n    return tax.list(this.id)\n  }\n\n  /**\n   *\n   * @returns {Promise<MTax>}\n   */\n  createTax (data) {\n    return tax.create(this.id, data)\n  }\n}\n",
+    "static": true,
+    "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/models/organization.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 90,
+    "kind": "class",
+    "name": "MOrganization",
+    "memberof": "src/models/organization.js",
+    "static": true,
+    "longname": "src/models/organization.js~MOrganization",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/models/organization.js",
+    "importStyle": "MOrganization",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "src/models/baseModel.js~BaseModel"
+    ]
+  },
+  {
+    "__docId__": 91,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/models/organization.js~MOrganization",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/models/organization.js~MOrganization#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true
+  },
+  {
+    "__docId__": 92,
+    "kind": "member",
+    "name": "module",
+    "memberof": "src/models/organization.js~MOrganization",
+    "static": false,
+    "longname": "src/models/organization.js~MOrganization#module",
+    "access": "public",
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 93,
+    "kind": "member",
+    "name": "locale",
+    "memberof": "src/models/organization.js~MOrganization",
+    "static": false,
+    "longname": "src/models/organization.js~MOrganization#locale",
+    "access": "public",
+    "description": "",
+    "lineNumber": 12,
+    "type": {
+      "nullable": null,
+      "types": [
+        "String"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 94,
+    "kind": "member",
+    "name": "brand",
+    "memberof": "src/models/organization.js~MOrganization",
+    "static": false,
+    "longname": "src/models/organization.js~MOrganization#brand",
+    "access": "public",
+    "description": "",
+    "lineNumber": 16,
+    "type": {
+      "nullable": null,
+      "types": [
+        "String"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 95,
+    "kind": "member",
+    "name": "supportPin",
+    "memberof": "src/models/organization.js~MOrganization",
+    "static": false,
+    "longname": "src/models/organization.js~MOrganization#supportPin",
+    "access": "public",
+    "description": "",
+    "lineNumber": 20,
+    "type": {
+      "nullable": null,
+      "types": [
+        "number"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 96,
+    "kind": "member",
+    "name": "name",
+    "memberof": "src/models/organization.js~MOrganization",
+    "static": false,
+    "longname": "src/models/organization.js~MOrganization#name",
+    "access": "public",
+    "description": "",
+    "lineNumber": 24,
+    "type": {
+      "nullable": null,
+      "types": [
+        "String"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 97,
+    "kind": "member",
+    "name": "address",
+    "memberof": "src/models/organization.js~MOrganization",
+    "static": false,
+    "longname": "src/models/organization.js~MOrganization#address",
+    "access": "public",
+    "description": "",
+    "lineNumber": 28,
+    "type": {
+      "nullable": null,
+      "types": [
+        "String"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 98,
+    "kind": "member",
+    "name": "city",
+    "memberof": "src/models/organization.js~MOrganization",
+    "static": false,
+    "longname": "src/models/organization.js~MOrganization#city",
+    "access": "public",
+    "description": "",
+    "lineNumber": 32,
+    "type": {
+      "nullable": null,
+      "types": [
+        "String"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 99,
+    "kind": "member",
+    "name": "country",
+    "memberof": "src/models/organization.js~MOrganization",
+    "static": false,
+    "longname": "src/models/organization.js~MOrganization#country",
+    "access": "public",
+    "description": "",
+    "lineNumber": 36,
+    "type": {
+      "nullable": null,
+      "types": [
+        "String"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 100,
+    "kind": "member",
+    "name": "IBAN",
+    "memberof": "src/models/organization.js~MOrganization",
+    "static": false,
+    "longname": "src/models/organization.js~MOrganization#IBAN",
+    "access": "public",
+    "description": "",
+    "lineNumber": 40,
+    "type": {
+      "nullable": null,
+      "types": [
+        "String"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 101,
+    "kind": "member",
+    "name": "bank",
+    "memberof": "src/models/organization.js~MOrganization",
+    "static": false,
+    "longname": "src/models/organization.js~MOrganization#bank",
+    "access": "public",
+    "description": "",
+    "lineNumber": 44,
+    "type": {
+      "nullable": null,
+      "types": [
+        "String"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 102,
+    "kind": "method",
+    "name": "listDocuments",
+    "memberof": "src/models/organization.js~MOrganization",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/models/organization.js~MOrganization#listDocuments",
+    "access": "public",
+    "description": "",
+    "lineNumber": 52,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MDocument[]>}"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MDocument[]>"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
+  },
+  {
+    "__docId__": 103,
+    "kind": "method",
+    "name": "createDocument",
+    "memberof": "src/models/organization.js~MOrganization",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/models/organization.js~MOrganization#createDocument",
+    "access": "public",
+    "description": "",
+    "lineNumber": 60,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MDocument>}"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MDocument>"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": [
+      {
+        "name": "data",
+        "types": [
+          "*"
+        ]
+      }
+    ]
+  },
+  {
+    "__docId__": 104,
+    "kind": "method",
+    "name": "listClients",
+    "memberof": "src/models/organization.js~MOrganization",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/models/organization.js~MOrganization#listClients",
+    "access": "public",
+    "description": "",
+    "lineNumber": 68,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MClient[]>}"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MClient[]>"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
+  },
+  {
+    "__docId__": 105,
+    "kind": "method",
+    "name": "createClient",
+    "memberof": "src/models/organization.js~MOrganization",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/models/organization.js~MOrganization#createClient",
+    "access": "public",
+    "description": "",
+    "lineNumber": 76,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MClient>}"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MClient>"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": [
+      {
+        "name": "data",
+        "types": [
+          "*"
+        ]
+      }
+    ]
+  },
+  {
+    "__docId__": 106,
+    "kind": "method",
+    "name": "searchClient",
+    "memberof": "src/models/organization.js~MOrganization",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/models/organization.js~MOrganization#searchClient",
+    "access": "public",
+    "description": "",
+    "lineNumber": 84,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MClient>}"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MClient>"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": [
+      {
+        "name": "term",
+        "types": [
+          "*"
+        ]
+      }
+    ]
+  },
+  {
+    "__docId__": 107,
+    "kind": "method",
+    "name": "listItems",
+    "memberof": "src/models/organization.js~MOrganization",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/models/organization.js~MOrganization#listItems",
+    "access": "public",
+    "description": "",
+    "lineNumber": 92,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MItem[]>}"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MItem[]>"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
+  },
+  {
+    "__docId__": 108,
+    "kind": "method",
+    "name": "createItem",
+    "memberof": "src/models/organization.js~MOrganization",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/models/organization.js~MOrganization#createItem",
+    "access": "public",
+    "description": "",
+    "lineNumber": 100,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MItem>}"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MItem>"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": [
+      {
+        "name": "data",
+        "types": [
+          "*"
+        ]
+      }
+    ]
+  },
+  {
+    "__docId__": 109,
+    "kind": "method",
+    "name": "searchItem",
+    "memberof": "src/models/organization.js~MOrganization",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/models/organization.js~MOrganization#searchItem",
+    "access": "public",
+    "description": "",
+    "lineNumber": 108,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MItem>}"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MItem>"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": [
+      {
+        "name": "term",
+        "types": [
+          "*"
+        ]
+      }
+    ]
+  },
+  {
+    "__docId__": 110,
+    "kind": "method",
+    "name": "listPayments",
+    "memberof": "src/models/organization.js~MOrganization",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/models/organization.js~MOrganization#listPayments",
+    "access": "public",
+    "description": "",
+    "lineNumber": 116,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MPayment[]>}"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MPayment[]>"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
+  },
+  {
+    "__docId__": 111,
+    "kind": "method",
+    "name": "listRecurrences",
+    "memberof": "src/models/organization.js~MOrganization",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/models/organization.js~MOrganization#listRecurrences",
+    "access": "public",
+    "description": "",
+    "lineNumber": 124,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MRecurrence[]>}"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MRecurrence[]>"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
+  },
+  {
+    "__docId__": 112,
+    "kind": "method",
+    "name": "listTaxes",
+    "memberof": "src/models/organization.js~MOrganization",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/models/organization.js~MOrganization#listTaxes",
+    "access": "public",
+    "description": "",
+    "lineNumber": 132,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MTax[]>}"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MTax[]>"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
+  },
+  {
+    "__docId__": 113,
+    "kind": "method",
+    "name": "createTax",
+    "memberof": "src/models/organization.js~MOrganization",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/models/organization.js~MOrganization#createTax",
+    "access": "public",
+    "description": "",
+    "lineNumber": 140,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MTax>}"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MTax>"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": [
+      {
+        "name": "data",
+        "types": [
+          "*"
+        ]
+      }
+    ]
+  },
+  {
+    "__docId__": 114,
+    "kind": "file",
+    "name": "src/models/payment.js",
+    "content": "import BaseModel from './baseModel'\n\nexport default class MPayment extends BaseModel { }\n",
+    "static": true,
+    "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/models/payment.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 115,
+    "kind": "class",
+    "name": "MPayment",
+    "memberof": "src/models/payment.js",
+    "static": true,
+    "longname": "src/models/payment.js~MPayment",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/models/payment.js",
+    "importStyle": "MPayment",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "src/models/baseModel.js~BaseModel"
+    ]
+  },
+  {
+    "__docId__": 116,
+    "kind": "file",
+    "name": "src/models/recurrence.js",
+    "content": "import BaseModel from './baseModel'\n\nexport default class MRecurrence extends BaseModel { }\n",
+    "static": true,
+    "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/models/recurrence.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 117,
+    "kind": "class",
+    "name": "MRecurrence",
+    "memberof": "src/models/recurrence.js",
+    "static": true,
+    "longname": "src/models/recurrence.js~MRecurrence",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/models/recurrence.js",
+    "importStyle": "MRecurrence",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "src/models/baseModel.js~BaseModel"
+    ]
+  },
+  {
+    "__docId__": 118,
+    "kind": "file",
+    "name": "src/models/tax.js",
+    "content": "import BaseModel from './baseModel'\n\nexport default class MTax extends BaseModel { }\n",
+    "static": true,
+    "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/models/tax.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 119,
+    "kind": "class",
+    "name": "MTax",
+    "memberof": "src/models/tax.js",
+    "static": true,
+    "longname": "src/models/tax.js~MTax",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/models/tax.js",
+    "importStyle": "MTax",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "src/models/baseModel.js~BaseModel"
+    ]
+  },
+  {
+    "__docId__": 120,
+    "kind": "file",
+    "name": "src/modules/account.js",
+    "content": "import BaseModule from './baseModule'\r\nimport { MAccount } from '../models'\r\n\r\n/**\r\n * @extends {BaseModule}\r\n */\r\nclass Account extends BaseModule {\r\n  constructor () {\r\n    super()\r\n    this.TransformModel = MAccount\r\n  }\r\n\r\n  /**\r\n  *\r\n  * @param {string} accountId\r\n  *\r\n  * @returns {Promise<object>}\r\n  */\r\n  get (accountId) {\r\n    return this.call(`/accounts/${accountId}`)\r\n  }\r\n\r\n  /**\r\n  *\r\n  * @param {string} email\r\n  * @param {string} password\r\n  *\r\n  * @returns {Promise<MAccount>}\r\n  */\r\n  authenticate (email, password) {\r\n    return this.call('/accounts/login', { email, password }, 'POST')\r\n  }\r\n\r\n  /**\r\n  *\r\n  * @param {string} email\r\n  * @param {string} password\r\n  *\r\n  * @returns {Promise<object>}\r\n  */\r\n  create (email, password) {\r\n    return this.call('/accounts', { email, password }, 'POST')\r\n  }\r\n\r\n  /**\r\n  *\r\n  * @param {string} email\r\n\r\n  * @returns {Promise<boolean>}\r\n  */\r\n  isEmailUnique (email) {\r\n    return this.call(`/accounts/is-unique?email=${email}`).then((data) => {\r\n      return data.isUnique\r\n    })\r\n  }\r\n}\r\n\r\nexport default new Account()\r\n",
+    "static": true,
+    "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/modules/account.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 121,
+    "kind": "class",
+    "name": "Account",
+    "memberof": "src/modules/account.js",
+    "static": true,
+    "longname": "src/modules/account.js~Account",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/modules/account.js",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 7,
+    "pseudoExport": true,
+    "interface": false,
+    "extends": [
+      "BaseModule"
+    ]
+  },
+  {
+    "__docId__": 122,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/modules/account.js~Account",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/account.js~Account#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true
+  },
+  {
+    "__docId__": 123,
+    "kind": "member",
+    "name": "TransformModel",
+    "memberof": "src/modules/account.js~Account",
+    "static": false,
+    "longname": "src/modules/account.js~Account#TransformModel",
+    "access": "public",
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 124,
+    "kind": "method",
+    "name": "get",
+    "memberof": "src/modules/account.js~Account",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/account.js~Account#get",
+    "access": "public",
+    "description": "",
+    "lineNumber": 19,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<object>}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "accountId",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<object>"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 125,
+    "kind": "method",
+    "name": "authenticate",
+    "memberof": "src/modules/account.js~Account",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/account.js~Account#authenticate",
+    "access": "public",
+    "description": "",
+    "lineNumber": 30,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MAccount>}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "email",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "password",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MAccount>"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 126,
+    "kind": "method",
+    "name": "create",
+    "memberof": "src/modules/account.js~Account",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/account.js~Account#create",
+    "access": "public",
+    "description": "",
+    "lineNumber": 41,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<object>}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "email",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "password",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<object>"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 127,
+    "kind": "method",
+    "name": "isEmailUnique",
+    "memberof": "src/modules/account.js~Account",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/account.js~Account#isEmailUnique",
+    "access": "public",
+    "description": "",
+    "lineNumber": 51,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<boolean>}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "email",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<boolean>"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 128,
+    "kind": "variable",
+    "name": "account",
+    "memberof": "src/modules/account.js",
+    "static": true,
+    "longname": "src/modules/account.js~account",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/modules/account.js",
+    "importStyle": "account",
+    "description": null,
+    "lineNumber": 58,
+    "undocument": true,
+    "type": {
+      "types": [
+        "src/modules/account.js~Account"
+      ]
+    }
+  },
+  {
+    "__docId__": 129,
+    "kind": "file",
+    "name": "src/modules/baseModule.js",
+    "content": "import { requestService, FilterBuilder } from '../services' // eslint-disable-line no-unused-vars\r\nexport default class BaseModule {\r\n  constructor () {\r\n    this.TransformModel = null\r\n  }\r\n\r\n  /**\r\n   *\r\n   * @param {string} endpoint\r\n   * @param {object|FilterBuilder} data\r\n   * @param {string} method\r\n   *\r\n   * @returns {Promise}\r\n   */\r\n  call (endpoint, data = null, method = 'GET') {\r\n    let filter = null\r\n    if (data !== null && data.constructor !== undefined && data.constructor.name === 'FilterBuilder') {\r\n      filter = data\r\n      data = null\r\n    }\r\n\r\n    return requestService.call(endpoint, method, data, filter).then((data) => {\r\n      if (this.transformModel !== null) {\r\n        return this._transform(data)\r\n      } else {\r\n        return data\r\n      }\r\n    })\r\n  }\r\n\r\n  _transform (data) {\r\n    if (Array.isArray(data)) {\r\n      return data.map((item) => {\r\n        return new this.TransformModel(item)\r\n      })\r\n    } else if (typeof data === 'object') {\r\n      return new this.TransformModel(data)\r\n    } else {\r\n      return undefined\r\n    }\r\n  }\r\n}\r\n",
+    "static": true,
+    "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/modules/baseModule.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 130,
+    "kind": "class",
+    "name": "BaseModule",
+    "memberof": "src/modules/baseModule.js",
+    "static": true,
+    "longname": "src/modules/baseModule.js~BaseModule",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/modules/baseModule.js",
+    "importStyle": "BaseModule",
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 131,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/modules/baseModule.js~BaseModule",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/baseModule.js~BaseModule#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true
+  },
+  {
+    "__docId__": 132,
+    "kind": "member",
+    "name": "TransformModel",
+    "memberof": "src/modules/baseModule.js~BaseModule",
+    "static": false,
+    "longname": "src/modules/baseModule.js~BaseModule#TransformModel",
+    "access": "public",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 133,
+    "kind": "method",
+    "name": "call",
+    "memberof": "src/modules/baseModule.js~BaseModule",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/baseModule.js~BaseModule#call",
+    "access": "public",
+    "description": "",
+    "lineNumber": 15,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "endpoint",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object",
+          "FilterBuilder"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "data",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "method",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 134,
+    "kind": "method",
+    "name": "_transform",
+    "memberof": "src/modules/baseModule.js~BaseModule",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/baseModule.js~BaseModule#_transform",
+    "access": "private",
+    "description": null,
+    "lineNumber": 31,
+    "undocument": true,
+    "params": [
+      {
+        "name": "data",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 135,
+    "kind": "file",
+    "name": "src/modules/client.js",
+    "content": "import BaseModule from './baseModule'\r\nimport { MClient } from '../models'\r\n\r\n/**\r\n * @extends {BaseModule}\r\n */\r\nclass Client extends BaseModule {\r\n  constructor () {\r\n    super()\r\n    this.TransformModel = MClient\r\n  }\r\n\r\n  /**\r\n  *\r\n  * @returns {Promise<MClient[], ResponseError|ServerError>}\r\n  */\r\n  list (organizationId) {\r\n    return this.call(`/organizations/${organizationId}/clients`)\r\n  }\r\n\r\n  /**\r\n  * @param {string} organizationId\r\n  * @param {string} term\r\n  *\r\n  * @returns {Promise<MClient[], ResponseError|ServerError>}\r\n  */\r\n  search (organizationId, term) {\r\n    return this.call(`/organizations/${organizationId}/search-clients?term=${term}`)\r\n  }\r\n\r\n  /**\r\n  *\r\n  * @returns {Promise<MClient, APIError>}\r\n  */\r\n  get (clientId) {\r\n    return this.call(`/clients/${clientId}`)\r\n  }\r\n\r\n  /**\r\n  * @param {string} organizationId\r\n  * @param {object} data\r\n  *\r\n  * @returns {Promise<MClient, APIError>}\r\n  */\r\n  create (organizationId, data) {\r\n    return this.call(`/organizations/${organizationId}/clients`, data, 'POST')\r\n  }\r\n\r\n  /**\r\n  * @param {string} clientId\r\n  * @param {object} data\r\n  *\r\n  * @returns {Promise<MClient, APIError>}\r\n  */\r\n  update (clientId, data) {\r\n    return this.call(`/clients/${clientId}`, data, 'PUT')\r\n  }\r\n\r\n  /**\r\n  * @param {string} clientId\r\n  *\r\n  * @returns {Promise<MClient, APIError>}\r\n  */\r\n  delete (clientId) {\r\n    return this.call(`/clients/${clientId}`, 'DELETE')\r\n  }\r\n}\r\n\r\nexport default new Client()\r\n",
+    "static": true,
+    "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/modules/client.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 136,
+    "kind": "class",
+    "name": "Client",
+    "memberof": "src/modules/client.js",
+    "static": true,
+    "longname": "src/modules/client.js~Client",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/modules/client.js",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 7,
+    "pseudoExport": true,
+    "interface": false,
+    "extends": [
+      "BaseModule"
+    ]
+  },
+  {
+    "__docId__": 137,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/modules/client.js~Client",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/client.js~Client#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true
+  },
+  {
+    "__docId__": 138,
+    "kind": "member",
+    "name": "TransformModel",
+    "memberof": "src/modules/client.js~Client",
+    "static": false,
+    "longname": "src/modules/client.js~Client#TransformModel",
+    "access": "public",
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 139,
+    "kind": "method",
+    "name": "list",
+    "memberof": "src/modules/client.js~Client",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/client.js~Client#list",
+    "access": "public",
+    "description": "",
+    "lineNumber": 17,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MClient[], ResponseError|ServerError>}"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MClient[], ResponseError|ServerError>"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": [
+      {
+        "name": "organizationId",
+        "types": [
+          "*"
+        ]
+      }
+    ]
+  },
+  {
+    "__docId__": 140,
+    "kind": "method",
+    "name": "search",
+    "memberof": "src/modules/client.js~Client",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/client.js~Client#search",
+    "access": "public",
+    "description": "",
+    "lineNumber": 27,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MClient[], ResponseError|ServerError>}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "organizationId",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "term",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MClient[], ResponseError|ServerError>"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 141,
+    "kind": "method",
+    "name": "get",
+    "memberof": "src/modules/client.js~Client",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/client.js~Client#get",
+    "access": "public",
+    "description": "",
+    "lineNumber": 35,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MClient, APIError>}"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MClient, APIError>"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": [
+      {
+        "name": "clientId",
+        "types": [
+          "*"
+        ]
+      }
+    ]
+  },
+  {
+    "__docId__": 142,
+    "kind": "method",
+    "name": "create",
+    "memberof": "src/modules/client.js~Client",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/client.js~Client#create",
+    "access": "public",
+    "description": "",
+    "lineNumber": 45,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MClient, APIError>}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "organizationId",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "data",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MClient, APIError>"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 143,
+    "kind": "method",
+    "name": "update",
+    "memberof": "src/modules/client.js~Client",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/client.js~Client#update",
+    "access": "public",
+    "description": "",
+    "lineNumber": 55,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MClient, APIError>}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "clientId",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "data",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MClient, APIError>"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 144,
+    "kind": "method",
+    "name": "delete",
+    "memberof": "src/modules/client.js~Client",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/client.js~Client#delete",
+    "access": "public",
+    "description": "",
+    "lineNumber": 64,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MClient, APIError>}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "clientId",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MClient, APIError>"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 145,
+    "kind": "variable",
+    "name": "client",
+    "memberof": "src/modules/client.js",
+    "static": true,
+    "longname": "src/modules/client.js~client",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/modules/client.js",
+    "importStyle": "client",
+    "description": null,
+    "lineNumber": 69,
+    "undocument": true,
+    "type": {
+      "types": [
+        "src/modules/client.js~Client"
+      ]
+    }
+  },
+  {
+    "__docId__": 146,
+    "kind": "file",
+    "name": "src/modules/company.js",
+    "content": "import BaseModule from './baseModule'\r\n\r\n/**\r\n * @extends {BaseModule}\r\n */\r\nclass Company extends BaseModule {\r\n  /**\r\n   *\r\n   * @returns {Promise<object[]>}\r\n   */\r\n  list (organizationId) {\r\n    return this.call(`/companies`)\r\n  }\r\n\r\n  /**\r\n   *\r\n   * @returns {Promise<object[]>}\r\n   */\r\n  search (term) {\r\n    return this.call(`/companies/search?term=${term}`)\r\n  }\r\n}\r\n\r\nexport default new Company()\r\n",
+    "static": true,
+    "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/modules/company.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 147,
+    "kind": "class",
+    "name": "Company",
+    "memberof": "src/modules/company.js",
+    "static": true,
+    "longname": "src/modules/company.js~Company",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/modules/company.js",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 6,
+    "pseudoExport": true,
+    "interface": false,
+    "extends": [
+      "BaseModule"
+    ]
+  },
+  {
+    "__docId__": 148,
+    "kind": "method",
+    "name": "list",
+    "memberof": "src/modules/company.js~Company",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/company.js~Company#list",
+    "access": "public",
+    "description": "",
+    "lineNumber": 11,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<object[]>}"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<object[]>"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": [
+      {
+        "name": "organizationId",
+        "types": [
+          "*"
+        ]
+      }
+    ]
+  },
+  {
+    "__docId__": 149,
+    "kind": "method",
+    "name": "search",
+    "memberof": "src/modules/company.js~Company",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/company.js~Company#search",
+    "access": "public",
+    "description": "",
+    "lineNumber": 19,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<object[]>}"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<object[]>"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": [
+      {
+        "name": "term",
+        "types": [
+          "*"
+        ]
+      }
+    ]
+  },
+  {
+    "__docId__": 150,
+    "kind": "variable",
+    "name": "company",
+    "memberof": "src/modules/company.js",
+    "static": true,
+    "longname": "src/modules/company.js~company",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/modules/company.js",
+    "importStyle": "company",
+    "description": null,
+    "lineNumber": 24,
+    "undocument": true,
+    "type": {
+      "types": [
+        "src/modules/company.js~Company"
+      ]
+    }
+  },
+  {
+    "__docId__": 151,
+    "kind": "file",
+    "name": "src/modules/currency.js",
+    "content": "import BaseModule from './baseModule'\r\n\r\n/**\r\n * @extends {BaseModule}\r\n */\r\nclass Currency extends BaseModule {\r\n  /**\r\n   *\r\n   * @returns {Promise<Object[]>}\r\n   */\r\n  list () {\r\n    return this.call('/currencies')\r\n  }\r\n}\r\n\r\nexport default new Currency()\r\n",
+    "static": true,
+    "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/modules/currency.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 152,
+    "kind": "class",
+    "name": "Currency",
+    "memberof": "src/modules/currency.js",
+    "static": true,
+    "longname": "src/modules/currency.js~Currency",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/modules/currency.js",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 6,
+    "pseudoExport": true,
+    "interface": false,
+    "extends": [
+      "BaseModule"
+    ]
+  },
+  {
+    "__docId__": 153,
+    "kind": "method",
+    "name": "list",
+    "memberof": "src/modules/currency.js~Currency",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/currency.js~Currency#list",
+    "access": "public",
+    "description": "",
+    "lineNumber": 11,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<Object[]>}"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<Object[]>"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
+  },
+  {
+    "__docId__": 154,
+    "kind": "variable",
+    "name": "currency",
+    "memberof": "src/modules/currency.js",
+    "static": true,
+    "longname": "src/modules/currency.js~currency",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/modules/currency.js",
+    "importStyle": "currency",
+    "description": null,
+    "lineNumber": 16,
+    "undocument": true,
+    "type": {
+      "types": [
+        "src/modules/currency.js~Currency"
+      ]
+    }
+  },
+  {
+    "__docId__": 155,
+    "kind": "file",
+    "name": "src/modules/document.js",
+    "content": "import BaseModule from './baseModule'\r\nimport { MDocument } from '../models'\r\n\r\nclass Document extends BaseModule {\r\n  constructor () {\r\n    super()\r\n    this.TransformModel = MDocument\r\n  }\r\n\r\n  /**\r\n   *\r\n   * @returns {Promise<MDocument[]>}\r\n   */\r\n  list (organizationId, transform = true) {\r\n    return this.call(`/organizations/${organizationId}/documents`)\r\n  }\r\n\r\n  /**\r\n  *\r\n  * @returns {Promise<MDocument>}\r\n  */\r\n  get (documentId) {\r\n    return this.call(`/documents/${documentId}`)\r\n  }\r\n\r\n  /**\r\n   * @param {string} organizationId\r\n   * @param {object} data\r\n   *\r\n   * @returns {Promise<MDocument>}\r\n   */\r\n  create (organizationId, data) {\r\n    return this.call(`/organizations/${organizationId}/documents`, data, 'POST')\r\n  }\r\n\r\n  /**\r\n   * @param {string} documentId\r\n   * @param {object} data\r\n   *\r\n   * @returns {Promise<MDocument>}\r\n   */\r\n  update (documentId, data) {\r\n    return this.call(`/documents/${documentId}`, data, 'PUT')\r\n  }\r\n\r\n  /**\r\n   * @param {string} documentId\r\n   *\r\n   * @returns {Promise<MDocument>}\r\n   */\r\n  delete (documentId) {\r\n    return this.call(`/documents/${documentId}`, null, 'DELETE')\r\n  }\r\n\r\n  /**\r\n   * @param {string} documentId\r\n   *\r\n   * @returns {Promise<MPayment>}\r\n   */\r\n  payments (documentId) {\r\n    return this.call(`/documents/${documentId}/payments`)\r\n  }\r\n}\r\n\r\nexport default new Document()\r\n",
+    "static": true,
+    "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/modules/document.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 156,
+    "kind": "class",
+    "name": "Document",
+    "memberof": "src/modules/document.js",
+    "static": true,
+    "longname": "src/modules/document.js~Document",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/modules/document.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "pseudoExport": true,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "src/modules/baseModule.js~BaseModule"
+    ]
+  },
+  {
+    "__docId__": 157,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/modules/document.js~Document",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/document.js~Document#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true
+  },
+  {
+    "__docId__": 158,
+    "kind": "member",
+    "name": "TransformModel",
+    "memberof": "src/modules/document.js~Document",
+    "static": false,
+    "longname": "src/modules/document.js~Document#TransformModel",
+    "access": "public",
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 159,
+    "kind": "method",
+    "name": "list",
+    "memberof": "src/modules/document.js~Document",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/document.js~Document#list",
+    "access": "public",
+    "description": "",
+    "lineNumber": 14,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MDocument[]>}"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MDocument[]>"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": [
+      {
+        "name": "organizationId",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "transform",
+        "optional": true,
+        "types": [
+          "boolean"
+        ],
+        "defaultRaw": true,
+        "defaultValue": "true"
+      }
+    ]
+  },
+  {
+    "__docId__": 160,
+    "kind": "method",
+    "name": "get",
+    "memberof": "src/modules/document.js~Document",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/document.js~Document#get",
+    "access": "public",
+    "description": "",
+    "lineNumber": 22,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MDocument>}"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MDocument>"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": [
+      {
+        "name": "documentId",
+        "types": [
+          "*"
+        ]
+      }
+    ]
+  },
+  {
+    "__docId__": 161,
+    "kind": "method",
+    "name": "create",
+    "memberof": "src/modules/document.js~Document",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/document.js~Document#create",
+    "access": "public",
+    "description": "",
+    "lineNumber": 32,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MDocument>}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "organizationId",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "data",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MDocument>"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 162,
+    "kind": "method",
+    "name": "update",
+    "memberof": "src/modules/document.js~Document",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/document.js~Document#update",
+    "access": "public",
+    "description": "",
+    "lineNumber": 42,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MDocument>}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "documentId",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "data",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MDocument>"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 163,
+    "kind": "method",
+    "name": "delete",
+    "memberof": "src/modules/document.js~Document",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/document.js~Document#delete",
+    "access": "public",
+    "description": "",
+    "lineNumber": 51,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MDocument>}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "documentId",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MDocument>"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 164,
+    "kind": "method",
+    "name": "payments",
+    "memberof": "src/modules/document.js~Document",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/document.js~Document#payments",
+    "access": "public",
+    "description": "",
+    "lineNumber": 60,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MPayment>}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "documentId",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MPayment>"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 165,
+    "kind": "variable",
+    "name": "document",
+    "memberof": "src/modules/document.js",
+    "static": true,
+    "longname": "src/modules/document.js~document",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/modules/document.js",
+    "importStyle": "document",
+    "description": null,
+    "lineNumber": 65,
+    "undocument": true,
+    "type": {
+      "types": [
+        "src/modules/document.js~Document"
+      ]
+    }
+  },
+  {
+    "__docId__": 166,
+    "kind": "file",
+    "name": "src/modules/index.js",
+    "content": "export { default as account } from './account'\r\nexport { default as client } from './client'\r\nexport { default as company } from './company'\r\nexport { default as currency } from './currency'\r\nexport { default as document } from './document'\r\nexport { default as item } from './item'\r\nexport { default as organization } from './organization'\r\nexport { default as payment } from './payment'\r\nexport { default as recurrence } from './recurrence'\r\nexport { default as tax } from './tax'\r\n",
+    "static": true,
+    "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/modules/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 167,
+    "kind": "file",
+    "name": "src/modules/item.js",
+    "content": "import BaseModule from './baseModule'\r\nimport { MItem } from '../models'\r\n\r\nclass Item extends BaseModule {\r\n  constructor () {\r\n    super()\r\n    this.TransformModel = MItem\r\n  }\r\n\r\n  /**\r\n   *\r\n   * @returns {Promise<MItem[]>}\r\n   */\r\n  list (organizationId) {\r\n    return this.call(`/organizations/${organizationId}/items`)\r\n  }\r\n\r\n  /**\r\n   *\r\n   * @returns {Promise<MItem[]>}\r\n   */\r\n  search (organizationId, term) {\r\n    return this.call(`/organizations/${organizationId}/search-items?term=${term}`)\r\n  }\r\n\r\n  /**\r\n  *\r\n  * @returns {Promise<MItem>}\r\n  */\r\n  get (itemId) {\r\n    return this.call(`/items/${itemId}`)\r\n  }\r\n\r\n  /**\r\n   * @param {string} organizationId\r\n   * @param {object} data\r\n   *\r\n   * @returns {Promise<MItem>}\r\n   */\r\n  create (organizationId, data) {\r\n    return this.call(`/organizations/${organizationId}/items`, data, 'POST')\r\n  }\r\n\r\n  /**\r\n   * @param {string} itemId\r\n   * @param {object} data\r\n   *\r\n   * @returns {Promise<MItem>}\r\n   */\r\n  update (itemId, data) {\r\n    return this.call(`/items/${itemId}`, data, 'PUT')\r\n  }\r\n\r\n  /**\r\n   * @param {string} itemId\r\n   *\r\n   * @returns {Promise<MItem>}\r\n   */\r\n  delete (itemId) {\r\n    return this.call(`/items/${itemId}`, null, 'DELETE')\r\n  }\r\n}\r\n\r\nexport default new Item()\r\n",
+    "static": true,
+    "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/modules/item.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 168,
+    "kind": "class",
+    "name": "Item",
+    "memberof": "src/modules/item.js",
+    "static": true,
+    "longname": "src/modules/item.js~Item",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/modules/item.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "pseudoExport": true,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "src/modules/baseModule.js~BaseModule"
+    ]
+  },
+  {
+    "__docId__": 169,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/modules/item.js~Item",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/item.js~Item#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true
+  },
+  {
+    "__docId__": 170,
+    "kind": "member",
+    "name": "TransformModel",
+    "memberof": "src/modules/item.js~Item",
+    "static": false,
+    "longname": "src/modules/item.js~Item#TransformModel",
+    "access": "public",
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 171,
+    "kind": "method",
+    "name": "list",
+    "memberof": "src/modules/item.js~Item",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/item.js~Item#list",
+    "access": "public",
+    "description": "",
+    "lineNumber": 14,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MItem[]>}"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MItem[]>"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": [
+      {
+        "name": "organizationId",
+        "types": [
+          "*"
+        ]
+      }
+    ]
+  },
+  {
+    "__docId__": 172,
+    "kind": "method",
+    "name": "search",
+    "memberof": "src/modules/item.js~Item",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/item.js~Item#search",
+    "access": "public",
+    "description": "",
+    "lineNumber": 22,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MItem[]>}"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MItem[]>"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": [
+      {
+        "name": "organizationId",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "term",
+        "types": [
+          "*"
+        ]
+      }
+    ]
+  },
+  {
+    "__docId__": 173,
+    "kind": "method",
+    "name": "get",
+    "memberof": "src/modules/item.js~Item",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/item.js~Item#get",
+    "access": "public",
+    "description": "",
+    "lineNumber": 30,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MItem>}"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MItem>"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": [
+      {
+        "name": "itemId",
+        "types": [
+          "*"
+        ]
+      }
+    ]
+  },
+  {
+    "__docId__": 174,
+    "kind": "method",
+    "name": "create",
+    "memberof": "src/modules/item.js~Item",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/item.js~Item#create",
+    "access": "public",
+    "description": "",
+    "lineNumber": 40,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MItem>}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "organizationId",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "data",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MItem>"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 175,
+    "kind": "method",
+    "name": "update",
+    "memberof": "src/modules/item.js~Item",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/item.js~Item#update",
+    "access": "public",
+    "description": "",
+    "lineNumber": 50,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MItem>}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "itemId",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "data",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MItem>"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 176,
+    "kind": "method",
+    "name": "delete",
+    "memberof": "src/modules/item.js~Item",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/item.js~Item#delete",
+    "access": "public",
+    "description": "",
+    "lineNumber": 59,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MItem>}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "itemId",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MItem>"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 177,
+    "kind": "variable",
+    "name": "item",
+    "memberof": "src/modules/item.js",
+    "static": true,
+    "longname": "src/modules/item.js~item",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/modules/item.js",
+    "importStyle": "item",
+    "description": null,
+    "lineNumber": 64,
+    "undocument": true,
+    "type": {
+      "types": [
+        "src/modules/item.js~Item"
+      ]
+    }
+  },
+  {
+    "__docId__": 178,
+    "kind": "file",
+    "name": "src/modules/organization.js",
+    "content": "import BaseModule from './baseModule'\r\nimport { MOrganization } from '../models'\r\nimport { FilterBuilder } from '../services' // eslint-disable-line no-unused-vars\r\n\r\nclass Organization extends BaseModule {\r\n  constructor () {\r\n    super()\r\n    this.TransformModel = MOrganization\r\n  }\r\n\r\n  /**\r\n   * @param {string} accountId\r\n   * @param {null|FilterBuilder} filter\r\n   *\r\n   * @returns {Promise<MOrganization[]>}\r\n   */\r\n  list (accountId, filter = null) {\r\n    return this.call(`/accounts/${accountId}/organizations`, filter)\r\n  }\r\n\r\n  /**\r\n  *\r\n  * @returns {Promise<MOrganization>}\r\n  */\r\n  get (organizationId) {\r\n    return this.call(`/organizations/${organizationId}`)\r\n  }\r\n\r\n  /**\r\n   * @param {string} accountId\r\n   * @param {object} data\r\n   *\r\n   * @returns {Promise<MOrganization>}\r\n   */\r\n  create (accountId, data) {\r\n    return this.call(`/accounts/${accountId}/organizations`, data, 'POST')\r\n  }\r\n\r\n  /**\r\n   * @param {string} organizationId\r\n   * @param {object} data\r\n   *\r\n   * @returns {Promise<MOrganization>}\r\n   */\r\n  update (organizationId, data) {\r\n    return this.call(`/organizations/${organizationId}`, data, 'PUT')\r\n  }\r\n\r\n  /**\r\n   * @param {string} organizationId\r\n   *\r\n   * @returns {Promise<MOrganization>}\r\n   */\r\n  delete (organizationId) {\r\n    return this.call(`/organizations/${organizationId}`, null, 'DELETE')\r\n  }\r\n}\r\n\r\nexport default new Organization()\r\n",
+    "static": true,
+    "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/modules/organization.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 179,
+    "kind": "class",
+    "name": "Organization",
+    "memberof": "src/modules/organization.js",
+    "static": true,
+    "longname": "src/modules/organization.js~Organization",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/modules/organization.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "pseudoExport": true,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "src/modules/baseModule.js~BaseModule"
+    ]
+  },
+  {
+    "__docId__": 180,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/modules/organization.js~Organization",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/organization.js~Organization#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true
+  },
+  {
+    "__docId__": 181,
+    "kind": "member",
+    "name": "TransformModel",
+    "memberof": "src/modules/organization.js~Organization",
+    "static": false,
+    "longname": "src/modules/organization.js~Organization#TransformModel",
+    "access": "public",
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 182,
+    "kind": "method",
+    "name": "list",
+    "memberof": "src/modules/organization.js~Organization",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/organization.js~Organization#list",
+    "access": "public",
+    "description": "",
+    "lineNumber": 17,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MOrganization[]>}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "accountId",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "null",
+          "FilterBuilder"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "filter",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MOrganization[]>"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 183,
+    "kind": "method",
+    "name": "get",
+    "memberof": "src/modules/organization.js~Organization",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/organization.js~Organization#get",
+    "access": "public",
+    "description": "",
+    "lineNumber": 25,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MOrganization>}"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MOrganization>"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": [
+      {
+        "name": "organizationId",
+        "types": [
+          "*"
+        ]
+      }
+    ]
+  },
+  {
+    "__docId__": 184,
+    "kind": "method",
+    "name": "create",
+    "memberof": "src/modules/organization.js~Organization",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/organization.js~Organization#create",
+    "access": "public",
+    "description": "",
+    "lineNumber": 35,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MOrganization>}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "accountId",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "data",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MOrganization>"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 185,
+    "kind": "method",
+    "name": "update",
+    "memberof": "src/modules/organization.js~Organization",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/organization.js~Organization#update",
+    "access": "public",
+    "description": "",
+    "lineNumber": 45,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MOrganization>}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "organizationId",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "data",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MOrganization>"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 186,
+    "kind": "method",
+    "name": "delete",
+    "memberof": "src/modules/organization.js~Organization",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/organization.js~Organization#delete",
+    "access": "public",
+    "description": "",
+    "lineNumber": 54,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MOrganization>}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "organizationId",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MOrganization>"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 187,
+    "kind": "variable",
+    "name": "organization",
+    "memberof": "src/modules/organization.js",
+    "static": true,
+    "longname": "src/modules/organization.js~organization",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/modules/organization.js",
+    "importStyle": "organization",
+    "description": null,
+    "lineNumber": 59,
+    "undocument": true,
+    "type": {
+      "types": [
+        "src/modules/organization.js~Organization"
+      ]
+    }
+  },
+  {
+    "__docId__": 188,
+    "kind": "file",
+    "name": "src/modules/payment.js",
+    "content": "import BaseModule from './baseModule'\r\nimport { MPayment } from '../models'\r\n\r\nclass Payment extends BaseModule {\r\n  constructor () {\r\n    super()\r\n    this.TransformModel = MPayment\r\n  }\r\n\r\n  /**\r\n  * @param {string} organizationId\r\n  *\r\n  * @returns {Promise<MPayment[]>}\r\n  */\r\n  organizationList (organizationId) {\r\n    return this.call(`/organizations/${organizationId}/payments`)\r\n  }\r\n\r\n  /**\r\n  * @param {string} documentId\r\n  *\r\n  * @returns {Promise<MPayment[]>}\r\n  */\r\n  documentList (documentId) {\r\n    return this.call(`/documents/${documentId}/payments`)\r\n  }\r\n\r\n  /**\r\n   * @param {string} documentId\r\n   * @param {object} data\r\n   *\r\n   * @returns {Promise<MPayment>}\r\n   */\r\n  create (documentId, data) {\r\n    return this.call(`/documents/${documentId}/payments`, data, 'POST')\r\n  }\r\n\r\n  /**\r\n   * @param {string} paymentId\r\n   * @param {object} data\r\n   *\r\n   * @returns {Promise<MPayment>}\r\n   */\r\n  update (paymentId, data) {\r\n    return this.call(`/payments/${paymentId}`, data, 'PUT')\r\n  }\r\n\r\n  /**\r\n   * @param {string} paymentId\r\n   *\r\n   * @returns {Promise<MPayment>}\r\n   */\r\n  delete (paymentId) {\r\n    return this.call(`/payments/${paymentId}`, null, 'DELETE')\r\n  }\r\n}\r\n\r\nexport default new Payment()\r\n",
+    "static": true,
+    "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/modules/payment.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 189,
+    "kind": "class",
+    "name": "Payment",
+    "memberof": "src/modules/payment.js",
+    "static": true,
+    "longname": "src/modules/payment.js~Payment",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/modules/payment.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "pseudoExport": true,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "src/modules/baseModule.js~BaseModule"
+    ]
+  },
+  {
+    "__docId__": 190,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/modules/payment.js~Payment",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/payment.js~Payment#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true
+  },
+  {
+    "__docId__": 191,
+    "kind": "member",
+    "name": "TransformModel",
+    "memberof": "src/modules/payment.js~Payment",
+    "static": false,
+    "longname": "src/modules/payment.js~Payment#TransformModel",
+    "access": "public",
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 192,
+    "kind": "method",
+    "name": "organizationList",
+    "memberof": "src/modules/payment.js~Payment",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/payment.js~Payment#organizationList",
+    "access": "public",
+    "description": "",
+    "lineNumber": 15,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MPayment[]>}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "organizationId",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MPayment[]>"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 193,
+    "kind": "method",
+    "name": "documentList",
+    "memberof": "src/modules/payment.js~Payment",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/payment.js~Payment#documentList",
+    "access": "public",
+    "description": "",
+    "lineNumber": 24,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MPayment[]>}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "documentId",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MPayment[]>"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 194,
+    "kind": "method",
+    "name": "create",
+    "memberof": "src/modules/payment.js~Payment",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/payment.js~Payment#create",
+    "access": "public",
+    "description": "",
+    "lineNumber": 34,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MPayment>}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "documentId",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "data",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MPayment>"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 195,
+    "kind": "method",
+    "name": "update",
+    "memberof": "src/modules/payment.js~Payment",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/payment.js~Payment#update",
+    "access": "public",
+    "description": "",
+    "lineNumber": 44,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MPayment>}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "paymentId",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "data",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MPayment>"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 196,
+    "kind": "method",
+    "name": "delete",
+    "memberof": "src/modules/payment.js~Payment",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/payment.js~Payment#delete",
+    "access": "public",
+    "description": "",
+    "lineNumber": 53,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MPayment>}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "paymentId",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MPayment>"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 197,
+    "kind": "variable",
+    "name": "payment",
+    "memberof": "src/modules/payment.js",
+    "static": true,
+    "longname": "src/modules/payment.js~payment",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/modules/payment.js",
+    "importStyle": "payment",
+    "description": null,
+    "lineNumber": 58,
+    "undocument": true,
+    "type": {
+      "types": [
+        "src/modules/payment.js~Payment"
+      ]
+    }
+  },
+  {
+    "__docId__": 198,
+    "kind": "file",
+    "name": "src/modules/recurrence.js",
+    "content": "import BaseModule from './baseModule'\r\nimport { MRecurrence } from '../models'\r\n\r\nclass Recurrence extends BaseModule {\r\n  constructor () {\r\n    super()\r\n    this.TransformModel = MRecurrence\r\n  }\r\n\r\n  /**\r\n  * @param {string} organizationId\r\n  *\r\n  * @returns {Promise<MRecurrence[]>}\r\n  */\r\n  listFromOrganization (organizationId) {\r\n    return this.call(`/organizations/${organizationId}/recurrences`)\r\n  }\r\n\r\n  /**\r\n  * @param {string} documentId\r\n  *\r\n  * @returns {Promise<MRecurrence[]>}\r\n  */\r\n  listFromDocument (documentId) {\r\n    return this.call(`/documents/${documentId}/recurrences`)\r\n  }\r\n\r\n  /**\r\n   * @param {string} documentId\r\n   * @param {object} data\r\n   *\r\n   * @returns {Promise<MRecurrence>}\r\n   */\r\n  create (documentId, data) {\r\n    return this.call(`/documents/${documentId}/recurrences`, data, 'POST')\r\n  }\r\n\r\n  /**\r\n   * @param {string} reccurenceId\r\n   *\r\n   * @returns {Promise<MRecurrence>}\r\n   */\r\n  delete (reccurenceId) {\r\n    return this.call(`/recurrences/${reccurenceId}`, null, 'DELETE')\r\n  }\r\n}\r\n\r\nexport default new Recurrence()\r\n",
+    "static": true,
+    "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/modules/recurrence.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 199,
+    "kind": "class",
+    "name": "Recurrence",
+    "memberof": "src/modules/recurrence.js",
+    "static": true,
+    "longname": "src/modules/recurrence.js~Recurrence",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/modules/recurrence.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "pseudoExport": true,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "src/modules/baseModule.js~BaseModule"
+    ]
+  },
+  {
+    "__docId__": 200,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/modules/recurrence.js~Recurrence",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/recurrence.js~Recurrence#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true
+  },
+  {
+    "__docId__": 201,
+    "kind": "member",
+    "name": "TransformModel",
+    "memberof": "src/modules/recurrence.js~Recurrence",
+    "static": false,
+    "longname": "src/modules/recurrence.js~Recurrence#TransformModel",
+    "access": "public",
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 202,
+    "kind": "method",
+    "name": "listFromOrganization",
+    "memberof": "src/modules/recurrence.js~Recurrence",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/recurrence.js~Recurrence#listFromOrganization",
+    "access": "public",
+    "description": "",
+    "lineNumber": 15,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MRecurrence[]>}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "organizationId",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MRecurrence[]>"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 203,
+    "kind": "method",
+    "name": "listFromDocument",
+    "memberof": "src/modules/recurrence.js~Recurrence",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/recurrence.js~Recurrence#listFromDocument",
+    "access": "public",
+    "description": "",
+    "lineNumber": 24,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MRecurrence[]>}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "documentId",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MRecurrence[]>"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 204,
+    "kind": "method",
+    "name": "create",
+    "memberof": "src/modules/recurrence.js~Recurrence",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/recurrence.js~Recurrence#create",
+    "access": "public",
+    "description": "",
+    "lineNumber": 34,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MRecurrence>}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "documentId",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "data",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MRecurrence>"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 205,
+    "kind": "method",
+    "name": "delete",
+    "memberof": "src/modules/recurrence.js~Recurrence",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/recurrence.js~Recurrence#delete",
+    "access": "public",
+    "description": "",
+    "lineNumber": 43,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MRecurrence>}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "reccurenceId",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MRecurrence>"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 206,
+    "kind": "variable",
+    "name": "recurrence",
+    "memberof": "src/modules/recurrence.js",
+    "static": true,
+    "longname": "src/modules/recurrence.js~recurrence",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/modules/recurrence.js",
+    "importStyle": "recurrence",
+    "description": null,
+    "lineNumber": 48,
+    "undocument": true,
+    "type": {
+      "types": [
+        "src/modules/recurrence.js~Recurrence"
+      ]
+    }
+  },
+  {
+    "__docId__": 207,
+    "kind": "file",
+    "name": "src/modules/tax.js",
+    "content": "import BaseModule from './baseModule'\r\nimport { MTax } from '../models'\r\n\r\nclass Tax extends BaseModule {\r\n  constructor () {\r\n    super()\r\n    this.transformModel = MTax\r\n  }\r\n\r\n  /**\r\n  * @param {string} organizationId\r\n  *\r\n  * @returns {Promise<MTax[]>}\r\n  */\r\n  list (organizationId) {\r\n    return this.call(`/organizations/${organizationId}/taxes`)\r\n  }\r\n\r\n  /**\r\n   * @param {string} organizationId\r\n   * @param {object} data\r\n   *\r\n   * @returns {Promise<MTax>}\r\n   */\r\n  create (organizationId, data) {\r\n    return this.call(`/organizations/${organizationId}/taxes`, data, 'POST')\r\n  }\r\n\r\n  /**\r\n   * @param {string} taxId\r\n   * @param {object} data\r\n   *\r\n   * @returns {Promise<object>}\r\n   */\r\n  addRate (taxId, data) {\r\n    return this.call(`/taxes/${taxId}/taxRates`, data, 'POST')\r\n  }\r\n\r\n  /**\r\n   * @param {string} taxId\r\n   * @param {object} data\r\n   *\r\n   * @returns {Promise<MTax>}\r\n   */\r\n  update (taxId, data) {\r\n    return this.call(`/taxes/${taxId}`, data, 'PUT')\r\n  }\r\n\r\n  /**\r\n   * @param {string} taxId\r\n   *\r\n   * @returns {Promise<MTax>}\r\n   */\r\n  delete (taxId) {\r\n    return this.call(`/taxes/${taxId}`, null, 'DELETE')\r\n  }\r\n}\r\n\r\nexport default new Tax()\r\n",
+    "static": true,
+    "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/modules/tax.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 208,
+    "kind": "class",
+    "name": "Tax",
+    "memberof": "src/modules/tax.js",
+    "static": true,
+    "longname": "src/modules/tax.js~Tax",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/modules/tax.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "pseudoExport": true,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "src/modules/baseModule.js~BaseModule"
+    ]
+  },
+  {
+    "__docId__": 209,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/modules/tax.js~Tax",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/tax.js~Tax#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true
+  },
+  {
+    "__docId__": 210,
+    "kind": "member",
+    "name": "transformModel",
+    "memberof": "src/modules/tax.js~Tax",
+    "static": false,
+    "longname": "src/modules/tax.js~Tax#transformModel",
+    "access": "public",
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 211,
+    "kind": "method",
+    "name": "list",
+    "memberof": "src/modules/tax.js~Tax",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/tax.js~Tax#list",
+    "access": "public",
+    "description": "",
+    "lineNumber": 15,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MTax[]>}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "organizationId",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MTax[]>"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 212,
+    "kind": "method",
+    "name": "create",
+    "memberof": "src/modules/tax.js~Tax",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/tax.js~Tax#create",
+    "access": "public",
+    "description": "",
+    "lineNumber": 25,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MTax>}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "organizationId",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "data",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MTax>"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 213,
+    "kind": "method",
+    "name": "addRate",
+    "memberof": "src/modules/tax.js~Tax",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/tax.js~Tax#addRate",
+    "access": "public",
+    "description": "",
+    "lineNumber": 35,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<object>}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "taxId",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "data",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<object>"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 214,
+    "kind": "method",
+    "name": "update",
+    "memberof": "src/modules/tax.js~Tax",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/tax.js~Tax#update",
+    "access": "public",
+    "description": "",
+    "lineNumber": 45,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MTax>}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "taxId",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "data",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MTax>"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 215,
+    "kind": "method",
+    "name": "delete",
+    "memberof": "src/modules/tax.js~Tax",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/modules/tax.js~Tax#delete",
+    "access": "public",
+    "description": "",
+    "lineNumber": 54,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<MTax>}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "taxId",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<MTax>"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 216,
+    "kind": "variable",
+    "name": "tax",
+    "memberof": "src/modules/tax.js",
+    "static": true,
+    "longname": "src/modules/tax.js~tax",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/modules/tax.js",
+    "importStyle": "tax",
+    "description": null,
+    "lineNumber": 59,
+    "undocument": true,
+    "type": {
+      "types": [
+        "src/modules/tax.js~Tax"
+      ]
+    }
+  },
+  {
+    "__docId__": 217,
+    "kind": "file",
+    "name": "src/services/filterBuilder.js",
+    "content": "import ParamBuilder from './paramBuilder'\nimport URI from 'urijs'\n\nexport default class FilterBuilder {\n  constructor () {\n    this._param = new ParamBuilder(this)\n    this.reset()\n  }\n\n  static new () {\n    return new this()\n  }\n\n  reset () {\n    this._where = {}\n    this._include = null\n    this._fields = null\n    this._limit = null\n    this._order = null\n    this._skip = null\n    this._deleted = null\n  }\n\n  /**\n   * Where query filter\n   * Accepts operators, see [Where operators](http://docs.spaceinvoices.com/?shell#where-operators) section for details.\n   * @param {*} fields\n   */\n  where (...fields) {\n    fields.forEach(field => {\n      this._where[field] = null\n    })\n    return this._param\n  }\n\n  /**\n   * Logical AND operator\n   * @param {string} fields\n   */\n  and (...fields) {\n    this._operator('and', fields)\n    return this._param\n  }\n\n  /**\n   * Logical OR operator\n   * @param {string} fields\n   */\n  or (...fields) {\n    this._operator('or', fields)\n    return this._param\n  }\n\n  _operator (operation, fields) {\n    if (this._where[operation] === undefined) {\n      let tmpWhere = Object.assign({}, this._where)\n      this._where = {}\n      this._where[operation] = [tmpWhere]\n    }\n    fields.forEach(field => {\n      let tmpWhere = {}\n      tmpWhere[field] = null\n      this._where[operation].push(tmpWhere)\n    })\n  }\n\n  /**\n   * Used to include related models\n   * @param {*} model\n   */\n  include (model) {\n    this._include = model\n    return this\n  }\n\n  /**\n   * Include or exclude certain fields\n   * @param {*} fields\n   */\n  fields (...fields) {\n    this._fields = {}\n    fields.forEach(field => {\n      this._fields[field] = true\n    })\n    return this\n  }\n\n  /**\n   * Limit amount of data returned\n   * @param {number} limit\n   */\n  limit (limit) {\n    this._limit = limit\n    return this\n  }\n\n  /**\n   * Order results by property\n   * @param {string} field\n   * @param {string} sort ASC or DESC\n   */\n  order (field, sort = 'ASC') {\n    this._order = { field, sort }\n    return this\n  }\n\n  /**\n   * Number of results to skip\n   * @param {number} skip\n   */\n  skip (skip) {\n    this._skip = skip\n    return this\n  }\n\n  /**\n   * Also return deleted records. Only available on models that implement soft delete\n   */\n  deleted () {\n    this._deleted = true\n    return this\n  }\n\n  buildObject () {\n    let filter = {}\n    if (this._where) {\n      filter.where = this._where\n    }\n    if (this._include) {\n      filter.include = this._include\n    }\n    if (this._fields) {\n      filter.fields = this._fields\n    }\n    if (this._limit) {\n      filter.limit = this._limit\n    }\n    if (this._order) {\n      filter.order = this._order\n    }\n    if (this._skip) {\n      filter.skip = this._skip\n    }\n    if (this._deleted) {\n      filter.deleted = this._deleted\n    }\n\n    return filter\n  }\n\n  buildUri (endpoint = '', decode = false) {\n    let filter = { filter: this.buildObject() }\n\n    let filterFlatten = this._flattenFilter(filter)\n    let uriFilter = URI.buildQuery(filterFlatten)\n    let uri = URI(endpoint + (URI(endpoint).search() ? '&' : '?') + uriFilter)\n\n    if (decode) {\n      return URI.decode(uri.toString())\n    } else {\n      return uri.toString()\n    }\n  }\n\n  _flattenFilter (ob, lvl = 0) {\n    var toReturn = {}\n    for (var i in ob) {\n      if (!ob.hasOwnProperty(i)) continue\n\n      if ((typeof ob[i]) === 'object') {\n        var flatObject = this._flattenFilter(ob[i], ++lvl)\n        for (var x in flatObject) {\n          if (!flatObject.hasOwnProperty(x)) continue\n\n          if (lvl !== 1) {\n            toReturn[`[${i}]${x}`] = flatObject[x]\n          } else {\n            toReturn[`${i}${x}`] = flatObject[x]\n          }\n        }\n      } else {\n        toReturn[`[${i}]`] = ob[i]\n      }\n    }\n    return toReturn\n  }\n}\n",
+    "static": true,
+    "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/services/filterBuilder.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 218,
+    "kind": "class",
+    "name": "FilterBuilder",
+    "memberof": "src/services/filterBuilder.js",
+    "static": true,
+    "longname": "src/services/filterBuilder.js~FilterBuilder",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/services/filterBuilder.js",
+    "importStyle": "FilterBuilder",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 219,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/services/filterBuilder.js~FilterBuilder",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/services/filterBuilder.js~FilterBuilder#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true
+  },
+  {
+    "__docId__": 220,
+    "kind": "member",
+    "name": "_param",
+    "memberof": "src/services/filterBuilder.js~FilterBuilder",
+    "static": false,
+    "longname": "src/services/filterBuilder.js~FilterBuilder#_param",
+    "access": "private",
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 221,
+    "kind": "method",
+    "name": "new",
+    "memberof": "src/services/filterBuilder.js~FilterBuilder",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/services/filterBuilder.js~FilterBuilder.new",
+    "access": "public",
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 222,
+    "kind": "method",
+    "name": "reset",
+    "memberof": "src/services/filterBuilder.js~FilterBuilder",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/services/filterBuilder.js~FilterBuilder#reset",
+    "access": "public",
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 223,
+    "kind": "member",
+    "name": "_where",
+    "memberof": "src/services/filterBuilder.js~FilterBuilder",
+    "static": false,
+    "longname": "src/services/filterBuilder.js~FilterBuilder#_where",
+    "access": "private",
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{}"
+      ]
+    }
+  },
+  {
+    "__docId__": 224,
+    "kind": "member",
+    "name": "_include",
+    "memberof": "src/services/filterBuilder.js~FilterBuilder",
+    "static": false,
+    "longname": "src/services/filterBuilder.js~FilterBuilder#_include",
+    "access": "private",
+    "description": null,
+    "lineNumber": 16,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 225,
+    "kind": "member",
+    "name": "_fields",
+    "memberof": "src/services/filterBuilder.js~FilterBuilder",
+    "static": false,
+    "longname": "src/services/filterBuilder.js~FilterBuilder#_fields",
+    "access": "private",
+    "description": null,
+    "lineNumber": 17,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 226,
+    "kind": "member",
+    "name": "_limit",
+    "memberof": "src/services/filterBuilder.js~FilterBuilder",
+    "static": false,
+    "longname": "src/services/filterBuilder.js~FilterBuilder#_limit",
+    "access": "private",
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 227,
+    "kind": "member",
+    "name": "_order",
+    "memberof": "src/services/filterBuilder.js~FilterBuilder",
+    "static": false,
+    "longname": "src/services/filterBuilder.js~FilterBuilder#_order",
+    "access": "private",
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 228,
+    "kind": "member",
+    "name": "_skip",
+    "memberof": "src/services/filterBuilder.js~FilterBuilder",
+    "static": false,
+    "longname": "src/services/filterBuilder.js~FilterBuilder#_skip",
+    "access": "private",
+    "description": null,
+    "lineNumber": 20,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 229,
+    "kind": "member",
+    "name": "_deleted",
+    "memberof": "src/services/filterBuilder.js~FilterBuilder",
+    "static": false,
+    "longname": "src/services/filterBuilder.js~FilterBuilder#_deleted",
+    "access": "private",
+    "description": null,
+    "lineNumber": 21,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 230,
+    "kind": "method",
+    "name": "where",
+    "memberof": "src/services/filterBuilder.js~FilterBuilder",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/services/filterBuilder.js~FilterBuilder#where",
+    "access": "public",
+    "description": "Where query filter\nAccepts operators, see [Where operators](http://docs.spaceinvoices.com/?shell#where-operators) section for details.",
+    "lineNumber": 29,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "fields",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 231,
+    "kind": "method",
+    "name": "and",
+    "memberof": "src/services/filterBuilder.js~FilterBuilder",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/services/filterBuilder.js~FilterBuilder#and",
+    "access": "public",
+    "description": "Logical AND operator",
+    "lineNumber": 40,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "fields",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 232,
+    "kind": "method",
+    "name": "or",
+    "memberof": "src/services/filterBuilder.js~FilterBuilder",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/services/filterBuilder.js~FilterBuilder#or",
+    "access": "public",
+    "description": "Logical OR operator",
+    "lineNumber": 49,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "fields",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 233,
+    "kind": "method",
+    "name": "_operator",
+    "memberof": "src/services/filterBuilder.js~FilterBuilder",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/services/filterBuilder.js~FilterBuilder#_operator",
+    "access": "private",
+    "description": null,
+    "lineNumber": 54,
+    "undocument": true,
+    "params": [
+      {
+        "name": "operation",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "fields",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 235,
+    "kind": "method",
+    "name": "include",
+    "memberof": "src/services/filterBuilder.js~FilterBuilder",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/services/filterBuilder.js~FilterBuilder#include",
+    "access": "public",
+    "description": "Used to include related models",
+    "lineNumber": 71,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "model",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 237,
+    "kind": "method",
+    "name": "fields",
+    "memberof": "src/services/filterBuilder.js~FilterBuilder",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/services/filterBuilder.js~FilterBuilder#fields",
+    "access": "public",
+    "description": "Include or exclude certain fields",
+    "lineNumber": 80,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "fields",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 239,
+    "kind": "method",
+    "name": "limit",
+    "memberof": "src/services/filterBuilder.js~FilterBuilder",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/services/filterBuilder.js~FilterBuilder#limit",
+    "access": "public",
+    "description": "Limit amount of data returned",
+    "lineNumber": 92,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "limit",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 241,
+    "kind": "method",
+    "name": "order",
+    "memberof": "src/services/filterBuilder.js~FilterBuilder",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/services/filterBuilder.js~FilterBuilder#order",
+    "access": "public",
+    "description": "Order results by property",
+    "lineNumber": 102,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "field",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sort",
+        "description": "ASC or DESC"
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 243,
+    "kind": "method",
+    "name": "skip",
+    "memberof": "src/services/filterBuilder.js~FilterBuilder",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/services/filterBuilder.js~FilterBuilder#skip",
+    "access": "public",
+    "description": "Number of results to skip",
+    "lineNumber": 111,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "skip",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 245,
+    "kind": "method",
+    "name": "deleted",
+    "memberof": "src/services/filterBuilder.js~FilterBuilder",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/services/filterBuilder.js~FilterBuilder#deleted",
+    "access": "public",
+    "description": "Also return deleted records. Only available on models that implement soft delete",
+    "lineNumber": 119,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 247,
+    "kind": "method",
+    "name": "buildObject",
+    "memberof": "src/services/filterBuilder.js~FilterBuilder",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/services/filterBuilder.js~FilterBuilder#buildObject",
+    "access": "public",
+    "description": null,
+    "lineNumber": 124,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 248,
+    "kind": "method",
+    "name": "buildUri",
+    "memberof": "src/services/filterBuilder.js~FilterBuilder",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/services/filterBuilder.js~FilterBuilder#buildUri",
+    "access": "public",
+    "description": null,
+    "lineNumber": 151,
+    "undocument": true,
+    "params": [
+      {
+        "name": "endpoint",
+        "optional": true,
+        "types": [
+          "string"
+        ],
+        "defaultRaw": "",
+        "defaultValue": ""
+      },
+      {
+        "name": "decode",
+        "optional": true,
+        "types": [
+          "boolean"
+        ],
+        "defaultRaw": false,
+        "defaultValue": "false"
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 249,
+    "kind": "method",
+    "name": "_flattenFilter",
+    "memberof": "src/services/filterBuilder.js~FilterBuilder",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/services/filterBuilder.js~FilterBuilder#_flattenFilter",
+    "access": "private",
+    "description": null,
+    "lineNumber": 165,
+    "undocument": true,
+    "params": [
+      {
+        "name": "ob",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "lvl",
+        "optional": true,
+        "types": [
+          "number"
+        ],
+        "defaultRaw": 0,
+        "defaultValue": "0"
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 250,
+    "kind": "file",
+    "name": "src/services/index.js",
+    "content": "export { requestService } from './requestService'\nexport { default as FilterBuilder } from './filterBuilder'\n",
+    "static": true,
+    "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/services/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 251,
+    "kind": "file",
+    "name": "src/services/paramBuilder.js",
+    "content": "import FilterBuilder from './filterBuilder' // eslint-disable-line no-unused-vars\n\nexport default class ParamBuilder {\n  /**\n   *\n   * @param {FilterBuilder} filter\n   */\n  constructor (filter) {\n    this._filter = filter\n  }\n\n  /**\n   * Equivalence\n   * @param {*} value\n   *\n   * @returns {FilterBuilder}\n   */\n  eq (value) {\n    this._setValue(value)\n    return this._filter\n  }\n\n  /**\n   * Not equal (!=)\n   * @param {*} value\n   */\n  neq (value) {\n    this._setValue({ neq: value })\n    return this._filter\n  }\n\n  /**\n   * Numerical greather than (>)\n   * Valid for numberical and date values. For Geopoint values, the units are in miles by default.\n   *\n   * @param {string|number|Date} value\n   */\n  gt (value) {\n    this._setValue({ gt: value })\n    return this._filter\n  }\n\n  /**\n   * Numerical greater than of equal (>=)\n   * Valid for numberical and date values. For Geopoint values, the units are in miles by default.\n   *\n   * @param {string|number|Date} value\n   */\n  gte (value) {\n    this._setValue({ gte: value })\n    return this._filter\n  }\n\n  /**\n   * Numerical less than (<)\n   * Valid only for numerical and date values. For Geopoint values, the units are in miles by default.\n   * @param {string|number|Date} value\n   */\n  lt (value) {\n    this._setValue({ lt: value })\n    return this._filter\n  }\n\n  /**\n   * Numerical less than or equal (<=)\n   * Valid only for numerical and date values. For Geopoint values, the units are in miles by default.\n   * @param {string|number|Date} value\n   */\n  lte (value) {\n    this._setValue({ lte: value })\n    return this._filter\n  }\n\n  /**\n   * True if the value is between the two specified values\n   * greater than or equal to first value and less than or equal to second value.\n   * @param {*} valFrom\n   * @param {*} valTo\n   */\n  between (valFrom, valTo) {\n    this._setValue({ between: [valFrom, valTo] })\n    return this._filter\n  }\n\n  /**\n   * In an array of values.\n   * @param {*} values\n   */\n  inq (...values) {\n    this._setValue({ inq: values })\n    return this._filter\n  }\n\n  /**\n   * Not in an array of values.\n   * @param {*} values\n   */\n  nin (...values) {\n    this._setValue({ nin: values })\n    return this._filter\n  }\n\n  /**\n   * For geolocations, return the closest points, sorted in order of distance.\n   * Use with limit to return the n closest points.\n   * maxDistance and unit can also be passed on same level as near to configure the search.\n   * @param {string} near\n   * @param {number} maxDistance\n   * @param {string} unit miles or meters. Default: miles\n   */\n  near (near, maxDistance = null, unit = null) {\n    let value = near\n    if (maxDistance) {\n      value = Object.assign({}, { near, maxDistance })\n    }\n    if (unit) {\n      value = Object.assign({}, { near, maxDistance, unit })\n    }\n    this._setValue(value)\n    return this._filter\n  }\n\n  /**\n   * LIKE operators for use with regular expressions\n   * @param {string} value\n   */\n  like (value) {\n    this._setValue({like: value})\n    return this._filter\n  }\n\n  /**\n   * NOT LIKE operators for use with regular expressions\n   * @param {string} value\n   */\n  nlike (value) {\n    this._setValue({nlike: value})\n    return this._filter\n  }\n\n  /**\n   * Regular expression\n   * @param {string} regexp\n   */\n  regexp (regexp) {\n    this._setValue({ regexp })\n    return this._filter\n  }\n\n  /**\n   * Sets the value to the filter builder\n   * @param {*} value\n   */\n  _setValue (value) {\n    let fields = this._filter._where\n\n    if (this._filter._where.and !== undefined) {\n      fields = this._filter._where.and[this._filter._where.and.length - 1]\n    } else if (this._filter._where.or !== undefined) {\n      fields = this._filter._where.or[this._filter._where.or.length - 1]\n    }\n\n    for (var key of Object.keys(fields)) {\n      fields[key] = value\n    }\n  }\n}\n",
+    "static": true,
+    "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/services/paramBuilder.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 252,
+    "kind": "class",
+    "name": "ParamBuilder",
+    "memberof": "src/services/paramBuilder.js",
+    "static": true,
+    "longname": "src/services/paramBuilder.js~ParamBuilder",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/services/paramBuilder.js",
+    "importStyle": "ParamBuilder",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 253,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/services/paramBuilder.js~ParamBuilder",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/services/paramBuilder.js~ParamBuilder#constructor",
+    "access": "public",
+    "description": "",
+    "lineNumber": 8,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "FilterBuilder"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "filter",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "__docId__": 254,
+    "kind": "member",
+    "name": "_filter",
+    "memberof": "src/services/paramBuilder.js~ParamBuilder",
+    "static": false,
+    "longname": "src/services/paramBuilder.js~ParamBuilder#_filter",
+    "access": "private",
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 255,
+    "kind": "method",
+    "name": "eq",
+    "memberof": "src/services/paramBuilder.js~ParamBuilder",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/services/paramBuilder.js~ParamBuilder#eq",
+    "access": "public",
+    "description": "Equivalence",
+    "lineNumber": 18,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{FilterBuilder}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "value",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "FilterBuilder"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 256,
+    "kind": "method",
+    "name": "neq",
+    "memberof": "src/services/paramBuilder.js~ParamBuilder",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/services/paramBuilder.js~ParamBuilder#neq",
+    "access": "public",
+    "description": "Not equal (!=)",
+    "lineNumber": 27,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "value",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 257,
+    "kind": "method",
+    "name": "gt",
+    "memberof": "src/services/paramBuilder.js~ParamBuilder",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/services/paramBuilder.js~ParamBuilder#gt",
+    "access": "public",
+    "description": "Numerical greather than (>)\nValid for numberical and date values. For Geopoint values, the units are in miles by default.",
+    "lineNumber": 38,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string",
+          "number",
+          "Date"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "value",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 258,
+    "kind": "method",
+    "name": "gte",
+    "memberof": "src/services/paramBuilder.js~ParamBuilder",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/services/paramBuilder.js~ParamBuilder#gte",
+    "access": "public",
+    "description": "Numerical greater than of equal (>=)\nValid for numberical and date values. For Geopoint values, the units are in miles by default.",
+    "lineNumber": 49,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string",
+          "number",
+          "Date"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "value",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 259,
+    "kind": "method",
+    "name": "lt",
+    "memberof": "src/services/paramBuilder.js~ParamBuilder",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/services/paramBuilder.js~ParamBuilder#lt",
+    "access": "public",
+    "description": "Numerical less than (<)\nValid only for numerical and date values. For Geopoint values, the units are in miles by default.",
+    "lineNumber": 59,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string",
+          "number",
+          "Date"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "value",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 260,
+    "kind": "method",
+    "name": "lte",
+    "memberof": "src/services/paramBuilder.js~ParamBuilder",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/services/paramBuilder.js~ParamBuilder#lte",
+    "access": "public",
+    "description": "Numerical less than or equal (<=)\nValid only for numerical and date values. For Geopoint values, the units are in miles by default.",
+    "lineNumber": 69,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string",
+          "number",
+          "Date"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "value",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 261,
+    "kind": "method",
+    "name": "between",
+    "memberof": "src/services/paramBuilder.js~ParamBuilder",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/services/paramBuilder.js~ParamBuilder#between",
+    "access": "public",
+    "description": "True if the value is between the two specified values\ngreater than or equal to first value and less than or equal to second value.",
+    "lineNumber": 80,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "valFrom",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "valTo",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 262,
+    "kind": "method",
+    "name": "inq",
+    "memberof": "src/services/paramBuilder.js~ParamBuilder",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/services/paramBuilder.js~ParamBuilder#inq",
+    "access": "public",
+    "description": "In an array of values.",
+    "lineNumber": 89,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "values",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 263,
+    "kind": "method",
+    "name": "nin",
+    "memberof": "src/services/paramBuilder.js~ParamBuilder",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/services/paramBuilder.js~ParamBuilder#nin",
+    "access": "public",
+    "description": "Not in an array of values.",
+    "lineNumber": 98,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "values",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 264,
+    "kind": "method",
+    "name": "near",
+    "memberof": "src/services/paramBuilder.js~ParamBuilder",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/services/paramBuilder.js~ParamBuilder#near",
+    "access": "public",
+    "description": "For geolocations, return the closest points, sorted in order of distance.\nUse with limit to return the n closest points.\nmaxDistance and unit can also be passed on same level as near to configure the search.",
+    "lineNumber": 111,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "near",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "maxDistance",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "unit",
+        "description": "miles or meters. Default: miles"
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 265,
+    "kind": "method",
+    "name": "like",
+    "memberof": "src/services/paramBuilder.js~ParamBuilder",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/services/paramBuilder.js~ParamBuilder#like",
+    "access": "public",
+    "description": "LIKE operators for use with regular expressions",
+    "lineNumber": 127,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "value",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 266,
+    "kind": "method",
+    "name": "nlike",
+    "memberof": "src/services/paramBuilder.js~ParamBuilder",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/services/paramBuilder.js~ParamBuilder#nlike",
+    "access": "public",
+    "description": "NOT LIKE operators for use with regular expressions",
+    "lineNumber": 136,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "value",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 267,
+    "kind": "method",
+    "name": "regexp",
+    "memberof": "src/services/paramBuilder.js~ParamBuilder",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/services/paramBuilder.js~ParamBuilder#regexp",
+    "access": "public",
+    "description": "Regular expression",
+    "lineNumber": 145,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "regexp",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 268,
+    "kind": "method",
+    "name": "_setValue",
+    "memberof": "src/services/paramBuilder.js~ParamBuilder",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/services/paramBuilder.js~ParamBuilder#_setValue",
+    "access": "private",
+    "description": "Sets the value to the filter builder",
+    "lineNumber": 154,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "value",
+        "description": ""
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 269,
+    "kind": "file",
+    "name": "src/services/requestService.js",
+    "content": "import { RequestError, ServerError } from '../errors'\r\nimport FilterBuilder from './filterBuilder' // eslint-disable-line no-unused-vars\r\nimport rp from 'request-promise'\r\n\r\nclass RequestService {\r\n  /**\r\n   * Initialize\r\n   * @param {string} host\r\n   * @param {string} apiToken\r\n   * @param {string} accountId\r\n   */\r\n  init (host, apiToken, accountId) {\r\n    this.host = host\r\n    this.apiToken = apiToken\r\n    this.accountId = accountId\r\n    this.requester = rp.defaults({\r\n      baseUrl: this.host,\r\n      headers: {\r\n        Authorization: this.apiToken\r\n      }\r\n    })\r\n  }\r\n\r\n  /**\r\n   *\r\n   * @param {string} endpoint\r\n   * @param {string} method\r\n   * @param {null|object} data\r\n   * @param {null|FilterBuilder} filter\r\n   *\r\n   * @returns {Promise<Object|Object[], RequestError|ServerError>}\r\n   */\r\n  call (endpoint, method = 'GET', data = null, filter = null) {\r\n    if (filter !== null) {\r\n      endpoint = filter.buildUri(endpoint)\r\n    }\r\n\r\n    let requestProps = {\r\n      method,\r\n      uri: endpoint,\r\n      resolveWithFullResponse: true,\r\n      simple: true,\r\n      json: true\r\n    }\r\n\r\n    if (data) {\r\n      requestProps = Object.assign(requestProps, {\r\n        body: data\r\n      })\r\n    }\r\n\r\n    return this.requester(requestProps).then(response => {\r\n      return response.body\r\n    }).catch(response => {\r\n      if (response.statusCode >= 400 && response.statusCode < 500) {\r\n        return Promise.reject(new RequestError(response.statusCode, response.response.body.error))\r\n      } else {\r\n        return Promise.reject(new ServerError(response.statusCode, response.response.body.error))\r\n      }\r\n    })\r\n  }\r\n}\r\n\r\nexport const requestService = new RequestService()\r\n",
+    "static": true,
+    "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/services/requestService.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 270,
+    "kind": "variable",
+    "name": "requestService",
+    "memberof": "src/services/requestService.js",
+    "static": true,
+    "longname": "src/services/requestService.js~requestService",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/services/requestService.js",
+    "importStyle": "{requestService}",
+    "description": null,
+    "lineNumber": 64,
+    "undocument": true,
+    "type": {
+      "types": [
+        "src/services/requestService.js~RequestService"
+      ]
+    }
+  },
+  {
+    "__docId__": 271,
+    "kind": "class",
+    "name": "RequestService",
+    "memberof": "src/services/requestService.js",
+    "static": true,
+    "longname": "src/services/requestService.js~RequestService",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/services/requestService.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "pseudoExport": true,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 272,
+    "kind": "method",
+    "name": "init",
+    "memberof": "src/services/requestService.js~RequestService",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/services/requestService.js~RequestService#init",
+    "access": "public",
+    "description": "Initialize",
+    "lineNumber": 12,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "host",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "apiToken",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "accountId",
+        "description": ""
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 273,
+    "kind": "member",
+    "name": "host",
+    "memberof": "src/services/requestService.js~RequestService",
+    "static": false,
+    "longname": "src/services/requestService.js~RequestService#host",
+    "access": "public",
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 274,
+    "kind": "member",
+    "name": "apiToken",
+    "memberof": "src/services/requestService.js~RequestService",
+    "static": false,
+    "longname": "src/services/requestService.js~RequestService#apiToken",
+    "access": "public",
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 275,
+    "kind": "member",
+    "name": "accountId",
+    "memberof": "src/services/requestService.js~RequestService",
+    "static": false,
+    "longname": "src/services/requestService.js~RequestService#accountId",
+    "access": "public",
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 276,
+    "kind": "member",
+    "name": "requester",
+    "memberof": "src/services/requestService.js~RequestService",
+    "static": false,
+    "longname": "src/services/requestService.js~RequestService#requester",
+    "access": "public",
+    "description": null,
+    "lineNumber": 16,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 277,
+    "kind": "method",
+    "name": "call",
+    "memberof": "src/services/requestService.js~RequestService",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/services/requestService.js~RequestService#call",
+    "access": "public",
+    "description": "",
+    "lineNumber": 33,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise<Object|Object[], RequestError|ServerError>}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "endpoint",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "method",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "null",
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "data",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "null",
+          "FilterBuilder"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "filter",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<Object|Object[], RequestError|ServerError>"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 278,
+    "kind": "file",
+    "name": "src/spaceInvoices.js",
+    "content": "import { requestService, FilterBuilder } from './services'\r\nimport * as modules from './modules'\r\n\r\nexport class SpaceInvoices {\r\n  /**\r\n   *\r\n   * @param {string} apiToken - Token needed for calling the API\r\n   * @param {string} accountId - Account for retreiving data from\r\n   * @param {string} host - Hostname for the API / default https://api.spaceinvoices.com/v1\r\n   */\r\n  constructor (apiToken, accountId, host = 'https://api.spaceinvoices.com/v1') {\r\n    requestService.init(host, apiToken, accountId)\r\n  }\r\n\r\n  /**\r\n   *\r\n   * @param {string} accountId\r\n   */\r\n  switchAccountId (accountId) {\r\n    requestService.accountId = accountId\r\n  }\r\n\r\n  /** @type {Account} */\r\n  get account () { return modules.account }\r\n  /** @type {Client} */\r\n  get client () { return modules.client }\r\n  /** @type {Company} */\r\n  get company () { return modules.company }\r\n  /** @type {Currency} */\r\n  get currency () { return modules.currency }\r\n  /** @type {Document} */\r\n  get document () { return modules.document }\r\n  /** @type {Item} */\r\n  get item () { return modules.item }\r\n  /** @type {Organization} */\r\n  get organization () { return modules.organization }\r\n}\r\n/**\r\n * Creates a new filter builder instance\r\n * @returns {FilterBuilder}\r\n */\r\nexport function siFilter () {\r\n  return new FilterBuilder()\r\n}\r\n",
+    "static": true,
+    "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/spaceInvoices.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 279,
+    "kind": "class",
+    "name": "SpaceInvoices",
+    "memberof": "src/spaceInvoices.js",
+    "static": true,
+    "longname": "src/spaceInvoices.js~SpaceInvoices",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/spaceInvoices.js",
+    "importStyle": "{SpaceInvoices}",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 280,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/spaceInvoices.js~SpaceInvoices",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/spaceInvoices.js~SpaceInvoices#constructor",
+    "access": "public",
+    "description": "",
+    "lineNumber": 11,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "apiToken",
+        "description": "Token needed for calling the API"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "accountId",
+        "description": "Account for retreiving data from"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "host",
+        "description": "Hostname for the API / default https://api.spaceinvoices.com/v1"
+      }
+    ]
+  },
+  {
+    "__docId__": 281,
+    "kind": "method",
+    "name": "switchAccountId",
+    "memberof": "src/spaceInvoices.js~SpaceInvoices",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/spaceInvoices.js~SpaceInvoices#switchAccountId",
+    "access": "public",
+    "description": "",
+    "lineNumber": 19,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "accountId",
+        "description": ""
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 282,
+    "kind": "get",
+    "name": "account",
+    "memberof": "src/spaceInvoices.js~SpaceInvoices",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/spaceInvoices.js~SpaceInvoices#account",
+    "access": "public",
+    "description": null,
+    "lineNumber": 24,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Account"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 283,
+    "kind": "get",
+    "name": "client",
+    "memberof": "src/spaceInvoices.js~SpaceInvoices",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/spaceInvoices.js~SpaceInvoices#client",
+    "access": "public",
+    "description": null,
+    "lineNumber": 26,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Client"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 284,
+    "kind": "get",
+    "name": "company",
+    "memberof": "src/spaceInvoices.js~SpaceInvoices",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/spaceInvoices.js~SpaceInvoices#company",
+    "access": "public",
+    "description": null,
+    "lineNumber": 28,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Company"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 285,
+    "kind": "get",
+    "name": "currency",
+    "memberof": "src/spaceInvoices.js~SpaceInvoices",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/spaceInvoices.js~SpaceInvoices#currency",
+    "access": "public",
+    "description": null,
+    "lineNumber": 30,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Currency"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 286,
+    "kind": "get",
+    "name": "document",
+    "memberof": "src/spaceInvoices.js~SpaceInvoices",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/spaceInvoices.js~SpaceInvoices#document",
+    "access": "public",
+    "description": null,
+    "lineNumber": 32,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Document"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 287,
+    "kind": "get",
+    "name": "item",
+    "memberof": "src/spaceInvoices.js~SpaceInvoices",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/spaceInvoices.js~SpaceInvoices#item",
+    "access": "public",
+    "description": null,
+    "lineNumber": 34,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Item"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 288,
+    "kind": "get",
+    "name": "organization",
+    "memberof": "src/spaceInvoices.js~SpaceInvoices",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/spaceInvoices.js~SpaceInvoices#organization",
+    "access": "public",
+    "description": null,
+    "lineNumber": 36,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Organization"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 289,
+    "kind": "function",
+    "name": "siFilter",
+    "memberof": "src/spaceInvoices.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/spaceInvoices.js~siFilter",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/spaceInvoices.js",
+    "importStyle": "{siFilter}",
+    "description": "Creates a new filter builder instance",
+    "lineNumber": 42,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{FilterBuilder}"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "FilterBuilder"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
+  },
+  {
+    "kind": "index",
+    "content": "# spaceinvoices-api-client\r\n\r\n[![Build Status](https://travis-ci.org/ronzyfonzy/spaceinvoices-api-client.svg?branch=master)](https://travis-ci.org/ronzyfonzy/spaceinvoices-api-client)\r\n[![codecov](https://codecov.io/gh/ronzyfonzy/spaceinvoices-api-client/branch/master/graph/badge.svg)](https://codecov.io/gh/ronzyfonzy/spaceinvoices-api-client)\r\n[![dependencies Status](https://david-dm.org/ronzyfonzy/spaceinvoices-api-client/status.svg)](https://david-dm.org/ronzyfonzy/spaceinvoices-api-client)\r\n[![devDependencies Status](https://david-dm.org/ronzyfonzy/spaceinvoices-api-client/dev-status.svg)](https://david-dm.org/ronzyfonzy/spaceinvoices-api-client?type=dev)\r\n[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)\r\n[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)\r\n\r\n### Instalation\r\n\r\n```\r\nyarn\r\n```\r\n\r\n### Usage\r\n\r\nInclude module\r\n```javascript\r\nimport dotenv from 'dotenv'\r\nimport { SpaceInvoices, siFilter } from './src/spaceInvoices'\r\n\r\ndotenv.config()\r\n\r\nlet spaceInvoices = new SpaceInvoices(process.env.API_TOKEN)\r\n\r\nspaceInvoices.account.authenticate(process.env.TEST_EMAIL, process.env.TEST_PASSWORD).then(account => {\r\n  console.log('account', account)\r\n\r\n  // Example 1: List All Organizations\r\n  account.listOrganizations().then(organizations => {\r\n    console.log('allOrganizations', organizations.length)\r\n    let organization = organizations.pop()\r\n\r\n    if (organization) {\r\n      organization.listDocuments().then((documents) => {\r\n        console.log('documents from organization', documents)\r\n      })\r\n    }\r\n  })\r\n\r\n  // Example 1: List Filtered Organizations\r\n\r\n  let filter = siFilter()\r\n    .where('locale').eq('en')\r\n    .and('supportPin').gte(10000)\r\n\r\n  account.listOrganizations(filter).then(organizations => {\r\n    console.log('filteredOrganizations', organizations.length)\r\n  })\r\n}).catch((error) => {\r\n  console.error('Error', error)\r\n})\r\n```\r\n\r\n### Compile\r\n\r\n```\r\nyarn compile\r\n```\r\n\r\n### Test\r\n\r\n```\r\nyarn test\r\n```\r\n\r\n## License\r\n\r\nMIT © [Robert Tajnšek](https://github.com/ronzyfonzy)",
+    "longname": "C:\\Users\\Ronzy\\Development\\personal\\spaceinvoices-api-client\\README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\r\n  \"name\": \"spaceinvoices-api-client\",\r\n  \"version\": \"1.0.0\",\r\n  \"description\": \"\",\r\n  \"main\": \"lib/spaceInvoices.js\",\r\n  \"scripts\": {\r\n    \"test\": \"mocha --require babel-register ./test/**/*.test.js\",\r\n    \"lint\": \"standard-markdown && standard ./src/**/*.js ./test/**/*.js\",\r\n    \"test:full\": \"yarn lint && yarn test\",\r\n    \"coverage\": \"cross-env NODE_ENV=test nyc --reporter=text --reporter=text-summary mocha test/**/*.js\",\r\n    \"coverage:travis\": \"cross-env NODE_ENV=test nyc --reporter=lcovonly mocha ./test/**/*.js && codecov\",\r\n    \"docs\": \"esdoc\",\r\n    \"runrun\": \"babel-node ./index.js\",\r\n    \"clean\": \"rimraf lib/*\",\r\n    \"precompile\": \"yarn run clean\",\r\n    \"compile\": \"babel src --out-dir lib\",\r\n    \"commit\": \"git add . && git-cz\",\r\n    \"pregit\": \"yarn test && yarn compile && yarn docs\",\r\n    \"gitit\": \"pregit && yarn commit\"\r\n  },\r\n  \"author\": \"Robert Tajnšek\",\r\n  \"license\": \"MIT\",\r\n  \"dependencies\": {\r\n    \"es6-error\": \"^4.1.1\",\r\n    \"request\": \"^2.83.0\",\r\n    \"request-promise\": \"^4.2.2\",\r\n    \"urijs\": \"^1.19.1\"\r\n  },\r\n  \"devDependencies\": {\r\n    \"babel-cli\": \"^6.26.0\",\r\n    \"babel-core\": \"^6.26.0\",\r\n    \"babel-plugin-istanbul\": \"^4.1.5\",\r\n    \"babel-preset-env\": \"^1.6.1\",\r\n    \"babel-register\": \"^6.26.0\",\r\n    \"chai\": \"^4.1.2\",\r\n    \"chai-as-promised\": \"^7.1.1\",\r\n    \"codecov\": \"^3.0.0\",\r\n    \"cross-env\": \"^5.1.3\",\r\n    \"dotenv\": \"^5.0.1\",\r\n    \"esdoc\": \"^1.0.4\",\r\n    \"esdoc-standard-plugin\": \"^1.0.0\",\r\n    \"eslint\": \"^4.18.2\",\r\n    \"istanbul\": \"^0.4.5\",\r\n    \"mocha\": \"^5.0.1\",\r\n    \"nyc\": \"^11.4.1\",\r\n    \"rimraf\": \"^2.6.2\",\r\n    \"standard\": \"^11.0.0\",\r\n    \"standard-markdown\": \"^4.0.2\"\r\n  },\r\n  \"config\": {\r\n    \"commitizen\": {\r\n      \"path\": \"cz-conventional-changelog\"\r\n    }\r\n  },\r\n  \"standard\": {\r\n    \"env\": [\r\n      \"mocha\"\r\n    ],\r\n    \"ignore\": [\r\n      \"lib\"\r\n    ]\r\n  }\r\n}\r\n",
+    "longname": "C:\\Users\\Ronzy\\Development\\personal\\spaceinvoices-api-client\\package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]

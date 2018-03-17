@@ -20,7 +20,7 @@ export default class MDocument extends BaseModel {
 
   /**
    *
-   * @returns {Promise<MReccurence[]>}
+   * @returns {Promise<MRecurrence[]>}
   */
   listReccurences () {
     return recurrence.listFromDocument(this.id)
@@ -28,7 +28,7 @@ export default class MDocument extends BaseModel {
 
   /**
    *
-   * @returns {Promise<MReccurence>}
+   * @returns {Promise<MRecurrence>}
   */
   createReccurence (data) {
     return recurrence.create(this.id, data)

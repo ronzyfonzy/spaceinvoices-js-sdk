@@ -10,8 +10,10 @@ export default class MAccount extends BaseModel {
   }
 
   /**
-  * @inheritDoc
-  */
+   * @param {null|FilterBuilder} filter
+   *
+   * @returns {Promise<MOrganization[]>}
+   */
   listOrganizations (filter = null) {
     return organization.list(this.id, filter)
   }

@@ -20,15 +20,25 @@ export class SpaceInvoices {
     requestService.accountId = accountId
   }
 
+  /** @type {Account} */
   get account () { return modules.account }
+  /** @type {Client} */
   get client () { return modules.client }
+  /** @type {Company} */
   get company () { return modules.company }
+  /** @type {Currency} */
   get currency () { return modules.currency }
+  /** @type {Document} */
   get document () { return modules.document }
+  /** @type {Item} */
   get item () { return modules.item }
+  /** @type {Organization} */
   get organization () { return modules.organization }
 }
-
+/**
+ * Creates a new filter builder instance
+ * @returns {FilterBuilder}
+ */
 export function siFilter () {
   return new FilterBuilder()
 }

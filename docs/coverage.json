@@ -1,0 +1,257 @@
+{
+  "coverage": "56.86%",
+  "expectCount": 204,
+  "actualCount": 116,
+  "files": {
+    "src/errors.js": {
+      "expectCount": 8,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        6,
+        7,
+        8,
+        12,
+        17,
+        18
+      ]
+    },
+    "src/models/account.js": {
+      "expectCount": 5,
+      "actualCount": 3,
+      "undocumentLines": [
+        4,
+        9
+      ]
+    },
+    "src/models/baseModel.js": {
+      "expectCount": 9,
+      "actualCount": 3,
+      "undocumentLines": [
+        1,
+        7,
+        8,
+        12,
+        16,
+        17
+      ]
+    },
+    "src/models/client.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        3
+      ]
+    },
+    "src/models/company.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        3
+      ]
+    },
+    "src/models/currency.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        3
+      ]
+    },
+    "src/models/document.js": {
+      "expectCount": 5,
+      "actualCount": 4,
+      "undocumentLines": [
+        4
+      ]
+    },
+    "src/models/item.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        3
+      ]
+    },
+    "src/models/organization.js": {
+      "expectCount": 24,
+      "actualCount": 21,
+      "undocumentLines": [
+        4,
+        5,
+        7
+      ]
+    },
+    "src/models/payment.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        3
+      ]
+    },
+    "src/models/recurrence.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        3
+      ]
+    },
+    "src/models/tax.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        3
+      ]
+    },
+    "src/modules/account.js": {
+      "expectCount": 8,
+      "actualCount": 5,
+      "undocumentLines": [
+        8,
+        10,
+        58
+      ]
+    },
+    "src/modules/baseModule.js": {
+      "expectCount": 5,
+      "actualCount": 1,
+      "undocumentLines": [
+        2,
+        3,
+        4,
+        31
+      ]
+    },
+    "src/modules/client.js": {
+      "expectCount": 10,
+      "actualCount": 7,
+      "undocumentLines": [
+        8,
+        10,
+        69
+      ]
+    },
+    "src/modules/company.js": {
+      "expectCount": 4,
+      "actualCount": 3,
+      "undocumentLines": [
+        24
+      ]
+    },
+    "src/modules/currency.js": {
+      "expectCount": 3,
+      "actualCount": 2,
+      "undocumentLines": [
+        16
+      ]
+    },
+    "src/modules/document.js": {
+      "expectCount": 10,
+      "actualCount": 6,
+      "undocumentLines": [
+        4,
+        5,
+        7,
+        65
+      ]
+    },
+    "src/modules/item.js": {
+      "expectCount": 10,
+      "actualCount": 6,
+      "undocumentLines": [
+        4,
+        5,
+        7,
+        64
+      ]
+    },
+    "src/modules/organization.js": {
+      "expectCount": 9,
+      "actualCount": 5,
+      "undocumentLines": [
+        5,
+        6,
+        8,
+        59
+      ]
+    },
+    "src/modules/payment.js": {
+      "expectCount": 9,
+      "actualCount": 5,
+      "undocumentLines": [
+        4,
+        5,
+        7,
+        58
+      ]
+    },
+    "src/modules/recurrence.js": {
+      "expectCount": 8,
+      "actualCount": 4,
+      "undocumentLines": [
+        4,
+        5,
+        7,
+        48
+      ]
+    },
+    "src/modules/tax.js": {
+      "expectCount": 9,
+      "actualCount": 5,
+      "undocumentLines": [
+        4,
+        5,
+        7,
+        59
+      ]
+    },
+    "src/services/filterBuilder.js": {
+      "expectCount": 25,
+      "actualCount": 9,
+      "undocumentLines": [
+        4,
+        5,
+        6,
+        10,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        54,
+        124,
+        151,
+        165
+      ]
+    },
+    "src/services/paramBuilder.js": {
+      "expectCount": 17,
+      "actualCount": 15,
+      "undocumentLines": [
+        3,
+        9
+      ]
+    },
+    "src/services/requestService.js": {
+      "expectCount": 8,
+      "actualCount": 2,
+      "undocumentLines": [
+        64,
+        5,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "src/spaceInvoices.js": {
+      "expectCount": 11,
+      "actualCount": 10,
+      "undocumentLines": [
+        4
+      ]
+    }
+  }
+}
