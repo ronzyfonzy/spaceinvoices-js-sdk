@@ -25,7 +25,8 @@ export default class ParamBuilder {
    * @param {*} value
    */
   neq (value) {
-    return this.eq(value)
+    this._setValue({ neq: value })
+    return this._filter
   }
 
   /**
@@ -35,7 +36,7 @@ export default class ParamBuilder {
    * @param {string|number|Date} value
    */
   gt (value) {
-    this._setValue({'gt': value})
+    this._setValue({ gt: value })
     return this._filter
   }
 
@@ -46,7 +47,7 @@ export default class ParamBuilder {
    * @param {string|number|Date} value
    */
   gte (value) {
-    this._setValue({'gt': value})
+    this._setValue({ gte: value })
     return this._filter
   }
 
@@ -56,7 +57,7 @@ export default class ParamBuilder {
    * @param {string|number|Date} value
    */
   lt (value) {
-    this._setValue({'lt': value})
+    this._setValue({ lt: value })
     return this._filter
   }
 
@@ -66,7 +67,7 @@ export default class ParamBuilder {
    * @param {string|number|Date} value
    */
   lte (value) {
-    this._setValue({'lte': value})
+    this._setValue({ lte: value })
     return this._filter
   }
 
@@ -77,7 +78,7 @@ export default class ParamBuilder {
    * @param {*} valTo
    */
   between (valFrom, valTo) {
-    this._setValue({'between': [valFrom, valTo]})
+    this._setValue({ between: [valFrom, valTo] })
     return this._filter
   }
 
@@ -86,7 +87,7 @@ export default class ParamBuilder {
    * @param {*} values
    */
   inq (...values) {
-    this._setValue({'inq': values})
+    this._setValue({ inq: values })
     return this._filter
   }
 
@@ -95,7 +96,7 @@ export default class ParamBuilder {
    * @param {*} values
    */
   nin (...values) {
-    this._setValue({'nin': values})
+    this._setValue({ nin: values })
     return this._filter
   }
 
@@ -105,17 +106,44 @@ export default class ParamBuilder {
    * maxDistance and unit can also be passed on same level as near to configure the search.
    * @param {string} near
    * @param {number} maxDistance
-   * @param {string} units miles or meters. Default: miles
+   * @param {string} unit miles or meters. Default: miles
    */
-  near (near, maxDistance = null, units = null) {
+  near (near, maxDistance = null, unit = null) {
     let value = near
     if (maxDistance) {
-      value = Object.assign({}, {near, maxDistance})
+      value = Object.assign({}, { near, maxDistance })
     }
-    if (units) {
-      value = Object.assign({}, {near, maxDistance, units})
+    if (unit) {
+      value = Object.assign({}, { near, maxDistance, unit })
     }
     this._setValue(value)
+    return this._filter
+  }
+
+  /**
+   * LIKE operators for use with regular expressions
+   * @param {string} value
+   */
+  like (value) {
+    this._setValue({like: value})
+    return this._filter
+  }
+
+  /**
+   * NOT LIKE operators for use with regular expressions
+   * @param {string} value
+   */
+  nlike (value) {
+    this._setValue({nlike: value})
+    return this._filter
+  }
+
+  /**
+   * Regular expression
+   * @param {string} regexp
+   */
+  regexp (regexp) {
+    this._setValue({ regexp })
     return this._filter
   }
 

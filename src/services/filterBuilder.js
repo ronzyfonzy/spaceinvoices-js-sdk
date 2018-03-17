@@ -78,7 +78,10 @@ export default class FilterBuilder {
    * @param {*} fields
    */
   fields (...fields) {
-    this._fields = fields
+    this._fields = {}
+    fields.forEach(field => {
+      this._fields[field] = true
+    })
     return this
   }
 
@@ -145,44 +148,40 @@ export default class FilterBuilder {
     return filter
   }
 
-  buildUri (endpoint = '') {
-    let filter = this.buildObject()
+  buildUri (endpoint = '', decode = false) {
+    let filter = { filter: this.buildObject() }
+
     let filterFlatten = this._flattenFilter(filter)
     let uriFilter = URI.buildQuery(filterFlatten)
     let uri = URI(endpoint + (URI(endpoint).search() ? '&' : '?') + uriFilter)
 
-    return uri.toString()
+    if (decode) {
+      return URI.decode(uri.toString())
+    } else {
+      return uri.toString()
+    }
   }
 
-  _flattenFilter (ob) {
+  _flattenFilter (ob, lvl = 0) {
     var toReturn = {}
     for (var i in ob) {
       if (!ob.hasOwnProperty(i)) continue
 
       if ((typeof ob[i]) === 'object') {
-        var flatObject = this._flattenFilter(ob[i])
+        var flatObject = this._flattenFilter(ob[i], ++lvl)
         for (var x in flatObject) {
           if (!flatObject.hasOwnProperty(x)) continue
 
-          toReturn[`${i}[${x}]`] = flatObject[x]
+          if (lvl !== 1) {
+            toReturn[`[${i}]${x}`] = flatObject[x]
+          } else {
+            toReturn[`${i}${x}`] = flatObject[x]
+          }
         }
       } else {
-        toReturn[i] = ob[i]
+        toReturn[`[${i}]`] = ob[i]
       }
     }
     return toReturn
   }
 }
-// export const filterBuilder = new FilterBuilder()
-// export class FilterBuilder
-// export function filter() {
-//   return new FilterBuilder()
-// }
-// let filter = new FilterBuilder()
-
-// filter
-//   .where('name').eq('Robert')
-//   .and('age').between(10, 20)
-//   .and('location').near('qwd2', 10, 'meters')
-//   .order('age')
-//   .build()
