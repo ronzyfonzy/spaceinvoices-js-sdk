@@ -81,7 +81,7 @@ import { MAccount } from &apos;../models&apos;
 /**
  * @extends {BaseModule}
  */
-class Account extends BaseModule {
+export default class Account extends BaseModule {
   constructor () {
     super()
     this.TransformModel = MAccount
@@ -126,13 +126,11 @@ class Account extends BaseModule {
   * @returns {Promise&lt;boolean&gt;}
   */
   isEmailUnique (email) {
-    return this.call(`/accounts/is-unique?email=${email}`).then((data) =&gt; {
+    return this.call(`/accounts/is-unique?email=${email}`, null, &apos;GET&apos;, false).then((data) =&gt; {
       return data.isUnique
     })
   }
 }
-
-export default new Account()
 </code></pre>
 
 </div>

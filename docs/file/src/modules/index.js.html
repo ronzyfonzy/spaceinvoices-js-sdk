@@ -75,16 +75,40 @@
 </nav>
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/modules/index.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">export { default as account } from &apos;./account&apos;
-export { default as client } from &apos;./client&apos;
-export { default as company } from &apos;./company&apos;
-export { default as currency } from &apos;./currency&apos;
-export { default as document } from &apos;./document&apos;
-export { default as item } from &apos;./item&apos;
-export { default as organization } from &apos;./organization&apos;
-export { default as payment } from &apos;./payment&apos;
-export { default as recurrence } from &apos;./recurrence&apos;
-export { default as tax } from &apos;./tax&apos;
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import Account from &apos;./account&apos;
+import Client from &apos;./client&apos;
+import Company from &apos;./company&apos;
+import Currency from &apos;./currency&apos;
+import Document from &apos;./document&apos;
+import Item from &apos;./item&apos;
+import Organization from &apos;./organization&apos;
+import Payment from &apos;./payment&apos;
+import Recurrence from &apos;./recurrence&apos;
+import Tax from &apos;./tax&apos;
+
+// export default {
+//   account: new Account(),
+//   client: new Client(),
+//   company: new Company(),
+//   currency: new Currency(),
+//   document: new Document(),
+//   item: new Item(),
+//   organization: new Organization(),
+//   payment: new Payment(),
+//   recurrence: new Recurrence(),
+//   tax: new Tax()
+// }
+
+export const account = new Account()
+export const client = new Client()
+export const company = new Company()
+export const currency = new Currency()
+export const document = new Document()
+export const item = new Item()
+export const organization = new Organization()
+export const payment = new Payment()
+export const recurrence = new Recurrence()
+export const tax = new Tax()
 </code></pre>
 
 </div>

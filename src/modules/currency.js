@@ -3,7 +3,7 @@ import BaseModule from './baseModule'
 /**
  * @extends {BaseModule}
  */
-class Currency extends BaseModule {
+export default class Currency extends BaseModule {
   /**
    *
    * @returns {Promise<Object[]>}
@@ -12,5 +12,3 @@ class Currency extends BaseModule {
     return this.call('/currencies')
   }
 }
-
-export default new Currency()

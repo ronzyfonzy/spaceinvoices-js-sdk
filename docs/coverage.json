@@ -1,6 +1,6 @@
 {
-  "coverage": "56.86%",
-  "expectCount": 204,
+  "coverage": "57.14%",
+  "expectCount": 203,
   "actualCount": 116,
   "files": {
     "src/errors.js": {
@@ -103,12 +103,11 @@
       ]
     },
     "src/modules/account.js": {
-      "expectCount": 8,
+      "expectCount": 7,
       "actualCount": 5,
       "undocumentLines": [
         8,
-        10,
-        58
+        10
       ]
     },
     "src/modules/baseModule.js": {
@@ -118,112 +117,116 @@
         2,
         3,
         4,
-        31
+        32
       ]
     },
     "src/modules/client.js": {
-      "expectCount": 10,
+      "expectCount": 9,
       "actualCount": 7,
       "undocumentLines": [
         8,
-        10,
-        69
+        10
       ]
     },
     "src/modules/company.js": {
-      "expectCount": 4,
+      "expectCount": 3,
       "actualCount": 3,
-      "undocumentLines": [
-        24
-      ]
+      "undocumentLines": []
     },
     "src/modules/currency.js": {
-      "expectCount": 3,
+      "expectCount": 2,
       "actualCount": 2,
-      "undocumentLines": [
-        16
-      ]
+      "undocumentLines": []
     },
     "src/modules/document.js": {
-      "expectCount": 10,
+      "expectCount": 9,
       "actualCount": 6,
       "undocumentLines": [
         4,
         5,
-        7,
-        65
+        7
+      ]
+    },
+    "src/modules/index.js": {
+      "expectCount": 10,
+      "actualCount": 0,
+      "undocumentLines": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
       ]
     },
     "src/modules/item.js": {
-      "expectCount": 10,
+      "expectCount": 9,
       "actualCount": 6,
       "undocumentLines": [
         4,
         5,
-        7,
-        64
+        7
       ]
     },
     "src/modules/organization.js": {
-      "expectCount": 9,
+      "expectCount": 8,
       "actualCount": 5,
       "undocumentLines": [
         5,
         6,
-        8,
-        59
+        8
       ]
     },
     "src/modules/payment.js": {
-      "expectCount": 9,
+      "expectCount": 8,
       "actualCount": 5,
       "undocumentLines": [
         4,
         5,
-        7,
-        58
+        7
       ]
     },
     "src/modules/recurrence.js": {
-      "expectCount": 8,
+      "expectCount": 7,
       "actualCount": 4,
       "undocumentLines": [
         4,
         5,
-        7,
-        48
+        7
       ]
     },
     "src/modules/tax.js": {
-      "expectCount": 9,
+      "expectCount": 8,
       "actualCount": 5,
       "undocumentLines": [
         4,
         5,
-        7,
-        59
+        7
       ]
     },
     "src/services/filterBuilder.js": {
-      "expectCount": 25,
+      "expectCount": 24,
       "actualCount": 9,
       "undocumentLines": [
         4,
         5,
         6,
         10,
+        11,
+        12,
+        13,
         14,
         15,
         16,
         17,
-        18,
-        19,
-        20,
-        21,
-        54,
-        124,
-        151,
-        165
+        50,
+        120,
+        147,
+        161
       ]
     },
     "src/services/paramBuilder.js": {

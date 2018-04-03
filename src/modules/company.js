@@ -3,7 +3,7 @@ import BaseModule from './baseModule'
 /**
  * @extends {BaseModule}
  */
-class Company extends BaseModule {
+export default class Company extends BaseModule {
   /**
    *
    * @returns {Promise<object[]>}
@@ -20,5 +20,3 @@ class Company extends BaseModule {
     return this.call(`/companies/search?term=${term}`)
   }
 }
-
-export default new Company()

@@ -80,7 +80,7 @@
 /**
  * @extends {BaseModule}
  */
-class Currency extends BaseModule {
+export default class Currency extends BaseModule {
   /**
    *
    * @returns {Promise&lt;Object[]&gt;}
@@ -89,8 +89,6 @@ class Currency extends BaseModule {
     return this.call(&apos;/currencies&apos;)
   }
 }
-
-export default new Currency()
 </code></pre>
 
 </div>

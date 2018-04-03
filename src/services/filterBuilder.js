@@ -7,10 +7,6 @@ export default class FilterBuilder {
     this.reset()
   }
 
-  static new () {
-    return new this()
-  }
-
   reset () {
     this._where = {}
     this._include = null
@@ -163,13 +159,13 @@ export default class FilterBuilder {
   }
 
   _flattenFilter (ob, lvl = 0) {
-    var toReturn = {}
-    for (var i in ob) {
+    let toReturn = {}
+    for (let i in ob) {
       if (!ob.hasOwnProperty(i)) continue
 
       if ((typeof ob[i]) === 'object') {
-        var flatObject = this._flattenFilter(ob[i], ++lvl)
-        for (var x in flatObject) {
+        let flatObject = this._flattenFilter(ob[i], ++lvl)
+        for (let x in flatObject) {
           if (!flatObject.hasOwnProperty(x)) continue
 
           if (lvl !== 1) {

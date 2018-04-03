@@ -78,7 +78,7 @@
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import BaseModule from &apos;./baseModule&apos;
 import { MDocument } from &apos;../models&apos;
 
-class Document extends BaseModule {
+export default class Document extends BaseModule {
   constructor () {
     super()
     this.TransformModel = MDocument
@@ -138,8 +138,6 @@ class Document extends BaseModule {
     return this.call(`/documents/${documentId}/payments`)
   }
 }
-
-export default new Document()
 </code></pre>
 
 </div>

@@ -1,7 +1,7 @@
 import BaseModule from './baseModule'
 import { MDocument } from '../models'
 
-class Document extends BaseModule {
+export default class Document extends BaseModule {
   constructor () {
     super()
     this.TransformModel = MDocument
@@ -61,5 +61,3 @@ class Document extends BaseModule {
     return this.call(`/documents/${documentId}/payments`)
   }
 }
-
-export default new Document()

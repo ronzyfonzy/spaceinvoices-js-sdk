@@ -1,7 +1,7 @@
 import BaseModule from './baseModule'
 import { MTax } from '../models'
 
-class Tax extends BaseModule {
+export default class Tax extends BaseModule {
   constructor () {
     super()
     this.transformModel = MTax
@@ -55,5 +55,3 @@ class Tax extends BaseModule {
     return this.call(`/taxes/${taxId}`, null, 'DELETE')
   }
 }
-
-export default new Tax()

@@ -1,7 +1,7 @@
 import BaseModule from './baseModule'
 import { MRecurrence } from '../models'
 
-class Recurrence extends BaseModule {
+export default class Recurrence extends BaseModule {
   constructor () {
     super()
     this.TransformModel = MRecurrence
@@ -44,5 +44,3 @@ class Recurrence extends BaseModule {
     return this.call(`/recurrences/${reccurenceId}`, null, 'DELETE')
   }
 }
-
-export default new Recurrence()

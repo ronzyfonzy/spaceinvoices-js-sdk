@@ -81,7 +81,7 @@ import { MClient } from &apos;../models&apos;
 /**
  * @extends {BaseModule}
  */
-class Client extends BaseModule {
+export default class Client extends BaseModule {
   constructor () {
     super()
     this.TransformModel = MClient
@@ -89,7 +89,7 @@ class Client extends BaseModule {
 
   /**
   *
-  * @returns {Promise&lt;MClient[], ResponseError|ServerError&gt;}
+  * @returns {Promise&lt;MClient[], APIError&gt;}
   */
   list (organizationId) {
     return this.call(`/organizations/${organizationId}/clients`)
@@ -142,8 +142,6 @@ class Client extends BaseModule {
     return this.call(`/clients/${clientId}`, &apos;DELETE&apos;)
   }
 }
-
-export default new Client()
 </code></pre>
 
 </div>

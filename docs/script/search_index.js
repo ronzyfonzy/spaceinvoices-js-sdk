@@ -174,57 +174,57 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "spaceinvoices-api-client/src/modules/account.js~account",
+    "spaceinvoices-api-client/src/modules/index.js~account",
     "variable/index.html#static-variable-account",
-    "<span>account</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/modules/account.js</span>",
+    "<span>account</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/modules/index.js</span>",
     "variable"
   ],
   [
-    "spaceinvoices-api-client/src/modules/client.js~client",
+    "spaceinvoices-api-client/src/modules/index.js~client",
     "variable/index.html#static-variable-client",
-    "<span>client</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/modules/client.js</span>",
+    "<span>client</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/modules/index.js</span>",
     "variable"
   ],
   [
-    "spaceinvoices-api-client/src/modules/company.js~company",
+    "spaceinvoices-api-client/src/modules/index.js~company",
     "variable/index.html#static-variable-company",
-    "<span>company</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/modules/company.js</span>",
+    "<span>company</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/modules/index.js</span>",
     "variable"
   ],
   [
-    "spaceinvoices-api-client/src/modules/currency.js~currency",
+    "spaceinvoices-api-client/src/modules/index.js~currency",
     "variable/index.html#static-variable-currency",
-    "<span>currency</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/modules/currency.js</span>",
+    "<span>currency</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/modules/index.js</span>",
     "variable"
   ],
   [
-    "spaceinvoices-api-client/src/modules/document.js~document",
+    "spaceinvoices-api-client/src/modules/index.js~document",
     "variable/index.html#static-variable-document",
-    "<span>document</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/modules/document.js</span>",
+    "<span>document</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/modules/index.js</span>",
     "variable"
   ],
   [
-    "spaceinvoices-api-client/src/modules/item.js~item",
+    "spaceinvoices-api-client/src/modules/index.js~item",
     "variable/index.html#static-variable-item",
-    "<span>item</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/modules/item.js</span>",
+    "<span>item</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/modules/index.js</span>",
     "variable"
   ],
   [
-    "spaceinvoices-api-client/src/modules/organization.js~organization",
+    "spaceinvoices-api-client/src/modules/index.js~organization",
     "variable/index.html#static-variable-organization",
-    "<span>organization</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/modules/organization.js</span>",
+    "<span>organization</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/modules/index.js</span>",
     "variable"
   ],
   [
-    "spaceinvoices-api-client/src/modules/payment.js~payment",
+    "spaceinvoices-api-client/src/modules/index.js~payment",
     "variable/index.html#static-variable-payment",
-    "<span>payment</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/modules/payment.js</span>",
+    "<span>payment</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/modules/index.js</span>",
     "variable"
   ],
   [
-    "spaceinvoices-api-client/src/modules/recurrence.js~recurrence",
+    "spaceinvoices-api-client/src/modules/index.js~recurrence",
     "variable/index.html#static-variable-recurrence",
-    "<span>recurrence</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/modules/recurrence.js</span>",
+    "<span>recurrence</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/modules/index.js</span>",
     "variable"
   ],
   [
@@ -240,9 +240,9 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
-    "spaceinvoices-api-client/src/modules/tax.js~tax",
+    "spaceinvoices-api-client/src/modules/index.js~tax",
     "variable/index.html#static-variable-tax",
-    "<span>tax</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/modules/tax.js</span>",
+    "<span>tax</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/modules/index.js</span>",
     "variable"
   ],
   [
@@ -1467,12 +1467,6 @@ window.esdocSearchIndex = [
     "src/services/filterbuilder.js~filterbuilder#where",
     "class/src/services/filterBuilder.js~FilterBuilder.html#instance-method-where",
     "src/services/filterBuilder.js~FilterBuilder#where",
-    "method"
-  ],
-  [
-    "src/services/filterbuilder.js~filterbuilder.new",
-    "class/src/services/filterBuilder.js~FilterBuilder.html#static-method-new",
-    "src/services/filterBuilder.js~FilterBuilder.new",
     "method"
   ],
   [

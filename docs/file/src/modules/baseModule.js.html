@@ -86,10 +86,11 @@ export default class BaseModule {
    * @param {string} endpoint
    * @param {object|FilterBuilder} data
    * @param {string} method
+   * @param {boolean} autoTransform
    *
    * @returns {Promise}
    */
-  call (endpoint, data = null, method = &apos;GET&apos;) {
+  call (endpoint, data = null, method = &apos;GET&apos;, autoTransform = true) {
     let filter = null
     if (data !== null &amp;&amp; data.constructor !== undefined &amp;&amp; data.constructor.name === &apos;FilterBuilder&apos;) {
       filter = data
@@ -97,7 +98,7 @@ export default class BaseModule {
     }
 
     return requestService.call(endpoint, method, data, filter).then((data) =&gt; {
-      if (this.transformModel !== null) {
+      if (autoTransform &amp;&amp; this.transformModel !== null) {
         return this._transform(data)
       } else {
         return data

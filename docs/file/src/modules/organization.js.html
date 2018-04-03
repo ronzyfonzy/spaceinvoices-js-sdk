@@ -79,7 +79,7 @@
 import { MOrganization } from &apos;../models&apos;
 import { FilterBuilder } from &apos;../services&apos; // eslint-disable-line no-unused-vars
 
-class Organization extends BaseModule {
+export default class Organization extends BaseModule {
   constructor () {
     super()
     this.TransformModel = MOrganization
@@ -132,8 +132,6 @@ class Organization extends BaseModule {
     return this.call(`/organizations/${organizationId}`, null, &apos;DELETE&apos;)
   }
 }
-
-export default new Organization()
 </code></pre>
 
 </div>

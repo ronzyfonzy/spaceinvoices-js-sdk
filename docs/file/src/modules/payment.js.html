@@ -78,7 +78,7 @@
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import BaseModule from &apos;./baseModule&apos;
 import { MPayment } from &apos;../models&apos;
 
-class Payment extends BaseModule {
+export default class Payment extends BaseModule {
   constructor () {
     super()
     this.TransformModel = MPayment
@@ -131,8 +131,6 @@ class Payment extends BaseModule {
     return this.call(`/payments/${paymentId}`, null, &apos;DELETE&apos;)
   }
 }
-
-export default new Payment()
 </code></pre>
 
 </div>

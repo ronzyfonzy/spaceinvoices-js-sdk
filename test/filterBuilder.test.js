@@ -192,7 +192,27 @@ describe('FilterBuilder Test', () => {
     return expect(uri).to.be.equal(uriExpected)
   })
 
-  it('long uri build', () => {
+  it('filter uri with default query', () => {
+    let uri = siFilter()
+      .where('test').eq(1)
+      .buildUri('test?myParam=true')
+
+    let uriExpected = 'test?myParam=true&filter%5Bwhere%5D%5Btest%5D=1'
+
+    return expect(uri).to.be.equal(uriExpected)
+  })
+
+  it('filter uri encoded', () => {
+    let uri = siFilter()
+      .where('test').eq(1)
+      .buildUri()
+
+    let uriExpected = '?filter%5Bwhere%5D%5Btest%5D=1'
+
+    return expect(uri).to.be.equal(uriExpected)
+  })
+
+  it('long uri build with and', () => {
     let uri = siFilter()
       .where('test1').eq(1)
       .and('test2').neq(2)
@@ -213,6 +233,31 @@ describe('FilterBuilder Test', () => {
       .buildUri('', true)
 
     let uriExpected = '?filter[where][and][0][test1]=1&filter[where][and][1][test2][neq]=2&filter[where][and][2][test3][gt]=3&filter[where][and][3][test4][gte]=4&filter[where][and][4][test5][lt]=5&filter[where][and][5][test6][lte]=6&filter[where][and][6][test7][between][0]=7&filter[where][and][6][test7][between][1]=77&filter[where][and][7][test8][inq][0]=8&filter[where][and][8][test9][nin][0]=9&filter[where][and][9][test10][near]=153.536,-28.1&filter[where][and][9][test10][maxDistance]=10&filter[where][and][9][test10][unit]=meters&filter[include][i1][i2]=i3&filter[fields][f1]=true&filter[fields][f2]=true&filter[fields][f3]=true&filter[limit]=5&filter[order][field]=test1&filter[order][sort]=DESC&filter[skip]=10&filter[deleted]=true'
+
+    return expect(uri).to.be.equal(uriExpected)
+  })
+
+  it('long uri build with or', () => {
+    let uri = siFilter()
+      .where('test1').eq(1)
+      .or('test2').neq(2)
+      .or('test3').gt(3)
+      .or('test4').gte(4)
+      .or('test5').lt(5)
+      .or('test6').lte(6)
+      .or('test7').between(7, 77)
+      .or('test8').inq(8)
+      .or('test9').nin(9)
+      .or('test10').near('153.536,-28.1', 10, 'meters')
+      .include({ i1: { i2: 'i3' } })
+      .fields('f1', 'f2', 'f3')
+      .order('test1')
+      .limit(5)
+      .skip(10)
+      .deleted()
+      .buildUri('', true)
+
+    let uriExpected = '?filter[where][or][0][test1]=1&filter[where][or][1][test2][neq]=2&filter[where][or][2][test3][gt]=3&filter[where][or][3][test4][gte]=4&filter[where][or][4][test5][lt]=5&filter[where][or][5][test6][lte]=6&filter[where][or][6][test7][between][0]=7&filter[where][or][6][test7][between][1]=77&filter[where][or][7][test8][inq][0]=8&filter[where][or][8][test9][nin][0]=9&filter[where][or][9][test10][near]=153.536,-28.1&filter[where][or][9][test10][maxDistance]=10&filter[where][or][9][test10][unit]=meters&filter[include][i1][i2]=i3&filter[fields][f1]=true&filter[fields][f2]=true&filter[fields][f3]=true&filter[limit]=5&filter[order][field]=test1&filter[order][sort]=ASC&filter[skip]=10&filter[deleted]=true'
 
     return expect(uri).to.be.equal(uriExpected)
   })

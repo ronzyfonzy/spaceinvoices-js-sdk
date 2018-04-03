@@ -2041,7 +2041,7 @@
     "__docId__": 120,
     "kind": "file",
     "name": "src/modules/account.js",
-    "content": "import BaseModule from './baseModule'\r\nimport { MAccount } from '../models'\r\n\r\n/**\r\n * @extends {BaseModule}\r\n */\r\nclass Account extends BaseModule {\r\n  constructor () {\r\n    super()\r\n    this.TransformModel = MAccount\r\n  }\r\n\r\n  /**\r\n  *\r\n  * @param {string} accountId\r\n  *\r\n  * @returns {Promise<object>}\r\n  */\r\n  get (accountId) {\r\n    return this.call(`/accounts/${accountId}`)\r\n  }\r\n\r\n  /**\r\n  *\r\n  * @param {string} email\r\n  * @param {string} password\r\n  *\r\n  * @returns {Promise<MAccount>}\r\n  */\r\n  authenticate (email, password) {\r\n    return this.call('/accounts/login', { email, password }, 'POST')\r\n  }\r\n\r\n  /**\r\n  *\r\n  * @param {string} email\r\n  * @param {string} password\r\n  *\r\n  * @returns {Promise<object>}\r\n  */\r\n  create (email, password) {\r\n    return this.call('/accounts', { email, password }, 'POST')\r\n  }\r\n\r\n  /**\r\n  *\r\n  * @param {string} email\r\n\r\n  * @returns {Promise<boolean>}\r\n  */\r\n  isEmailUnique (email) {\r\n    return this.call(`/accounts/is-unique?email=${email}`).then((data) => {\r\n      return data.isUnique\r\n    })\r\n  }\r\n}\r\n\r\nexport default new Account()\r\n",
+    "content": "import BaseModule from './baseModule'\r\nimport { MAccount } from '../models'\r\n\r\n/**\r\n * @extends {BaseModule}\r\n */\r\nexport default class Account extends BaseModule {\r\n  constructor () {\r\n    super()\r\n    this.TransformModel = MAccount\r\n  }\r\n\r\n  /**\r\n  *\r\n  * @param {string} accountId\r\n  *\r\n  * @returns {Promise<object>}\r\n  */\r\n  get (accountId) {\r\n    return this.call(`/accounts/${accountId}`)\r\n  }\r\n\r\n  /**\r\n  *\r\n  * @param {string} email\r\n  * @param {string} password\r\n  *\r\n  * @returns {Promise<MAccount>}\r\n  */\r\n  authenticate (email, password) {\r\n    return this.call('/accounts/login', { email, password }, 'POST')\r\n  }\r\n\r\n  /**\r\n  *\r\n  * @param {string} email\r\n  * @param {string} password\r\n  *\r\n  * @returns {Promise<object>}\r\n  */\r\n  create (email, password) {\r\n    return this.call('/accounts', { email, password }, 'POST')\r\n  }\r\n\r\n  /**\r\n  *\r\n  * @param {string} email\r\n\r\n  * @returns {Promise<boolean>}\r\n  */\r\n  isEmailUnique (email) {\r\n    return this.call(`/accounts/is-unique?email=${email}`, null, 'GET', false).then((data) => {\r\n      return data.isUnique\r\n    })\r\n  }\r\n}\r\n",
     "static": true,
     "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/modules/account.js",
     "access": "public",
@@ -2058,10 +2058,9 @@
     "access": "public",
     "export": true,
     "importPath": "spaceinvoices-api-client/src/modules/account.js",
-    "importStyle": null,
+    "importStyle": "Account",
     "description": "",
     "lineNumber": 7,
-    "pseudoExport": true,
     "interface": false,
     "extends": [
       "BaseModule"
@@ -2276,29 +2275,9 @@
   },
   {
     "__docId__": 128,
-    "kind": "variable",
-    "name": "account",
-    "memberof": "src/modules/account.js",
-    "static": true,
-    "longname": "src/modules/account.js~account",
-    "access": "public",
-    "export": true,
-    "importPath": "spaceinvoices-api-client/src/modules/account.js",
-    "importStyle": "account",
-    "description": null,
-    "lineNumber": 58,
-    "undocument": true,
-    "type": {
-      "types": [
-        "src/modules/account.js~Account"
-      ]
-    }
-  },
-  {
-    "__docId__": 129,
     "kind": "file",
     "name": "src/modules/baseModule.js",
-    "content": "import { requestService, FilterBuilder } from '../services' // eslint-disable-line no-unused-vars\r\nexport default class BaseModule {\r\n  constructor () {\r\n    this.TransformModel = null\r\n  }\r\n\r\n  /**\r\n   *\r\n   * @param {string} endpoint\r\n   * @param {object|FilterBuilder} data\r\n   * @param {string} method\r\n   *\r\n   * @returns {Promise}\r\n   */\r\n  call (endpoint, data = null, method = 'GET') {\r\n    let filter = null\r\n    if (data !== null && data.constructor !== undefined && data.constructor.name === 'FilterBuilder') {\r\n      filter = data\r\n      data = null\r\n    }\r\n\r\n    return requestService.call(endpoint, method, data, filter).then((data) => {\r\n      if (this.transformModel !== null) {\r\n        return this._transform(data)\r\n      } else {\r\n        return data\r\n      }\r\n    })\r\n  }\r\n\r\n  _transform (data) {\r\n    if (Array.isArray(data)) {\r\n      return data.map((item) => {\r\n        return new this.TransformModel(item)\r\n      })\r\n    } else if (typeof data === 'object') {\r\n      return new this.TransformModel(data)\r\n    } else {\r\n      return undefined\r\n    }\r\n  }\r\n}\r\n",
+    "content": "import { requestService, FilterBuilder } from '../services' // eslint-disable-line no-unused-vars\r\nexport default class BaseModule {\r\n  constructor () {\r\n    this.TransformModel = null\r\n  }\r\n\r\n  /**\r\n   *\r\n   * @param {string} endpoint\r\n   * @param {object|FilterBuilder} data\r\n   * @param {string} method\r\n   * @param {boolean} autoTransform\r\n   *\r\n   * @returns {Promise}\r\n   */\r\n  call (endpoint, data = null, method = 'GET', autoTransform = true) {\r\n    let filter = null\r\n    if (data !== null && data.constructor !== undefined && data.constructor.name === 'FilterBuilder') {\r\n      filter = data\r\n      data = null\r\n    }\r\n\r\n    return requestService.call(endpoint, method, data, filter).then((data) => {\r\n      if (autoTransform && this.transformModel !== null) {\r\n        return this._transform(data)\r\n      } else {\r\n        return data\r\n      }\r\n    })\r\n  }\r\n\r\n  _transform (data) {\r\n    if (Array.isArray(data)) {\r\n      return data.map((item) => {\r\n        return new this.TransformModel(item)\r\n      })\r\n    } else if (typeof data === 'object') {\r\n      return new this.TransformModel(data)\r\n    } else {\r\n      return undefined\r\n    }\r\n  }\r\n}\r\n",
     "static": true,
     "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/modules/baseModule.js",
     "access": "public",
@@ -2306,7 +2285,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 130,
+    "__docId__": 129,
     "kind": "class",
     "name": "BaseModule",
     "memberof": "src/modules/baseModule.js",
@@ -2322,7 +2301,7 @@
     "interface": false
   },
   {
-    "__docId__": 131,
+    "__docId__": 130,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/modules/baseModule.js~BaseModule",
@@ -2336,7 +2315,7 @@
     "undocument": true
   },
   {
-    "__docId__": 132,
+    "__docId__": 131,
     "kind": "member",
     "name": "TransformModel",
     "memberof": "src/modules/baseModule.js~BaseModule",
@@ -2353,7 +2332,7 @@
     }
   },
   {
-    "__docId__": 133,
+    "__docId__": 132,
     "kind": "method",
     "name": "call",
     "memberof": "src/modules/baseModule.js~BaseModule",
@@ -2363,7 +2342,7 @@
     "longname": "src/modules/baseModule.js~BaseModule#call",
     "access": "public",
     "description": "",
-    "lineNumber": 15,
+    "lineNumber": 16,
     "unknown": [
       {
         "tagName": "@returns",
@@ -2401,6 +2380,16 @@
         "optional": false,
         "name": "method",
         "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "boolean"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "autoTransform",
+        "description": ""
       }
     ],
     "return": {
@@ -2413,7 +2402,7 @@
     }
   },
   {
-    "__docId__": 134,
+    "__docId__": 133,
     "kind": "method",
     "name": "_transform",
     "memberof": "src/modules/baseModule.js~BaseModule",
@@ -2423,7 +2412,7 @@
     "longname": "src/modules/baseModule.js~BaseModule#_transform",
     "access": "private",
     "description": null,
-    "lineNumber": 31,
+    "lineNumber": 32,
     "undocument": true,
     "params": [
       {
@@ -2440,10 +2429,10 @@
     }
   },
   {
-    "__docId__": 135,
+    "__docId__": 134,
     "kind": "file",
     "name": "src/modules/client.js",
-    "content": "import BaseModule from './baseModule'\r\nimport { MClient } from '../models'\r\n\r\n/**\r\n * @extends {BaseModule}\r\n */\r\nclass Client extends BaseModule {\r\n  constructor () {\r\n    super()\r\n    this.TransformModel = MClient\r\n  }\r\n\r\n  /**\r\n  *\r\n  * @returns {Promise<MClient[], ResponseError|ServerError>}\r\n  */\r\n  list (organizationId) {\r\n    return this.call(`/organizations/${organizationId}/clients`)\r\n  }\r\n\r\n  /**\r\n  * @param {string} organizationId\r\n  * @param {string} term\r\n  *\r\n  * @returns {Promise<MClient[], ResponseError|ServerError>}\r\n  */\r\n  search (organizationId, term) {\r\n    return this.call(`/organizations/${organizationId}/search-clients?term=${term}`)\r\n  }\r\n\r\n  /**\r\n  *\r\n  * @returns {Promise<MClient, APIError>}\r\n  */\r\n  get (clientId) {\r\n    return this.call(`/clients/${clientId}`)\r\n  }\r\n\r\n  /**\r\n  * @param {string} organizationId\r\n  * @param {object} data\r\n  *\r\n  * @returns {Promise<MClient, APIError>}\r\n  */\r\n  create (organizationId, data) {\r\n    return this.call(`/organizations/${organizationId}/clients`, data, 'POST')\r\n  }\r\n\r\n  /**\r\n  * @param {string} clientId\r\n  * @param {object} data\r\n  *\r\n  * @returns {Promise<MClient, APIError>}\r\n  */\r\n  update (clientId, data) {\r\n    return this.call(`/clients/${clientId}`, data, 'PUT')\r\n  }\r\n\r\n  /**\r\n  * @param {string} clientId\r\n  *\r\n  * @returns {Promise<MClient, APIError>}\r\n  */\r\n  delete (clientId) {\r\n    return this.call(`/clients/${clientId}`, 'DELETE')\r\n  }\r\n}\r\n\r\nexport default new Client()\r\n",
+    "content": "import BaseModule from './baseModule'\r\nimport { MClient } from '../models'\r\n\r\n/**\r\n * @extends {BaseModule}\r\n */\r\nexport default class Client extends BaseModule {\r\n  constructor () {\r\n    super()\r\n    this.TransformModel = MClient\r\n  }\r\n\r\n  /**\r\n  *\r\n  * @returns {Promise<MClient[], APIError>}\r\n  */\r\n  list (organizationId) {\r\n    return this.call(`/organizations/${organizationId}/clients`)\r\n  }\r\n\r\n  /**\r\n  * @param {string} organizationId\r\n  * @param {string} term\r\n  *\r\n  * @returns {Promise<MClient[], ResponseError|ServerError>}\r\n  */\r\n  search (organizationId, term) {\r\n    return this.call(`/organizations/${organizationId}/search-clients?term=${term}`)\r\n  }\r\n\r\n  /**\r\n  *\r\n  * @returns {Promise<MClient, APIError>}\r\n  */\r\n  get (clientId) {\r\n    return this.call(`/clients/${clientId}`)\r\n  }\r\n\r\n  /**\r\n  * @param {string} organizationId\r\n  * @param {object} data\r\n  *\r\n  * @returns {Promise<MClient, APIError>}\r\n  */\r\n  create (organizationId, data) {\r\n    return this.call(`/organizations/${organizationId}/clients`, data, 'POST')\r\n  }\r\n\r\n  /**\r\n  * @param {string} clientId\r\n  * @param {object} data\r\n  *\r\n  * @returns {Promise<MClient, APIError>}\r\n  */\r\n  update (clientId, data) {\r\n    return this.call(`/clients/${clientId}`, data, 'PUT')\r\n  }\r\n\r\n  /**\r\n  * @param {string} clientId\r\n  *\r\n  * @returns {Promise<MClient, APIError>}\r\n  */\r\n  delete (clientId) {\r\n    return this.call(`/clients/${clientId}`, 'DELETE')\r\n  }\r\n}\r\n",
     "static": true,
     "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/modules/client.js",
     "access": "public",
@@ -2451,7 +2440,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 136,
+    "__docId__": 135,
     "kind": "class",
     "name": "Client",
     "memberof": "src/modules/client.js",
@@ -2460,17 +2449,16 @@
     "access": "public",
     "export": true,
     "importPath": "spaceinvoices-api-client/src/modules/client.js",
-    "importStyle": null,
+    "importStyle": "Client",
     "description": "",
     "lineNumber": 7,
-    "pseudoExport": true,
     "interface": false,
     "extends": [
       "BaseModule"
     ]
   },
   {
-    "__docId__": 137,
+    "__docId__": 136,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/modules/client.js~Client",
@@ -2484,7 +2472,7 @@
     "undocument": true
   },
   {
-    "__docId__": 138,
+    "__docId__": 137,
     "kind": "member",
     "name": "TransformModel",
     "memberof": "src/modules/client.js~Client",
@@ -2501,7 +2489,7 @@
     }
   },
   {
-    "__docId__": 139,
+    "__docId__": 138,
     "kind": "method",
     "name": "list",
     "memberof": "src/modules/client.js~Client",
@@ -2515,13 +2503,13 @@
     "unknown": [
       {
         "tagName": "@returns",
-        "tagValue": "{Promise<MClient[], ResponseError|ServerError>}"
+        "tagValue": "{Promise<MClient[], APIError>}"
       }
     ],
     "return": {
       "nullable": null,
       "types": [
-        "Promise<MClient[], ResponseError|ServerError>"
+        "Promise<MClient[], APIError>"
       ],
       "spread": false,
       "description": ""
@@ -2536,7 +2524,7 @@
     ]
   },
   {
-    "__docId__": 140,
+    "__docId__": 139,
     "kind": "method",
     "name": "search",
     "memberof": "src/modules/client.js~Client",
@@ -2585,7 +2573,7 @@
     }
   },
   {
-    "__docId__": 141,
+    "__docId__": 140,
     "kind": "method",
     "name": "get",
     "memberof": "src/modules/client.js~Client",
@@ -2620,7 +2608,7 @@
     ]
   },
   {
-    "__docId__": 142,
+    "__docId__": 141,
     "kind": "method",
     "name": "create",
     "memberof": "src/modules/client.js~Client",
@@ -2669,7 +2657,7 @@
     }
   },
   {
-    "__docId__": 143,
+    "__docId__": 142,
     "kind": "method",
     "name": "update",
     "memberof": "src/modules/client.js~Client",
@@ -2718,7 +2706,7 @@
     }
   },
   {
-    "__docId__": 144,
+    "__docId__": 143,
     "kind": "method",
     "name": "delete",
     "memberof": "src/modules/client.js~Client",
@@ -2757,30 +2745,10 @@
     }
   },
   {
-    "__docId__": 145,
-    "kind": "variable",
-    "name": "client",
-    "memberof": "src/modules/client.js",
-    "static": true,
-    "longname": "src/modules/client.js~client",
-    "access": "public",
-    "export": true,
-    "importPath": "spaceinvoices-api-client/src/modules/client.js",
-    "importStyle": "client",
-    "description": null,
-    "lineNumber": 69,
-    "undocument": true,
-    "type": {
-      "types": [
-        "src/modules/client.js~Client"
-      ]
-    }
-  },
-  {
-    "__docId__": 146,
+    "__docId__": 144,
     "kind": "file",
     "name": "src/modules/company.js",
-    "content": "import BaseModule from './baseModule'\r\n\r\n/**\r\n * @extends {BaseModule}\r\n */\r\nclass Company extends BaseModule {\r\n  /**\r\n   *\r\n   * @returns {Promise<object[]>}\r\n   */\r\n  list (organizationId) {\r\n    return this.call(`/companies`)\r\n  }\r\n\r\n  /**\r\n   *\r\n   * @returns {Promise<object[]>}\r\n   */\r\n  search (term) {\r\n    return this.call(`/companies/search?term=${term}`)\r\n  }\r\n}\r\n\r\nexport default new Company()\r\n",
+    "content": "import BaseModule from './baseModule'\r\n\r\n/**\r\n * @extends {BaseModule}\r\n */\r\nexport default class Company extends BaseModule {\r\n  /**\r\n   *\r\n   * @returns {Promise<object[]>}\r\n   */\r\n  list (organizationId) {\r\n    return this.call(`/companies`)\r\n  }\r\n\r\n  /**\r\n   *\r\n   * @returns {Promise<object[]>}\r\n   */\r\n  search (term) {\r\n    return this.call(`/companies/search?term=${term}`)\r\n  }\r\n}\r\n",
     "static": true,
     "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/modules/company.js",
     "access": "public",
@@ -2788,7 +2756,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 147,
+    "__docId__": 145,
     "kind": "class",
     "name": "Company",
     "memberof": "src/modules/company.js",
@@ -2797,17 +2765,16 @@
     "access": "public",
     "export": true,
     "importPath": "spaceinvoices-api-client/src/modules/company.js",
-    "importStyle": null,
+    "importStyle": "Company",
     "description": "",
     "lineNumber": 6,
-    "pseudoExport": true,
     "interface": false,
     "extends": [
       "BaseModule"
     ]
   },
   {
-    "__docId__": 148,
+    "__docId__": 146,
     "kind": "method",
     "name": "list",
     "memberof": "src/modules/company.js~Company",
@@ -2842,7 +2809,7 @@
     ]
   },
   {
-    "__docId__": 149,
+    "__docId__": 147,
     "kind": "method",
     "name": "search",
     "memberof": "src/modules/company.js~Company",
@@ -2877,30 +2844,10 @@
     ]
   },
   {
-    "__docId__": 150,
-    "kind": "variable",
-    "name": "company",
-    "memberof": "src/modules/company.js",
-    "static": true,
-    "longname": "src/modules/company.js~company",
-    "access": "public",
-    "export": true,
-    "importPath": "spaceinvoices-api-client/src/modules/company.js",
-    "importStyle": "company",
-    "description": null,
-    "lineNumber": 24,
-    "undocument": true,
-    "type": {
-      "types": [
-        "src/modules/company.js~Company"
-      ]
-    }
-  },
-  {
-    "__docId__": 151,
+    "__docId__": 148,
     "kind": "file",
     "name": "src/modules/currency.js",
-    "content": "import BaseModule from './baseModule'\r\n\r\n/**\r\n * @extends {BaseModule}\r\n */\r\nclass Currency extends BaseModule {\r\n  /**\r\n   *\r\n   * @returns {Promise<Object[]>}\r\n   */\r\n  list () {\r\n    return this.call('/currencies')\r\n  }\r\n}\r\n\r\nexport default new Currency()\r\n",
+    "content": "import BaseModule from './baseModule'\r\n\r\n/**\r\n * @extends {BaseModule}\r\n */\r\nexport default class Currency extends BaseModule {\r\n  /**\r\n   *\r\n   * @returns {Promise<Object[]>}\r\n   */\r\n  list () {\r\n    return this.call('/currencies')\r\n  }\r\n}\r\n",
     "static": true,
     "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/modules/currency.js",
     "access": "public",
@@ -2908,7 +2855,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 152,
+    "__docId__": 149,
     "kind": "class",
     "name": "Currency",
     "memberof": "src/modules/currency.js",
@@ -2917,17 +2864,16 @@
     "access": "public",
     "export": true,
     "importPath": "spaceinvoices-api-client/src/modules/currency.js",
-    "importStyle": null,
+    "importStyle": "Currency",
     "description": "",
     "lineNumber": 6,
-    "pseudoExport": true,
     "interface": false,
     "extends": [
       "BaseModule"
     ]
   },
   {
-    "__docId__": 153,
+    "__docId__": 150,
     "kind": "method",
     "name": "list",
     "memberof": "src/modules/currency.js~Currency",
@@ -2955,30 +2901,10 @@
     "params": []
   },
   {
-    "__docId__": 154,
-    "kind": "variable",
-    "name": "currency",
-    "memberof": "src/modules/currency.js",
-    "static": true,
-    "longname": "src/modules/currency.js~currency",
-    "access": "public",
-    "export": true,
-    "importPath": "spaceinvoices-api-client/src/modules/currency.js",
-    "importStyle": "currency",
-    "description": null,
-    "lineNumber": 16,
-    "undocument": true,
-    "type": {
-      "types": [
-        "src/modules/currency.js~Currency"
-      ]
-    }
-  },
-  {
-    "__docId__": 155,
+    "__docId__": 151,
     "kind": "file",
     "name": "src/modules/document.js",
-    "content": "import BaseModule from './baseModule'\r\nimport { MDocument } from '../models'\r\n\r\nclass Document extends BaseModule {\r\n  constructor () {\r\n    super()\r\n    this.TransformModel = MDocument\r\n  }\r\n\r\n  /**\r\n   *\r\n   * @returns {Promise<MDocument[]>}\r\n   */\r\n  list (organizationId, transform = true) {\r\n    return this.call(`/organizations/${organizationId}/documents`)\r\n  }\r\n\r\n  /**\r\n  *\r\n  * @returns {Promise<MDocument>}\r\n  */\r\n  get (documentId) {\r\n    return this.call(`/documents/${documentId}`)\r\n  }\r\n\r\n  /**\r\n   * @param {string} organizationId\r\n   * @param {object} data\r\n   *\r\n   * @returns {Promise<MDocument>}\r\n   */\r\n  create (organizationId, data) {\r\n    return this.call(`/organizations/${organizationId}/documents`, data, 'POST')\r\n  }\r\n\r\n  /**\r\n   * @param {string} documentId\r\n   * @param {object} data\r\n   *\r\n   * @returns {Promise<MDocument>}\r\n   */\r\n  update (documentId, data) {\r\n    return this.call(`/documents/${documentId}`, data, 'PUT')\r\n  }\r\n\r\n  /**\r\n   * @param {string} documentId\r\n   *\r\n   * @returns {Promise<MDocument>}\r\n   */\r\n  delete (documentId) {\r\n    return this.call(`/documents/${documentId}`, null, 'DELETE')\r\n  }\r\n\r\n  /**\r\n   * @param {string} documentId\r\n   *\r\n   * @returns {Promise<MPayment>}\r\n   */\r\n  payments (documentId) {\r\n    return this.call(`/documents/${documentId}/payments`)\r\n  }\r\n}\r\n\r\nexport default new Document()\r\n",
+    "content": "import BaseModule from './baseModule'\r\nimport { MDocument } from '../models'\r\n\r\nexport default class Document extends BaseModule {\r\n  constructor () {\r\n    super()\r\n    this.TransformModel = MDocument\r\n  }\r\n\r\n  /**\r\n   *\r\n   * @returns {Promise<MDocument[]>}\r\n   */\r\n  list (organizationId, transform = true) {\r\n    return this.call(`/organizations/${organizationId}/documents`)\r\n  }\r\n\r\n  /**\r\n  *\r\n  * @returns {Promise<MDocument>}\r\n  */\r\n  get (documentId) {\r\n    return this.call(`/documents/${documentId}`)\r\n  }\r\n\r\n  /**\r\n   * @param {string} organizationId\r\n   * @param {object} data\r\n   *\r\n   * @returns {Promise<MDocument>}\r\n   */\r\n  create (organizationId, data) {\r\n    return this.call(`/organizations/${organizationId}/documents`, data, 'POST')\r\n  }\r\n\r\n  /**\r\n   * @param {string} documentId\r\n   * @param {object} data\r\n   *\r\n   * @returns {Promise<MDocument>}\r\n   */\r\n  update (documentId, data) {\r\n    return this.call(`/documents/${documentId}`, data, 'PUT')\r\n  }\r\n\r\n  /**\r\n   * @param {string} documentId\r\n   *\r\n   * @returns {Promise<MDocument>}\r\n   */\r\n  delete (documentId) {\r\n    return this.call(`/documents/${documentId}`, null, 'DELETE')\r\n  }\r\n\r\n  /**\r\n   * @param {string} documentId\r\n   *\r\n   * @returns {Promise<MPayment>}\r\n   */\r\n  payments (documentId) {\r\n    return this.call(`/documents/${documentId}/payments`)\r\n  }\r\n}\r\n",
     "static": true,
     "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/modules/document.js",
     "access": "public",
@@ -2986,7 +2912,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 156,
+    "__docId__": 152,
     "kind": "class",
     "name": "Document",
     "memberof": "src/modules/document.js",
@@ -2995,10 +2921,9 @@
     "access": "public",
     "export": true,
     "importPath": "spaceinvoices-api-client/src/modules/document.js",
-    "importStyle": null,
+    "importStyle": "Document",
     "description": null,
     "lineNumber": 4,
-    "pseudoExport": true,
     "undocument": true,
     "interface": false,
     "extends": [
@@ -3006,7 +2931,7 @@
     ]
   },
   {
-    "__docId__": 157,
+    "__docId__": 153,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/modules/document.js~Document",
@@ -3020,7 +2945,7 @@
     "undocument": true
   },
   {
-    "__docId__": 158,
+    "__docId__": 154,
     "kind": "member",
     "name": "TransformModel",
     "memberof": "src/modules/document.js~Document",
@@ -3037,7 +2962,7 @@
     }
   },
   {
-    "__docId__": 159,
+    "__docId__": 155,
     "kind": "method",
     "name": "list",
     "memberof": "src/modules/document.js~Document",
@@ -3081,7 +3006,7 @@
     ]
   },
   {
-    "__docId__": 160,
+    "__docId__": 156,
     "kind": "method",
     "name": "get",
     "memberof": "src/modules/document.js~Document",
@@ -3116,7 +3041,7 @@
     ]
   },
   {
-    "__docId__": 161,
+    "__docId__": 157,
     "kind": "method",
     "name": "create",
     "memberof": "src/modules/document.js~Document",
@@ -3165,7 +3090,7 @@
     }
   },
   {
-    "__docId__": 162,
+    "__docId__": 158,
     "kind": "method",
     "name": "update",
     "memberof": "src/modules/document.js~Document",
@@ -3214,7 +3139,7 @@
     }
   },
   {
-    "__docId__": 163,
+    "__docId__": 159,
     "kind": "method",
     "name": "delete",
     "memberof": "src/modules/document.js~Document",
@@ -3253,7 +3178,7 @@
     }
   },
   {
-    "__docId__": 164,
+    "__docId__": 160,
     "kind": "method",
     "name": "payments",
     "memberof": "src/modules/document.js~Document",
@@ -3292,18 +3217,109 @@
     }
   },
   {
-    "__docId__": 165,
-    "kind": "variable",
-    "name": "document",
-    "memberof": "src/modules/document.js",
+    "__docId__": 161,
+    "kind": "file",
+    "name": "src/modules/index.js",
+    "content": "import Account from './account'\r\nimport Client from './client'\r\nimport Company from './company'\r\nimport Currency from './currency'\r\nimport Document from './document'\r\nimport Item from './item'\r\nimport Organization from './organization'\r\nimport Payment from './payment'\r\nimport Recurrence from './recurrence'\r\nimport Tax from './tax'\r\n\r\n// export default {\r\n//   account: new Account(),\r\n//   client: new Client(),\r\n//   company: new Company(),\r\n//   currency: new Currency(),\r\n//   document: new Document(),\r\n//   item: new Item(),\r\n//   organization: new Organization(),\r\n//   payment: new Payment(),\r\n//   recurrence: new Recurrence(),\r\n//   tax: new Tax()\r\n// }\r\n\r\nexport const account = new Account()\r\nexport const client = new Client()\r\nexport const company = new Company()\r\nexport const currency = new Currency()\r\nexport const document = new Document()\r\nexport const item = new Item()\r\nexport const organization = new Organization()\r\nexport const payment = new Payment()\r\nexport const recurrence = new Recurrence()\r\nexport const tax = new Tax()\r\n",
     "static": true,
-    "longname": "src/modules/document.js~document",
+    "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/modules/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 162,
+    "kind": "variable",
+    "name": "account",
+    "memberof": "src/modules/index.js",
+    "static": true,
+    "longname": "src/modules/index.js~account",
     "access": "public",
     "export": true,
-    "importPath": "spaceinvoices-api-client/src/modules/document.js",
-    "importStyle": "document",
+    "importPath": "spaceinvoices-api-client/src/modules/index.js",
+    "importStyle": "{account}",
     "description": null,
-    "lineNumber": 65,
+    "lineNumber": 25,
+    "undocument": true,
+    "type": {
+      "types": [
+        "src/modules/account.js~Account"
+      ]
+    }
+  },
+  {
+    "__docId__": 163,
+    "kind": "variable",
+    "name": "client",
+    "memberof": "src/modules/index.js",
+    "static": true,
+    "longname": "src/modules/index.js~client",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/modules/index.js",
+    "importStyle": "{client}",
+    "description": null,
+    "lineNumber": 26,
+    "undocument": true,
+    "type": {
+      "types": [
+        "src/modules/client.js~Client"
+      ]
+    }
+  },
+  {
+    "__docId__": 164,
+    "kind": "variable",
+    "name": "company",
+    "memberof": "src/modules/index.js",
+    "static": true,
+    "longname": "src/modules/index.js~company",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/modules/index.js",
+    "importStyle": "{company}",
+    "description": null,
+    "lineNumber": 27,
+    "undocument": true,
+    "type": {
+      "types": [
+        "src/modules/company.js~Company"
+      ]
+    }
+  },
+  {
+    "__docId__": 165,
+    "kind": "variable",
+    "name": "currency",
+    "memberof": "src/modules/index.js",
+    "static": true,
+    "longname": "src/modules/index.js~currency",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/modules/index.js",
+    "importStyle": "{currency}",
+    "description": null,
+    "lineNumber": 28,
+    "undocument": true,
+    "type": {
+      "types": [
+        "src/modules/currency.js~Currency"
+      ]
+    }
+  },
+  {
+    "__docId__": 166,
+    "kind": "variable",
+    "name": "document",
+    "memberof": "src/modules/index.js",
+    "static": true,
+    "longname": "src/modules/index.js~document",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/modules/index.js",
+    "importStyle": "{document}",
+    "description": null,
+    "lineNumber": 29,
     "undocument": true,
     "type": {
       "types": [
@@ -3312,21 +3328,110 @@
     }
   },
   {
-    "__docId__": 166,
-    "kind": "file",
-    "name": "src/modules/index.js",
-    "content": "export { default as account } from './account'\r\nexport { default as client } from './client'\r\nexport { default as company } from './company'\r\nexport { default as currency } from './currency'\r\nexport { default as document } from './document'\r\nexport { default as item } from './item'\r\nexport { default as organization } from './organization'\r\nexport { default as payment } from './payment'\r\nexport { default as recurrence } from './recurrence'\r\nexport { default as tax } from './tax'\r\n",
+    "__docId__": 167,
+    "kind": "variable",
+    "name": "item",
+    "memberof": "src/modules/index.js",
     "static": true,
-    "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/modules/index.js",
+    "longname": "src/modules/index.js~item",
     "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/modules/index.js",
+    "importStyle": "{item}",
     "description": null,
-    "lineNumber": 1
+    "lineNumber": 30,
+    "undocument": true,
+    "type": {
+      "types": [
+        "src/modules/item.js~Item"
+      ]
+    }
   },
   {
-    "__docId__": 167,
+    "__docId__": 168,
+    "kind": "variable",
+    "name": "organization",
+    "memberof": "src/modules/index.js",
+    "static": true,
+    "longname": "src/modules/index.js~organization",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/modules/index.js",
+    "importStyle": "{organization}",
+    "description": null,
+    "lineNumber": 31,
+    "undocument": true,
+    "type": {
+      "types": [
+        "src/modules/organization.js~Organization"
+      ]
+    }
+  },
+  {
+    "__docId__": 169,
+    "kind": "variable",
+    "name": "payment",
+    "memberof": "src/modules/index.js",
+    "static": true,
+    "longname": "src/modules/index.js~payment",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/modules/index.js",
+    "importStyle": "{payment}",
+    "description": null,
+    "lineNumber": 32,
+    "undocument": true,
+    "type": {
+      "types": [
+        "src/modules/payment.js~Payment"
+      ]
+    }
+  },
+  {
+    "__docId__": 170,
+    "kind": "variable",
+    "name": "recurrence",
+    "memberof": "src/modules/index.js",
+    "static": true,
+    "longname": "src/modules/index.js~recurrence",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/modules/index.js",
+    "importStyle": "{recurrence}",
+    "description": null,
+    "lineNumber": 33,
+    "undocument": true,
+    "type": {
+      "types": [
+        "src/modules/recurrence.js~Recurrence"
+      ]
+    }
+  },
+  {
+    "__docId__": 171,
+    "kind": "variable",
+    "name": "tax",
+    "memberof": "src/modules/index.js",
+    "static": true,
+    "longname": "src/modules/index.js~tax",
+    "access": "public",
+    "export": true,
+    "importPath": "spaceinvoices-api-client/src/modules/index.js",
+    "importStyle": "{tax}",
+    "description": null,
+    "lineNumber": 34,
+    "undocument": true,
+    "type": {
+      "types": [
+        "src/modules/tax.js~Tax"
+      ]
+    }
+  },
+  {
+    "__docId__": 172,
     "kind": "file",
     "name": "src/modules/item.js",
-    "content": "import BaseModule from './baseModule'\r\nimport { MItem } from '../models'\r\n\r\nclass Item extends BaseModule {\r\n  constructor () {\r\n    super()\r\n    this.TransformModel = MItem\r\n  }\r\n\r\n  /**\r\n   *\r\n   * @returns {Promise<MItem[]>}\r\n   */\r\n  list (organizationId) {\r\n    return this.call(`/organizations/${organizationId}/items`)\r\n  }\r\n\r\n  /**\r\n   *\r\n   * @returns {Promise<MItem[]>}\r\n   */\r\n  search (organizationId, term) {\r\n    return this.call(`/organizations/${organizationId}/search-items?term=${term}`)\r\n  }\r\n\r\n  /**\r\n  *\r\n  * @returns {Promise<MItem>}\r\n  */\r\n  get (itemId) {\r\n    return this.call(`/items/${itemId}`)\r\n  }\r\n\r\n  /**\r\n   * @param {string} organizationId\r\n   * @param {object} data\r\n   *\r\n   * @returns {Promise<MItem>}\r\n   */\r\n  create (organizationId, data) {\r\n    return this.call(`/organizations/${organizationId}/items`, data, 'POST')\r\n  }\r\n\r\n  /**\r\n   * @param {string} itemId\r\n   * @param {object} data\r\n   *\r\n   * @returns {Promise<MItem>}\r\n   */\r\n  update (itemId, data) {\r\n    return this.call(`/items/${itemId}`, data, 'PUT')\r\n  }\r\n\r\n  /**\r\n   * @param {string} itemId\r\n   *\r\n   * @returns {Promise<MItem>}\r\n   */\r\n  delete (itemId) {\r\n    return this.call(`/items/${itemId}`, null, 'DELETE')\r\n  }\r\n}\r\n\r\nexport default new Item()\r\n",
+    "content": "import BaseModule from './baseModule'\r\nimport { MItem } from '../models'\r\n\r\nexport default class Item extends BaseModule {\r\n  constructor () {\r\n    super()\r\n    this.TransformModel = MItem\r\n  }\r\n\r\n  /**\r\n   *\r\n   * @returns {Promise<MItem[]>}\r\n   */\r\n  list (organizationId) {\r\n    return this.call(`/organizations/${organizationId}/items`)\r\n  }\r\n\r\n  /**\r\n   *\r\n   * @returns {Promise<MItem[]>}\r\n   */\r\n  search (organizationId, term) {\r\n    return this.call(`/organizations/${organizationId}/search-items?term=${term}`)\r\n  }\r\n\r\n  /**\r\n  *\r\n  * @returns {Promise<MItem>}\r\n  */\r\n  get (itemId) {\r\n    return this.call(`/items/${itemId}`)\r\n  }\r\n\r\n  /**\r\n   * @param {string} organizationId\r\n   * @param {object} data\r\n   *\r\n   * @returns {Promise<MItem>}\r\n   */\r\n  create (organizationId, data) {\r\n    return this.call(`/organizations/${organizationId}/items`, data, 'POST')\r\n  }\r\n\r\n  /**\r\n   * @param {string} itemId\r\n   * @param {object} data\r\n   *\r\n   * @returns {Promise<MItem>}\r\n   */\r\n  update (itemId, data) {\r\n    return this.call(`/items/${itemId}`, data, 'PUT')\r\n  }\r\n\r\n  /**\r\n   * @param {string} itemId\r\n   *\r\n   * @returns {Promise<MItem>}\r\n   */\r\n  delete (itemId) {\r\n    return this.call(`/items/${itemId}`, null, 'DELETE')\r\n  }\r\n}\r\n",
     "static": true,
     "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/modules/item.js",
     "access": "public",
@@ -3334,7 +3439,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 168,
+    "__docId__": 173,
     "kind": "class",
     "name": "Item",
     "memberof": "src/modules/item.js",
@@ -3343,10 +3448,9 @@
     "access": "public",
     "export": true,
     "importPath": "spaceinvoices-api-client/src/modules/item.js",
-    "importStyle": null,
+    "importStyle": "Item",
     "description": null,
     "lineNumber": 4,
-    "pseudoExport": true,
     "undocument": true,
     "interface": false,
     "extends": [
@@ -3354,7 +3458,7 @@
     ]
   },
   {
-    "__docId__": 169,
+    "__docId__": 174,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/modules/item.js~Item",
@@ -3368,7 +3472,7 @@
     "undocument": true
   },
   {
-    "__docId__": 170,
+    "__docId__": 175,
     "kind": "member",
     "name": "TransformModel",
     "memberof": "src/modules/item.js~Item",
@@ -3385,7 +3489,7 @@
     }
   },
   {
-    "__docId__": 171,
+    "__docId__": 176,
     "kind": "method",
     "name": "list",
     "memberof": "src/modules/item.js~Item",
@@ -3420,7 +3524,7 @@
     ]
   },
   {
-    "__docId__": 172,
+    "__docId__": 177,
     "kind": "method",
     "name": "search",
     "memberof": "src/modules/item.js~Item",
@@ -3461,7 +3565,7 @@
     ]
   },
   {
-    "__docId__": 173,
+    "__docId__": 178,
     "kind": "method",
     "name": "get",
     "memberof": "src/modules/item.js~Item",
@@ -3496,7 +3600,7 @@
     ]
   },
   {
-    "__docId__": 174,
+    "__docId__": 179,
     "kind": "method",
     "name": "create",
     "memberof": "src/modules/item.js~Item",
@@ -3545,7 +3649,7 @@
     }
   },
   {
-    "__docId__": 175,
+    "__docId__": 180,
     "kind": "method",
     "name": "update",
     "memberof": "src/modules/item.js~Item",
@@ -3594,7 +3698,7 @@
     }
   },
   {
-    "__docId__": 176,
+    "__docId__": 181,
     "kind": "method",
     "name": "delete",
     "memberof": "src/modules/item.js~Item",
@@ -3633,30 +3737,10 @@
     }
   },
   {
-    "__docId__": 177,
-    "kind": "variable",
-    "name": "item",
-    "memberof": "src/modules/item.js",
-    "static": true,
-    "longname": "src/modules/item.js~item",
-    "access": "public",
-    "export": true,
-    "importPath": "spaceinvoices-api-client/src/modules/item.js",
-    "importStyle": "item",
-    "description": null,
-    "lineNumber": 64,
-    "undocument": true,
-    "type": {
-      "types": [
-        "src/modules/item.js~Item"
-      ]
-    }
-  },
-  {
-    "__docId__": 178,
+    "__docId__": 182,
     "kind": "file",
     "name": "src/modules/organization.js",
-    "content": "import BaseModule from './baseModule'\r\nimport { MOrganization } from '../models'\r\nimport { FilterBuilder } from '../services' // eslint-disable-line no-unused-vars\r\n\r\nclass Organization extends BaseModule {\r\n  constructor () {\r\n    super()\r\n    this.TransformModel = MOrganization\r\n  }\r\n\r\n  /**\r\n   * @param {string} accountId\r\n   * @param {null|FilterBuilder} filter\r\n   *\r\n   * @returns {Promise<MOrganization[]>}\r\n   */\r\n  list (accountId, filter = null) {\r\n    return this.call(`/accounts/${accountId}/organizations`, filter)\r\n  }\r\n\r\n  /**\r\n  *\r\n  * @returns {Promise<MOrganization>}\r\n  */\r\n  get (organizationId) {\r\n    return this.call(`/organizations/${organizationId}`)\r\n  }\r\n\r\n  /**\r\n   * @param {string} accountId\r\n   * @param {object} data\r\n   *\r\n   * @returns {Promise<MOrganization>}\r\n   */\r\n  create (accountId, data) {\r\n    return this.call(`/accounts/${accountId}/organizations`, data, 'POST')\r\n  }\r\n\r\n  /**\r\n   * @param {string} organizationId\r\n   * @param {object} data\r\n   *\r\n   * @returns {Promise<MOrganization>}\r\n   */\r\n  update (organizationId, data) {\r\n    return this.call(`/organizations/${organizationId}`, data, 'PUT')\r\n  }\r\n\r\n  /**\r\n   * @param {string} organizationId\r\n   *\r\n   * @returns {Promise<MOrganization>}\r\n   */\r\n  delete (organizationId) {\r\n    return this.call(`/organizations/${organizationId}`, null, 'DELETE')\r\n  }\r\n}\r\n\r\nexport default new Organization()\r\n",
+    "content": "import BaseModule from './baseModule'\r\nimport { MOrganization } from '../models'\r\nimport { FilterBuilder } from '../services' // eslint-disable-line no-unused-vars\r\n\r\nexport default class Organization extends BaseModule {\r\n  constructor () {\r\n    super()\r\n    this.TransformModel = MOrganization\r\n  }\r\n\r\n  /**\r\n   * @param {string} accountId\r\n   * @param {null|FilterBuilder} filter\r\n   *\r\n   * @returns {Promise<MOrganization[]>}\r\n   */\r\n  list (accountId, filter = null) {\r\n    return this.call(`/accounts/${accountId}/organizations`, filter)\r\n  }\r\n\r\n  /**\r\n  *\r\n  * @returns {Promise<MOrganization>}\r\n  */\r\n  get (organizationId) {\r\n    return this.call(`/organizations/${organizationId}`)\r\n  }\r\n\r\n  /**\r\n   * @param {string} accountId\r\n   * @param {object} data\r\n   *\r\n   * @returns {Promise<MOrganization>}\r\n   */\r\n  create (accountId, data) {\r\n    return this.call(`/accounts/${accountId}/organizations`, data, 'POST')\r\n  }\r\n\r\n  /**\r\n   * @param {string} organizationId\r\n   * @param {object} data\r\n   *\r\n   * @returns {Promise<MOrganization>}\r\n   */\r\n  update (organizationId, data) {\r\n    return this.call(`/organizations/${organizationId}`, data, 'PUT')\r\n  }\r\n\r\n  /**\r\n   * @param {string} organizationId\r\n   *\r\n   * @returns {Promise<MOrganization>}\r\n   */\r\n  delete (organizationId) {\r\n    return this.call(`/organizations/${organizationId}`, null, 'DELETE')\r\n  }\r\n}\r\n",
     "static": true,
     "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/modules/organization.js",
     "access": "public",
@@ -3664,7 +3748,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 179,
+    "__docId__": 183,
     "kind": "class",
     "name": "Organization",
     "memberof": "src/modules/organization.js",
@@ -3673,10 +3757,9 @@
     "access": "public",
     "export": true,
     "importPath": "spaceinvoices-api-client/src/modules/organization.js",
-    "importStyle": null,
+    "importStyle": "Organization",
     "description": null,
     "lineNumber": 5,
-    "pseudoExport": true,
     "undocument": true,
     "interface": false,
     "extends": [
@@ -3684,7 +3767,7 @@
     ]
   },
   {
-    "__docId__": 180,
+    "__docId__": 184,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/modules/organization.js~Organization",
@@ -3698,7 +3781,7 @@
     "undocument": true
   },
   {
-    "__docId__": 181,
+    "__docId__": 185,
     "kind": "member",
     "name": "TransformModel",
     "memberof": "src/modules/organization.js~Organization",
@@ -3715,7 +3798,7 @@
     }
   },
   {
-    "__docId__": 182,
+    "__docId__": 186,
     "kind": "method",
     "name": "list",
     "memberof": "src/modules/organization.js~Organization",
@@ -3765,7 +3848,7 @@
     }
   },
   {
-    "__docId__": 183,
+    "__docId__": 187,
     "kind": "method",
     "name": "get",
     "memberof": "src/modules/organization.js~Organization",
@@ -3800,7 +3883,7 @@
     ]
   },
   {
-    "__docId__": 184,
+    "__docId__": 188,
     "kind": "method",
     "name": "create",
     "memberof": "src/modules/organization.js~Organization",
@@ -3849,7 +3932,7 @@
     }
   },
   {
-    "__docId__": 185,
+    "__docId__": 189,
     "kind": "method",
     "name": "update",
     "memberof": "src/modules/organization.js~Organization",
@@ -3898,7 +3981,7 @@
     }
   },
   {
-    "__docId__": 186,
+    "__docId__": 190,
     "kind": "method",
     "name": "delete",
     "memberof": "src/modules/organization.js~Organization",
@@ -3937,30 +4020,10 @@
     }
   },
   {
-    "__docId__": 187,
-    "kind": "variable",
-    "name": "organization",
-    "memberof": "src/modules/organization.js",
-    "static": true,
-    "longname": "src/modules/organization.js~organization",
-    "access": "public",
-    "export": true,
-    "importPath": "spaceinvoices-api-client/src/modules/organization.js",
-    "importStyle": "organization",
-    "description": null,
-    "lineNumber": 59,
-    "undocument": true,
-    "type": {
-      "types": [
-        "src/modules/organization.js~Organization"
-      ]
-    }
-  },
-  {
-    "__docId__": 188,
+    "__docId__": 191,
     "kind": "file",
     "name": "src/modules/payment.js",
-    "content": "import BaseModule from './baseModule'\r\nimport { MPayment } from '../models'\r\n\r\nclass Payment extends BaseModule {\r\n  constructor () {\r\n    super()\r\n    this.TransformModel = MPayment\r\n  }\r\n\r\n  /**\r\n  * @param {string} organizationId\r\n  *\r\n  * @returns {Promise<MPayment[]>}\r\n  */\r\n  organizationList (organizationId) {\r\n    return this.call(`/organizations/${organizationId}/payments`)\r\n  }\r\n\r\n  /**\r\n  * @param {string} documentId\r\n  *\r\n  * @returns {Promise<MPayment[]>}\r\n  */\r\n  documentList (documentId) {\r\n    return this.call(`/documents/${documentId}/payments`)\r\n  }\r\n\r\n  /**\r\n   * @param {string} documentId\r\n   * @param {object} data\r\n   *\r\n   * @returns {Promise<MPayment>}\r\n   */\r\n  create (documentId, data) {\r\n    return this.call(`/documents/${documentId}/payments`, data, 'POST')\r\n  }\r\n\r\n  /**\r\n   * @param {string} paymentId\r\n   * @param {object} data\r\n   *\r\n   * @returns {Promise<MPayment>}\r\n   */\r\n  update (paymentId, data) {\r\n    return this.call(`/payments/${paymentId}`, data, 'PUT')\r\n  }\r\n\r\n  /**\r\n   * @param {string} paymentId\r\n   *\r\n   * @returns {Promise<MPayment>}\r\n   */\r\n  delete (paymentId) {\r\n    return this.call(`/payments/${paymentId}`, null, 'DELETE')\r\n  }\r\n}\r\n\r\nexport default new Payment()\r\n",
+    "content": "import BaseModule from './baseModule'\r\nimport { MPayment } from '../models'\r\n\r\nexport default class Payment extends BaseModule {\r\n  constructor () {\r\n    super()\r\n    this.TransformModel = MPayment\r\n  }\r\n\r\n  /**\r\n  * @param {string} organizationId\r\n  *\r\n  * @returns {Promise<MPayment[]>}\r\n  */\r\n  organizationList (organizationId) {\r\n    return this.call(`/organizations/${organizationId}/payments`)\r\n  }\r\n\r\n  /**\r\n  * @param {string} documentId\r\n  *\r\n  * @returns {Promise<MPayment[]>}\r\n  */\r\n  documentList (documentId) {\r\n    return this.call(`/documents/${documentId}/payments`)\r\n  }\r\n\r\n  /**\r\n   * @param {string} documentId\r\n   * @param {object} data\r\n   *\r\n   * @returns {Promise<MPayment>}\r\n   */\r\n  create (documentId, data) {\r\n    return this.call(`/documents/${documentId}/payments`, data, 'POST')\r\n  }\r\n\r\n  /**\r\n   * @param {string} paymentId\r\n   * @param {object} data\r\n   *\r\n   * @returns {Promise<MPayment>}\r\n   */\r\n  update (paymentId, data) {\r\n    return this.call(`/payments/${paymentId}`, data, 'PUT')\r\n  }\r\n\r\n  /**\r\n   * @param {string} paymentId\r\n   *\r\n   * @returns {Promise<MPayment>}\r\n   */\r\n  delete (paymentId) {\r\n    return this.call(`/payments/${paymentId}`, null, 'DELETE')\r\n  }\r\n}\r\n",
     "static": true,
     "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/modules/payment.js",
     "access": "public",
@@ -3968,7 +4031,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 189,
+    "__docId__": 192,
     "kind": "class",
     "name": "Payment",
     "memberof": "src/modules/payment.js",
@@ -3977,10 +4040,9 @@
     "access": "public",
     "export": true,
     "importPath": "spaceinvoices-api-client/src/modules/payment.js",
-    "importStyle": null,
+    "importStyle": "Payment",
     "description": null,
     "lineNumber": 4,
-    "pseudoExport": true,
     "undocument": true,
     "interface": false,
     "extends": [
@@ -3988,7 +4050,7 @@
     ]
   },
   {
-    "__docId__": 190,
+    "__docId__": 193,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/modules/payment.js~Payment",
@@ -4002,7 +4064,7 @@
     "undocument": true
   },
   {
-    "__docId__": 191,
+    "__docId__": 194,
     "kind": "member",
     "name": "TransformModel",
     "memberof": "src/modules/payment.js~Payment",
@@ -4019,7 +4081,7 @@
     }
   },
   {
-    "__docId__": 192,
+    "__docId__": 195,
     "kind": "method",
     "name": "organizationList",
     "memberof": "src/modules/payment.js~Payment",
@@ -4058,7 +4120,7 @@
     }
   },
   {
-    "__docId__": 193,
+    "__docId__": 196,
     "kind": "method",
     "name": "documentList",
     "memberof": "src/modules/payment.js~Payment",
@@ -4097,7 +4159,7 @@
     }
   },
   {
-    "__docId__": 194,
+    "__docId__": 197,
     "kind": "method",
     "name": "create",
     "memberof": "src/modules/payment.js~Payment",
@@ -4146,7 +4208,7 @@
     }
   },
   {
-    "__docId__": 195,
+    "__docId__": 198,
     "kind": "method",
     "name": "update",
     "memberof": "src/modules/payment.js~Payment",
@@ -4195,7 +4257,7 @@
     }
   },
   {
-    "__docId__": 196,
+    "__docId__": 199,
     "kind": "method",
     "name": "delete",
     "memberof": "src/modules/payment.js~Payment",
@@ -4234,30 +4296,10 @@
     }
   },
   {
-    "__docId__": 197,
-    "kind": "variable",
-    "name": "payment",
-    "memberof": "src/modules/payment.js",
-    "static": true,
-    "longname": "src/modules/payment.js~payment",
-    "access": "public",
-    "export": true,
-    "importPath": "spaceinvoices-api-client/src/modules/payment.js",
-    "importStyle": "payment",
-    "description": null,
-    "lineNumber": 58,
-    "undocument": true,
-    "type": {
-      "types": [
-        "src/modules/payment.js~Payment"
-      ]
-    }
-  },
-  {
-    "__docId__": 198,
+    "__docId__": 200,
     "kind": "file",
     "name": "src/modules/recurrence.js",
-    "content": "import BaseModule from './baseModule'\r\nimport { MRecurrence } from '../models'\r\n\r\nclass Recurrence extends BaseModule {\r\n  constructor () {\r\n    super()\r\n    this.TransformModel = MRecurrence\r\n  }\r\n\r\n  /**\r\n  * @param {string} organizationId\r\n  *\r\n  * @returns {Promise<MRecurrence[]>}\r\n  */\r\n  listFromOrganization (organizationId) {\r\n    return this.call(`/organizations/${organizationId}/recurrences`)\r\n  }\r\n\r\n  /**\r\n  * @param {string} documentId\r\n  *\r\n  * @returns {Promise<MRecurrence[]>}\r\n  */\r\n  listFromDocument (documentId) {\r\n    return this.call(`/documents/${documentId}/recurrences`)\r\n  }\r\n\r\n  /**\r\n   * @param {string} documentId\r\n   * @param {object} data\r\n   *\r\n   * @returns {Promise<MRecurrence>}\r\n   */\r\n  create (documentId, data) {\r\n    return this.call(`/documents/${documentId}/recurrences`, data, 'POST')\r\n  }\r\n\r\n  /**\r\n   * @param {string} reccurenceId\r\n   *\r\n   * @returns {Promise<MRecurrence>}\r\n   */\r\n  delete (reccurenceId) {\r\n    return this.call(`/recurrences/${reccurenceId}`, null, 'DELETE')\r\n  }\r\n}\r\n\r\nexport default new Recurrence()\r\n",
+    "content": "import BaseModule from './baseModule'\r\nimport { MRecurrence } from '../models'\r\n\r\nexport default class Recurrence extends BaseModule {\r\n  constructor () {\r\n    super()\r\n    this.TransformModel = MRecurrence\r\n  }\r\n\r\n  /**\r\n  * @param {string} organizationId\r\n  *\r\n  * @returns {Promise<MRecurrence[]>}\r\n  */\r\n  listFromOrganization (organizationId) {\r\n    return this.call(`/organizations/${organizationId}/recurrences`)\r\n  }\r\n\r\n  /**\r\n  * @param {string} documentId\r\n  *\r\n  * @returns {Promise<MRecurrence[]>}\r\n  */\r\n  listFromDocument (documentId) {\r\n    return this.call(`/documents/${documentId}/recurrences`)\r\n  }\r\n\r\n  /**\r\n   * @param {string} documentId\r\n   * @param {object} data\r\n   *\r\n   * @returns {Promise<MRecurrence>}\r\n   */\r\n  create (documentId, data) {\r\n    return this.call(`/documents/${documentId}/recurrences`, data, 'POST')\r\n  }\r\n\r\n  /**\r\n   * @param {string} reccurenceId\r\n   *\r\n   * @returns {Promise<MRecurrence>}\r\n   */\r\n  delete (reccurenceId) {\r\n    return this.call(`/recurrences/${reccurenceId}`, null, 'DELETE')\r\n  }\r\n}\r\n",
     "static": true,
     "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/modules/recurrence.js",
     "access": "public",
@@ -4265,7 +4307,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 199,
+    "__docId__": 201,
     "kind": "class",
     "name": "Recurrence",
     "memberof": "src/modules/recurrence.js",
@@ -4274,10 +4316,9 @@
     "access": "public",
     "export": true,
     "importPath": "spaceinvoices-api-client/src/modules/recurrence.js",
-    "importStyle": null,
+    "importStyle": "Recurrence",
     "description": null,
     "lineNumber": 4,
-    "pseudoExport": true,
     "undocument": true,
     "interface": false,
     "extends": [
@@ -4285,7 +4326,7 @@
     ]
   },
   {
-    "__docId__": 200,
+    "__docId__": 202,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/modules/recurrence.js~Recurrence",
@@ -4299,7 +4340,7 @@
     "undocument": true
   },
   {
-    "__docId__": 201,
+    "__docId__": 203,
     "kind": "member",
     "name": "TransformModel",
     "memberof": "src/modules/recurrence.js~Recurrence",
@@ -4316,7 +4357,7 @@
     }
   },
   {
-    "__docId__": 202,
+    "__docId__": 204,
     "kind": "method",
     "name": "listFromOrganization",
     "memberof": "src/modules/recurrence.js~Recurrence",
@@ -4355,7 +4396,7 @@
     }
   },
   {
-    "__docId__": 203,
+    "__docId__": 205,
     "kind": "method",
     "name": "listFromDocument",
     "memberof": "src/modules/recurrence.js~Recurrence",
@@ -4394,7 +4435,7 @@
     }
   },
   {
-    "__docId__": 204,
+    "__docId__": 206,
     "kind": "method",
     "name": "create",
     "memberof": "src/modules/recurrence.js~Recurrence",
@@ -4443,7 +4484,7 @@
     }
   },
   {
-    "__docId__": 205,
+    "__docId__": 207,
     "kind": "method",
     "name": "delete",
     "memberof": "src/modules/recurrence.js~Recurrence",
@@ -4482,30 +4523,10 @@
     }
   },
   {
-    "__docId__": 206,
-    "kind": "variable",
-    "name": "recurrence",
-    "memberof": "src/modules/recurrence.js",
-    "static": true,
-    "longname": "src/modules/recurrence.js~recurrence",
-    "access": "public",
-    "export": true,
-    "importPath": "spaceinvoices-api-client/src/modules/recurrence.js",
-    "importStyle": "recurrence",
-    "description": null,
-    "lineNumber": 48,
-    "undocument": true,
-    "type": {
-      "types": [
-        "src/modules/recurrence.js~Recurrence"
-      ]
-    }
-  },
-  {
-    "__docId__": 207,
+    "__docId__": 208,
     "kind": "file",
     "name": "src/modules/tax.js",
-    "content": "import BaseModule from './baseModule'\r\nimport { MTax } from '../models'\r\n\r\nclass Tax extends BaseModule {\r\n  constructor () {\r\n    super()\r\n    this.transformModel = MTax\r\n  }\r\n\r\n  /**\r\n  * @param {string} organizationId\r\n  *\r\n  * @returns {Promise<MTax[]>}\r\n  */\r\n  list (organizationId) {\r\n    return this.call(`/organizations/${organizationId}/taxes`)\r\n  }\r\n\r\n  /**\r\n   * @param {string} organizationId\r\n   * @param {object} data\r\n   *\r\n   * @returns {Promise<MTax>}\r\n   */\r\n  create (organizationId, data) {\r\n    return this.call(`/organizations/${organizationId}/taxes`, data, 'POST')\r\n  }\r\n\r\n  /**\r\n   * @param {string} taxId\r\n   * @param {object} data\r\n   *\r\n   * @returns {Promise<object>}\r\n   */\r\n  addRate (taxId, data) {\r\n    return this.call(`/taxes/${taxId}/taxRates`, data, 'POST')\r\n  }\r\n\r\n  /**\r\n   * @param {string} taxId\r\n   * @param {object} data\r\n   *\r\n   * @returns {Promise<MTax>}\r\n   */\r\n  update (taxId, data) {\r\n    return this.call(`/taxes/${taxId}`, data, 'PUT')\r\n  }\r\n\r\n  /**\r\n   * @param {string} taxId\r\n   *\r\n   * @returns {Promise<MTax>}\r\n   */\r\n  delete (taxId) {\r\n    return this.call(`/taxes/${taxId}`, null, 'DELETE')\r\n  }\r\n}\r\n\r\nexport default new Tax()\r\n",
+    "content": "import BaseModule from './baseModule'\r\nimport { MTax } from '../models'\r\n\r\nexport default class Tax extends BaseModule {\r\n  constructor () {\r\n    super()\r\n    this.transformModel = MTax\r\n  }\r\n\r\n  /**\r\n  * @param {string} organizationId\r\n  *\r\n  * @returns {Promise<MTax[]>}\r\n  */\r\n  list (organizationId) {\r\n    return this.call(`/organizations/${organizationId}/taxes`)\r\n  }\r\n\r\n  /**\r\n   * @param {string} organizationId\r\n   * @param {object} data\r\n   *\r\n   * @returns {Promise<MTax>}\r\n   */\r\n  create (organizationId, data) {\r\n    return this.call(`/organizations/${organizationId}/taxes`, data, 'POST')\r\n  }\r\n\r\n  /**\r\n   * @param {string} taxId\r\n   * @param {object} data\r\n   *\r\n   * @returns {Promise<object>}\r\n   */\r\n  addRate (taxId, data) {\r\n    return this.call(`/taxes/${taxId}/taxRates`, data, 'POST')\r\n  }\r\n\r\n  /**\r\n   * @param {string} taxId\r\n   * @param {object} data\r\n   *\r\n   * @returns {Promise<MTax>}\r\n   */\r\n  update (taxId, data) {\r\n    return this.call(`/taxes/${taxId}`, data, 'PUT')\r\n  }\r\n\r\n  /**\r\n   * @param {string} taxId\r\n   *\r\n   * @returns {Promise<MTax>}\r\n   */\r\n  delete (taxId) {\r\n    return this.call(`/taxes/${taxId}`, null, 'DELETE')\r\n  }\r\n}\r\n",
     "static": true,
     "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/modules/tax.js",
     "access": "public",
@@ -4513,7 +4534,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 208,
+    "__docId__": 209,
     "kind": "class",
     "name": "Tax",
     "memberof": "src/modules/tax.js",
@@ -4522,10 +4543,9 @@
     "access": "public",
     "export": true,
     "importPath": "spaceinvoices-api-client/src/modules/tax.js",
-    "importStyle": null,
+    "importStyle": "Tax",
     "description": null,
     "lineNumber": 4,
-    "pseudoExport": true,
     "undocument": true,
     "interface": false,
     "extends": [
@@ -4533,7 +4553,7 @@
     ]
   },
   {
-    "__docId__": 209,
+    "__docId__": 210,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/modules/tax.js~Tax",
@@ -4547,7 +4567,7 @@
     "undocument": true
   },
   {
-    "__docId__": 210,
+    "__docId__": 211,
     "kind": "member",
     "name": "transformModel",
     "memberof": "src/modules/tax.js~Tax",
@@ -4564,7 +4584,7 @@
     }
   },
   {
-    "__docId__": 211,
+    "__docId__": 212,
     "kind": "method",
     "name": "list",
     "memberof": "src/modules/tax.js~Tax",
@@ -4603,7 +4623,7 @@
     }
   },
   {
-    "__docId__": 212,
+    "__docId__": 213,
     "kind": "method",
     "name": "create",
     "memberof": "src/modules/tax.js~Tax",
@@ -4652,7 +4672,7 @@
     }
   },
   {
-    "__docId__": 213,
+    "__docId__": 214,
     "kind": "method",
     "name": "addRate",
     "memberof": "src/modules/tax.js~Tax",
@@ -4701,7 +4721,7 @@
     }
   },
   {
-    "__docId__": 214,
+    "__docId__": 215,
     "kind": "method",
     "name": "update",
     "memberof": "src/modules/tax.js~Tax",
@@ -4750,7 +4770,7 @@
     }
   },
   {
-    "__docId__": 215,
+    "__docId__": 216,
     "kind": "method",
     "name": "delete",
     "memberof": "src/modules/tax.js~Tax",
@@ -4789,30 +4809,10 @@
     }
   },
   {
-    "__docId__": 216,
-    "kind": "variable",
-    "name": "tax",
-    "memberof": "src/modules/tax.js",
-    "static": true,
-    "longname": "src/modules/tax.js~tax",
-    "access": "public",
-    "export": true,
-    "importPath": "spaceinvoices-api-client/src/modules/tax.js",
-    "importStyle": "tax",
-    "description": null,
-    "lineNumber": 59,
-    "undocument": true,
-    "type": {
-      "types": [
-        "src/modules/tax.js~Tax"
-      ]
-    }
-  },
-  {
     "__docId__": 217,
     "kind": "file",
     "name": "src/services/filterBuilder.js",
-    "content": "import ParamBuilder from './paramBuilder'\nimport URI from 'urijs'\n\nexport default class FilterBuilder {\n  constructor () {\n    this._param = new ParamBuilder(this)\n    this.reset()\n  }\n\n  static new () {\n    return new this()\n  }\n\n  reset () {\n    this._where = {}\n    this._include = null\n    this._fields = null\n    this._limit = null\n    this._order = null\n    this._skip = null\n    this._deleted = null\n  }\n\n  /**\n   * Where query filter\n   * Accepts operators, see [Where operators](http://docs.spaceinvoices.com/?shell#where-operators) section for details.\n   * @param {*} fields\n   */\n  where (...fields) {\n    fields.forEach(field => {\n      this._where[field] = null\n    })\n    return this._param\n  }\n\n  /**\n   * Logical AND operator\n   * @param {string} fields\n   */\n  and (...fields) {\n    this._operator('and', fields)\n    return this._param\n  }\n\n  /**\n   * Logical OR operator\n   * @param {string} fields\n   */\n  or (...fields) {\n    this._operator('or', fields)\n    return this._param\n  }\n\n  _operator (operation, fields) {\n    if (this._where[operation] === undefined) {\n      let tmpWhere = Object.assign({}, this._where)\n      this._where = {}\n      this._where[operation] = [tmpWhere]\n    }\n    fields.forEach(field => {\n      let tmpWhere = {}\n      tmpWhere[field] = null\n      this._where[operation].push(tmpWhere)\n    })\n  }\n\n  /**\n   * Used to include related models\n   * @param {*} model\n   */\n  include (model) {\n    this._include = model\n    return this\n  }\n\n  /**\n   * Include or exclude certain fields\n   * @param {*} fields\n   */\n  fields (...fields) {\n    this._fields = {}\n    fields.forEach(field => {\n      this._fields[field] = true\n    })\n    return this\n  }\n\n  /**\n   * Limit amount of data returned\n   * @param {number} limit\n   */\n  limit (limit) {\n    this._limit = limit\n    return this\n  }\n\n  /**\n   * Order results by property\n   * @param {string} field\n   * @param {string} sort ASC or DESC\n   */\n  order (field, sort = 'ASC') {\n    this._order = { field, sort }\n    return this\n  }\n\n  /**\n   * Number of results to skip\n   * @param {number} skip\n   */\n  skip (skip) {\n    this._skip = skip\n    return this\n  }\n\n  /**\n   * Also return deleted records. Only available on models that implement soft delete\n   */\n  deleted () {\n    this._deleted = true\n    return this\n  }\n\n  buildObject () {\n    let filter = {}\n    if (this._where) {\n      filter.where = this._where\n    }\n    if (this._include) {\n      filter.include = this._include\n    }\n    if (this._fields) {\n      filter.fields = this._fields\n    }\n    if (this._limit) {\n      filter.limit = this._limit\n    }\n    if (this._order) {\n      filter.order = this._order\n    }\n    if (this._skip) {\n      filter.skip = this._skip\n    }\n    if (this._deleted) {\n      filter.deleted = this._deleted\n    }\n\n    return filter\n  }\n\n  buildUri (endpoint = '', decode = false) {\n    let filter = { filter: this.buildObject() }\n\n    let filterFlatten = this._flattenFilter(filter)\n    let uriFilter = URI.buildQuery(filterFlatten)\n    let uri = URI(endpoint + (URI(endpoint).search() ? '&' : '?') + uriFilter)\n\n    if (decode) {\n      return URI.decode(uri.toString())\n    } else {\n      return uri.toString()\n    }\n  }\n\n  _flattenFilter (ob, lvl = 0) {\n    var toReturn = {}\n    for (var i in ob) {\n      if (!ob.hasOwnProperty(i)) continue\n\n      if ((typeof ob[i]) === 'object') {\n        var flatObject = this._flattenFilter(ob[i], ++lvl)\n        for (var x in flatObject) {\n          if (!flatObject.hasOwnProperty(x)) continue\n\n          if (lvl !== 1) {\n            toReturn[`[${i}]${x}`] = flatObject[x]\n          } else {\n            toReturn[`${i}${x}`] = flatObject[x]\n          }\n        }\n      } else {\n        toReturn[`[${i}]`] = ob[i]\n      }\n    }\n    return toReturn\n  }\n}\n",
+    "content": "import ParamBuilder from './paramBuilder'\nimport URI from 'urijs'\n\nexport default class FilterBuilder {\n  constructor () {\n    this._param = new ParamBuilder(this)\n    this.reset()\n  }\n\n  reset () {\n    this._where = {}\n    this._include = null\n    this._fields = null\n    this._limit = null\n    this._order = null\n    this._skip = null\n    this._deleted = null\n  }\n\n  /**\n   * Where query filter\n   * Accepts operators, see [Where operators](http://docs.spaceinvoices.com/?shell#where-operators) section for details.\n   * @param {*} fields\n   */\n  where (...fields) {\n    fields.forEach(field => {\n      this._where[field] = null\n    })\n    return this._param\n  }\n\n  /**\n   * Logical AND operator\n   * @param {string} fields\n   */\n  and (...fields) {\n    this._operator('and', fields)\n    return this._param\n  }\n\n  /**\n   * Logical OR operator\n   * @param {string} fields\n   */\n  or (...fields) {\n    this._operator('or', fields)\n    return this._param\n  }\n\n  _operator (operation, fields) {\n    if (this._where[operation] === undefined) {\n      let tmpWhere = Object.assign({}, this._where)\n      this._where = {}\n      this._where[operation] = [tmpWhere]\n    }\n    fields.forEach(field => {\n      let tmpWhere = {}\n      tmpWhere[field] = null\n      this._where[operation].push(tmpWhere)\n    })\n  }\n\n  /**\n   * Used to include related models\n   * @param {*} model\n   */\n  include (model) {\n    this._include = model\n    return this\n  }\n\n  /**\n   * Include or exclude certain fields\n   * @param {*} fields\n   */\n  fields (...fields) {\n    this._fields = {}\n    fields.forEach(field => {\n      this._fields[field] = true\n    })\n    return this\n  }\n\n  /**\n   * Limit amount of data returned\n   * @param {number} limit\n   */\n  limit (limit) {\n    this._limit = limit\n    return this\n  }\n\n  /**\n   * Order results by property\n   * @param {string} field\n   * @param {string} sort ASC or DESC\n   */\n  order (field, sort = 'ASC') {\n    this._order = { field, sort }\n    return this\n  }\n\n  /**\n   * Number of results to skip\n   * @param {number} skip\n   */\n  skip (skip) {\n    this._skip = skip\n    return this\n  }\n\n  /**\n   * Also return deleted records. Only available on models that implement soft delete\n   */\n  deleted () {\n    this._deleted = true\n    return this\n  }\n\n  buildObject () {\n    let filter = {}\n    if (this._where) {\n      filter.where = this._where\n    }\n    if (this._include) {\n      filter.include = this._include\n    }\n    if (this._fields) {\n      filter.fields = this._fields\n    }\n    if (this._limit) {\n      filter.limit = this._limit\n    }\n    if (this._order) {\n      filter.order = this._order\n    }\n    if (this._skip) {\n      filter.skip = this._skip\n    }\n    if (this._deleted) {\n      filter.deleted = this._deleted\n    }\n\n    return filter\n  }\n\n  buildUri (endpoint = '', decode = false) {\n    let filter = { filter: this.buildObject() }\n\n    let filterFlatten = this._flattenFilter(filter)\n    let uriFilter = URI.buildQuery(filterFlatten)\n    let uri = URI(endpoint + (URI(endpoint).search() ? '&' : '?') + uriFilter)\n\n    if (decode) {\n      return URI.decode(uri.toString())\n    } else {\n      return uri.toString()\n    }\n  }\n\n  _flattenFilter (ob, lvl = 0) {\n    let toReturn = {}\n    for (let i in ob) {\n      if (!ob.hasOwnProperty(i)) continue\n\n      if ((typeof ob[i]) === 'object') {\n        let flatObject = this._flattenFilter(ob[i], ++lvl)\n        for (let x in flatObject) {\n          if (!flatObject.hasOwnProperty(x)) continue\n\n          if (lvl !== 1) {\n            toReturn[`[${i}]${x}`] = flatObject[x]\n          } else {\n            toReturn[`${i}${x}`] = flatObject[x]\n          }\n        }\n      } else {\n        toReturn[`[${i}]`] = ob[i]\n      }\n    }\n    return toReturn\n  }\n}\n",
     "static": true,
     "longname": "C:/Users/Ronzy/Development/personal/spaceinvoices-api-client/src/services/filterBuilder.js",
     "access": "public",
@@ -4869,26 +4869,6 @@
   {
     "__docId__": 221,
     "kind": "method",
-    "name": "new",
-    "memberof": "src/services/filterBuilder.js~FilterBuilder",
-    "generator": false,
-    "async": false,
-    "static": true,
-    "longname": "src/services/filterBuilder.js~FilterBuilder.new",
-    "access": "public",
-    "description": null,
-    "lineNumber": 10,
-    "undocument": true,
-    "params": [],
-    "return": {
-      "types": [
-        "*"
-      ]
-    }
-  },
-  {
-    "__docId__": 222,
-    "kind": "method",
     "name": "reset",
     "memberof": "src/services/filterBuilder.js~FilterBuilder",
     "generator": false,
@@ -4897,13 +4877,13 @@
     "longname": "src/services/filterBuilder.js~FilterBuilder#reset",
     "access": "public",
     "description": null,
-    "lineNumber": 14,
+    "lineNumber": 10,
     "undocument": true,
     "params": [],
     "return": null
   },
   {
-    "__docId__": 223,
+    "__docId__": 222,
     "kind": "member",
     "name": "_where",
     "memberof": "src/services/filterBuilder.js~FilterBuilder",
@@ -4911,7 +4891,7 @@
     "longname": "src/services/filterBuilder.js~FilterBuilder#_where",
     "access": "private",
     "description": null,
-    "lineNumber": 15,
+    "lineNumber": 11,
     "undocument": true,
     "type": {
       "types": [
@@ -4920,12 +4900,80 @@
     }
   },
   {
-    "__docId__": 224,
+    "__docId__": 223,
     "kind": "member",
     "name": "_include",
     "memberof": "src/services/filterBuilder.js~FilterBuilder",
     "static": false,
     "longname": "src/services/filterBuilder.js~FilterBuilder#_include",
+    "access": "private",
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 224,
+    "kind": "member",
+    "name": "_fields",
+    "memberof": "src/services/filterBuilder.js~FilterBuilder",
+    "static": false,
+    "longname": "src/services/filterBuilder.js~FilterBuilder#_fields",
+    "access": "private",
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 225,
+    "kind": "member",
+    "name": "_limit",
+    "memberof": "src/services/filterBuilder.js~FilterBuilder",
+    "static": false,
+    "longname": "src/services/filterBuilder.js~FilterBuilder#_limit",
+    "access": "private",
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 226,
+    "kind": "member",
+    "name": "_order",
+    "memberof": "src/services/filterBuilder.js~FilterBuilder",
+    "static": false,
+    "longname": "src/services/filterBuilder.js~FilterBuilder#_order",
+    "access": "private",
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 227,
+    "kind": "member",
+    "name": "_skip",
+    "memberof": "src/services/filterBuilder.js~FilterBuilder",
+    "static": false,
+    "longname": "src/services/filterBuilder.js~FilterBuilder#_skip",
     "access": "private",
     "description": null,
     "lineNumber": 16,
@@ -4937,12 +4985,12 @@
     }
   },
   {
-    "__docId__": 225,
+    "__docId__": 228,
     "kind": "member",
-    "name": "_fields",
+    "name": "_deleted",
     "memberof": "src/services/filterBuilder.js~FilterBuilder",
     "static": false,
-    "longname": "src/services/filterBuilder.js~FilterBuilder#_fields",
+    "longname": "src/services/filterBuilder.js~FilterBuilder#_deleted",
     "access": "private",
     "description": null,
     "lineNumber": 17,
@@ -4954,75 +5002,7 @@
     }
   },
   {
-    "__docId__": 226,
-    "kind": "member",
-    "name": "_limit",
-    "memberof": "src/services/filterBuilder.js~FilterBuilder",
-    "static": false,
-    "longname": "src/services/filterBuilder.js~FilterBuilder#_limit",
-    "access": "private",
-    "description": null,
-    "lineNumber": 18,
-    "undocument": true,
-    "type": {
-      "types": [
-        "*"
-      ]
-    }
-  },
-  {
-    "__docId__": 227,
-    "kind": "member",
-    "name": "_order",
-    "memberof": "src/services/filterBuilder.js~FilterBuilder",
-    "static": false,
-    "longname": "src/services/filterBuilder.js~FilterBuilder#_order",
-    "access": "private",
-    "description": null,
-    "lineNumber": 19,
-    "undocument": true,
-    "type": {
-      "types": [
-        "*"
-      ]
-    }
-  },
-  {
-    "__docId__": 228,
-    "kind": "member",
-    "name": "_skip",
-    "memberof": "src/services/filterBuilder.js~FilterBuilder",
-    "static": false,
-    "longname": "src/services/filterBuilder.js~FilterBuilder#_skip",
-    "access": "private",
-    "description": null,
-    "lineNumber": 20,
-    "undocument": true,
-    "type": {
-      "types": [
-        "*"
-      ]
-    }
-  },
-  {
     "__docId__": 229,
-    "kind": "member",
-    "name": "_deleted",
-    "memberof": "src/services/filterBuilder.js~FilterBuilder",
-    "static": false,
-    "longname": "src/services/filterBuilder.js~FilterBuilder#_deleted",
-    "access": "private",
-    "description": null,
-    "lineNumber": 21,
-    "undocument": true,
-    "type": {
-      "types": [
-        "*"
-      ]
-    }
-  },
-  {
-    "__docId__": 230,
     "kind": "method",
     "name": "where",
     "memberof": "src/services/filterBuilder.js~FilterBuilder",
@@ -5032,7 +5012,7 @@
     "longname": "src/services/filterBuilder.js~FilterBuilder#where",
     "access": "public",
     "description": "Where query filter\nAccepts operators, see [Where operators](http://docs.spaceinvoices.com/?shell#where-operators) section for details.",
-    "lineNumber": 29,
+    "lineNumber": 25,
     "params": [
       {
         "nullable": null,
@@ -5052,7 +5032,7 @@
     }
   },
   {
-    "__docId__": 231,
+    "__docId__": 230,
     "kind": "method",
     "name": "and",
     "memberof": "src/services/filterBuilder.js~FilterBuilder",
@@ -5062,7 +5042,37 @@
     "longname": "src/services/filterBuilder.js~FilterBuilder#and",
     "access": "public",
     "description": "Logical AND operator",
-    "lineNumber": 40,
+    "lineNumber": 36,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "fields",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 231,
+    "kind": "method",
+    "name": "or",
+    "memberof": "src/services/filterBuilder.js~FilterBuilder",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/services/filterBuilder.js~FilterBuilder#or",
+    "access": "public",
+    "description": "Logical OR operator",
+    "lineNumber": 45,
     "params": [
       {
         "nullable": null,
@@ -5084,36 +5094,6 @@
   {
     "__docId__": 232,
     "kind": "method",
-    "name": "or",
-    "memberof": "src/services/filterBuilder.js~FilterBuilder",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/services/filterBuilder.js~FilterBuilder#or",
-    "access": "public",
-    "description": "Logical OR operator",
-    "lineNumber": 49,
-    "params": [
-      {
-        "nullable": null,
-        "types": [
-          "string"
-        ],
-        "spread": false,
-        "optional": false,
-        "name": "fields",
-        "description": ""
-      }
-    ],
-    "return": {
-      "types": [
-        "*"
-      ]
-    }
-  },
-  {
-    "__docId__": 233,
-    "kind": "method",
     "name": "_operator",
     "memberof": "src/services/filterBuilder.js~FilterBuilder",
     "generator": false,
@@ -5122,7 +5102,7 @@
     "longname": "src/services/filterBuilder.js~FilterBuilder#_operator",
     "access": "private",
     "description": null,
-    "lineNumber": 54,
+    "lineNumber": 50,
     "undocument": true,
     "params": [
       {
@@ -5141,7 +5121,7 @@
     "return": null
   },
   {
-    "__docId__": 235,
+    "__docId__": 234,
     "kind": "method",
     "name": "include",
     "memberof": "src/services/filterBuilder.js~FilterBuilder",
@@ -5151,7 +5131,7 @@
     "longname": "src/services/filterBuilder.js~FilterBuilder#include",
     "access": "public",
     "description": "Used to include related models",
-    "lineNumber": 71,
+    "lineNumber": 67,
     "params": [
       {
         "nullable": null,
@@ -5171,7 +5151,7 @@
     }
   },
   {
-    "__docId__": 237,
+    "__docId__": 236,
     "kind": "method",
     "name": "fields",
     "memberof": "src/services/filterBuilder.js~FilterBuilder",
@@ -5181,7 +5161,7 @@
     "longname": "src/services/filterBuilder.js~FilterBuilder#fields",
     "access": "public",
     "description": "Include or exclude certain fields",
-    "lineNumber": 80,
+    "lineNumber": 76,
     "params": [
       {
         "nullable": null,
@@ -5201,7 +5181,7 @@
     }
   },
   {
-    "__docId__": 239,
+    "__docId__": 238,
     "kind": "method",
     "name": "limit",
     "memberof": "src/services/filterBuilder.js~FilterBuilder",
@@ -5211,7 +5191,7 @@
     "longname": "src/services/filterBuilder.js~FilterBuilder#limit",
     "access": "public",
     "description": "Limit amount of data returned",
-    "lineNumber": 92,
+    "lineNumber": 88,
     "params": [
       {
         "nullable": null,
@@ -5231,7 +5211,7 @@
     }
   },
   {
-    "__docId__": 241,
+    "__docId__": 240,
     "kind": "method",
     "name": "order",
     "memberof": "src/services/filterBuilder.js~FilterBuilder",
@@ -5241,7 +5221,7 @@
     "longname": "src/services/filterBuilder.js~FilterBuilder#order",
     "access": "public",
     "description": "Order results by property",
-    "lineNumber": 102,
+    "lineNumber": 98,
     "params": [
       {
         "nullable": null,
@@ -5271,7 +5251,7 @@
     }
   },
   {
-    "__docId__": 243,
+    "__docId__": 242,
     "kind": "method",
     "name": "skip",
     "memberof": "src/services/filterBuilder.js~FilterBuilder",
@@ -5281,7 +5261,7 @@
     "longname": "src/services/filterBuilder.js~FilterBuilder#skip",
     "access": "public",
     "description": "Number of results to skip",
-    "lineNumber": 111,
+    "lineNumber": 107,
     "params": [
       {
         "nullable": null,
@@ -5301,7 +5281,7 @@
     }
   },
   {
-    "__docId__": 245,
+    "__docId__": 244,
     "kind": "method",
     "name": "deleted",
     "memberof": "src/services/filterBuilder.js~FilterBuilder",
@@ -5311,7 +5291,27 @@
     "longname": "src/services/filterBuilder.js~FilterBuilder#deleted",
     "access": "public",
     "description": "Also return deleted records. Only available on models that implement soft delete",
-    "lineNumber": 119,
+    "lineNumber": 115,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 246,
+    "kind": "method",
+    "name": "buildObject",
+    "memberof": "src/services/filterBuilder.js~FilterBuilder",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/services/filterBuilder.js~FilterBuilder#buildObject",
+    "access": "public",
+    "description": null,
+    "lineNumber": 120,
+    "undocument": true,
     "params": [],
     "return": {
       "types": [
@@ -5322,26 +5322,6 @@
   {
     "__docId__": 247,
     "kind": "method",
-    "name": "buildObject",
-    "memberof": "src/services/filterBuilder.js~FilterBuilder",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/services/filterBuilder.js~FilterBuilder#buildObject",
-    "access": "public",
-    "description": null,
-    "lineNumber": 124,
-    "undocument": true,
-    "params": [],
-    "return": {
-      "types": [
-        "*"
-      ]
-    }
-  },
-  {
-    "__docId__": 248,
-    "kind": "method",
     "name": "buildUri",
     "memberof": "src/services/filterBuilder.js~FilterBuilder",
     "generator": false,
@@ -5350,7 +5330,7 @@
     "longname": "src/services/filterBuilder.js~FilterBuilder#buildUri",
     "access": "public",
     "description": null,
-    "lineNumber": 151,
+    "lineNumber": 147,
     "undocument": true,
     "params": [
       {
@@ -5379,7 +5359,7 @@
     }
   },
   {
-    "__docId__": 249,
+    "__docId__": 248,
     "kind": "method",
     "name": "_flattenFilter",
     "memberof": "src/services/filterBuilder.js~FilterBuilder",
@@ -5389,7 +5369,7 @@
     "longname": "src/services/filterBuilder.js~FilterBuilder#_flattenFilter",
     "access": "private",
     "description": null,
-    "lineNumber": 165,
+    "lineNumber": 161,
     "undocument": true,
     "params": [
       {
@@ -5415,7 +5395,7 @@
     }
   },
   {
-    "__docId__": 250,
+    "__docId__": 249,
     "kind": "file",
     "name": "src/services/index.js",
     "content": "export { requestService } from './requestService'\nexport { default as FilterBuilder } from './filterBuilder'\n",
@@ -5426,7 +5406,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 251,
+    "__docId__": 250,
     "kind": "file",
     "name": "src/services/paramBuilder.js",
     "content": "import FilterBuilder from './filterBuilder' // eslint-disable-line no-unused-vars\n\nexport default class ParamBuilder {\n  /**\n   *\n   * @param {FilterBuilder} filter\n   */\n  constructor (filter) {\n    this._filter = filter\n  }\n\n  /**\n   * Equivalence\n   * @param {*} value\n   *\n   * @returns {FilterBuilder}\n   */\n  eq (value) {\n    this._setValue(value)\n    return this._filter\n  }\n\n  /**\n   * Not equal (!=)\n   * @param {*} value\n   */\n  neq (value) {\n    this._setValue({ neq: value })\n    return this._filter\n  }\n\n  /**\n   * Numerical greather than (>)\n   * Valid for numberical and date values. For Geopoint values, the units are in miles by default.\n   *\n   * @param {string|number|Date} value\n   */\n  gt (value) {\n    this._setValue({ gt: value })\n    return this._filter\n  }\n\n  /**\n   * Numerical greater than of equal (>=)\n   * Valid for numberical and date values. For Geopoint values, the units are in miles by default.\n   *\n   * @param {string|number|Date} value\n   */\n  gte (value) {\n    this._setValue({ gte: value })\n    return this._filter\n  }\n\n  /**\n   * Numerical less than (<)\n   * Valid only for numerical and date values. For Geopoint values, the units are in miles by default.\n   * @param {string|number|Date} value\n   */\n  lt (value) {\n    this._setValue({ lt: value })\n    return this._filter\n  }\n\n  /**\n   * Numerical less than or equal (<=)\n   * Valid only for numerical and date values. For Geopoint values, the units are in miles by default.\n   * @param {string|number|Date} value\n   */\n  lte (value) {\n    this._setValue({ lte: value })\n    return this._filter\n  }\n\n  /**\n   * True if the value is between the two specified values\n   * greater than or equal to first value and less than or equal to second value.\n   * @param {*} valFrom\n   * @param {*} valTo\n   */\n  between (valFrom, valTo) {\n    this._setValue({ between: [valFrom, valTo] })\n    return this._filter\n  }\n\n  /**\n   * In an array of values.\n   * @param {*} values\n   */\n  inq (...values) {\n    this._setValue({ inq: values })\n    return this._filter\n  }\n\n  /**\n   * Not in an array of values.\n   * @param {*} values\n   */\n  nin (...values) {\n    this._setValue({ nin: values })\n    return this._filter\n  }\n\n  /**\n   * For geolocations, return the closest points, sorted in order of distance.\n   * Use with limit to return the n closest points.\n   * maxDistance and unit can also be passed on same level as near to configure the search.\n   * @param {string} near\n   * @param {number} maxDistance\n   * @param {string} unit miles or meters. Default: miles\n   */\n  near (near, maxDistance = null, unit = null) {\n    let value = near\n    if (maxDistance) {\n      value = Object.assign({}, { near, maxDistance })\n    }\n    if (unit) {\n      value = Object.assign({}, { near, maxDistance, unit })\n    }\n    this._setValue(value)\n    return this._filter\n  }\n\n  /**\n   * LIKE operators for use with regular expressions\n   * @param {string} value\n   */\n  like (value) {\n    this._setValue({like: value})\n    return this._filter\n  }\n\n  /**\n   * NOT LIKE operators for use with regular expressions\n   * @param {string} value\n   */\n  nlike (value) {\n    this._setValue({nlike: value})\n    return this._filter\n  }\n\n  /**\n   * Regular expression\n   * @param {string} regexp\n   */\n  regexp (regexp) {\n    this._setValue({ regexp })\n    return this._filter\n  }\n\n  /**\n   * Sets the value to the filter builder\n   * @param {*} value\n   */\n  _setValue (value) {\n    let fields = this._filter._where\n\n    if (this._filter._where.and !== undefined) {\n      fields = this._filter._where.and[this._filter._where.and.length - 1]\n    } else if (this._filter._where.or !== undefined) {\n      fields = this._filter._where.or[this._filter._where.or.length - 1]\n    }\n\n    for (var key of Object.keys(fields)) {\n      fields[key] = value\n    }\n  }\n}\n",
@@ -5437,7 +5417,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 252,
+    "__docId__": 251,
     "kind": "class",
     "name": "ParamBuilder",
     "memberof": "src/services/paramBuilder.js",
@@ -5453,7 +5433,7 @@
     "interface": false
   },
   {
-    "__docId__": 253,
+    "__docId__": 252,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/services/paramBuilder.js~ParamBuilder",
@@ -5478,7 +5458,7 @@
     ]
   },
   {
-    "__docId__": 254,
+    "__docId__": 253,
     "kind": "member",
     "name": "_filter",
     "memberof": "src/services/paramBuilder.js~ParamBuilder",
@@ -5495,7 +5475,7 @@
     }
   },
   {
-    "__docId__": 255,
+    "__docId__": 254,
     "kind": "method",
     "name": "eq",
     "memberof": "src/services/paramBuilder.js~ParamBuilder",
@@ -5534,7 +5514,7 @@
     }
   },
   {
-    "__docId__": 256,
+    "__docId__": 255,
     "kind": "method",
     "name": "neq",
     "memberof": "src/services/paramBuilder.js~ParamBuilder",
@@ -5564,7 +5544,7 @@
     }
   },
   {
-    "__docId__": 257,
+    "__docId__": 256,
     "kind": "method",
     "name": "gt",
     "memberof": "src/services/paramBuilder.js~ParamBuilder",
@@ -5596,7 +5576,7 @@
     }
   },
   {
-    "__docId__": 258,
+    "__docId__": 257,
     "kind": "method",
     "name": "gte",
     "memberof": "src/services/paramBuilder.js~ParamBuilder",
@@ -5628,7 +5608,7 @@
     }
   },
   {
-    "__docId__": 259,
+    "__docId__": 258,
     "kind": "method",
     "name": "lt",
     "memberof": "src/services/paramBuilder.js~ParamBuilder",
@@ -5660,7 +5640,7 @@
     }
   },
   {
-    "__docId__": 260,
+    "__docId__": 259,
     "kind": "method",
     "name": "lte",
     "memberof": "src/services/paramBuilder.js~ParamBuilder",
@@ -5692,7 +5672,7 @@
     }
   },
   {
-    "__docId__": 261,
+    "__docId__": 260,
     "kind": "method",
     "name": "between",
     "memberof": "src/services/paramBuilder.js~ParamBuilder",
@@ -5732,7 +5712,7 @@
     }
   },
   {
-    "__docId__": 262,
+    "__docId__": 261,
     "kind": "method",
     "name": "inq",
     "memberof": "src/services/paramBuilder.js~ParamBuilder",
@@ -5762,7 +5742,7 @@
     }
   },
   {
-    "__docId__": 263,
+    "__docId__": 262,
     "kind": "method",
     "name": "nin",
     "memberof": "src/services/paramBuilder.js~ParamBuilder",
@@ -5792,7 +5772,7 @@
     }
   },
   {
-    "__docId__": 264,
+    "__docId__": 263,
     "kind": "method",
     "name": "near",
     "memberof": "src/services/paramBuilder.js~ParamBuilder",
@@ -5842,7 +5822,7 @@
     }
   },
   {
-    "__docId__": 265,
+    "__docId__": 264,
     "kind": "method",
     "name": "like",
     "memberof": "src/services/paramBuilder.js~ParamBuilder",
@@ -5872,7 +5852,7 @@
     }
   },
   {
-    "__docId__": 266,
+    "__docId__": 265,
     "kind": "method",
     "name": "nlike",
     "memberof": "src/services/paramBuilder.js~ParamBuilder",
@@ -5902,7 +5882,7 @@
     }
   },
   {
-    "__docId__": 267,
+    "__docId__": 266,
     "kind": "method",
     "name": "regexp",
     "memberof": "src/services/paramBuilder.js~ParamBuilder",
@@ -5932,7 +5912,7 @@
     }
   },
   {
-    "__docId__": 268,
+    "__docId__": 267,
     "kind": "method",
     "name": "_setValue",
     "memberof": "src/services/paramBuilder.js~ParamBuilder",
@@ -5958,7 +5938,7 @@
     "return": null
   },
   {
-    "__docId__": 269,
+    "__docId__": 268,
     "kind": "file",
     "name": "src/services/requestService.js",
     "content": "import { RequestError, ServerError } from '../errors'\r\nimport FilterBuilder from './filterBuilder' // eslint-disable-line no-unused-vars\r\nimport rp from 'request-promise'\r\n\r\nclass RequestService {\r\n  /**\r\n   * Initialize\r\n   * @param {string} host\r\n   * @param {string} apiToken\r\n   * @param {string} accountId\r\n   */\r\n  init (host, apiToken, accountId) {\r\n    this.host = host\r\n    this.apiToken = apiToken\r\n    this.accountId = accountId\r\n    this.requester = rp.defaults({\r\n      baseUrl: this.host,\r\n      headers: {\r\n        Authorization: this.apiToken\r\n      }\r\n    })\r\n  }\r\n\r\n  /**\r\n   *\r\n   * @param {string} endpoint\r\n   * @param {string} method\r\n   * @param {null|object} data\r\n   * @param {null|FilterBuilder} filter\r\n   *\r\n   * @returns {Promise<Object|Object[], RequestError|ServerError>}\r\n   */\r\n  call (endpoint, method = 'GET', data = null, filter = null) {\r\n    if (filter !== null) {\r\n      endpoint = filter.buildUri(endpoint)\r\n    }\r\n\r\n    let requestProps = {\r\n      method,\r\n      uri: endpoint,\r\n      resolveWithFullResponse: true,\r\n      simple: true,\r\n      json: true\r\n    }\r\n\r\n    if (data) {\r\n      requestProps = Object.assign(requestProps, {\r\n        body: data\r\n      })\r\n    }\r\n\r\n    return this.requester(requestProps).then(response => {\r\n      return response.body\r\n    }).catch(response => {\r\n      if (response.statusCode >= 400 && response.statusCode < 500) {\r\n        return Promise.reject(new RequestError(response.statusCode, response.response.body.error))\r\n      } else {\r\n        return Promise.reject(new ServerError(response.statusCode, response.response.body.error))\r\n      }\r\n    })\r\n  }\r\n}\r\n\r\nexport const requestService = new RequestService()\r\n",
@@ -5969,7 +5949,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 270,
+    "__docId__": 269,
     "kind": "variable",
     "name": "requestService",
     "memberof": "src/services/requestService.js",
@@ -5989,7 +5969,7 @@
     }
   },
   {
-    "__docId__": 271,
+    "__docId__": 270,
     "kind": "class",
     "name": "RequestService",
     "memberof": "src/services/requestService.js",
@@ -6006,7 +5986,7 @@
     "interface": false
   },
   {
-    "__docId__": 272,
+    "__docId__": 271,
     "kind": "method",
     "name": "init",
     "memberof": "src/services/requestService.js~RequestService",
@@ -6052,7 +6032,7 @@
     "return": null
   },
   {
-    "__docId__": 273,
+    "__docId__": 272,
     "kind": "member",
     "name": "host",
     "memberof": "src/services/requestService.js~RequestService",
@@ -6069,7 +6049,7 @@
     }
   },
   {
-    "__docId__": 274,
+    "__docId__": 273,
     "kind": "member",
     "name": "apiToken",
     "memberof": "src/services/requestService.js~RequestService",
@@ -6086,7 +6066,7 @@
     }
   },
   {
-    "__docId__": 275,
+    "__docId__": 274,
     "kind": "member",
     "name": "accountId",
     "memberof": "src/services/requestService.js~RequestService",
@@ -6103,7 +6083,7 @@
     }
   },
   {
-    "__docId__": 276,
+    "__docId__": 275,
     "kind": "member",
     "name": "requester",
     "memberof": "src/services/requestService.js~RequestService",
@@ -6120,7 +6100,7 @@
     }
   },
   {
-    "__docId__": 277,
+    "__docId__": 276,
     "kind": "method",
     "name": "call",
     "memberof": "src/services/requestService.js~RequestService",
@@ -6191,7 +6171,7 @@
     }
   },
   {
-    "__docId__": 278,
+    "__docId__": 277,
     "kind": "file",
     "name": "src/spaceInvoices.js",
     "content": "import { requestService, FilterBuilder } from './services'\r\nimport * as modules from './modules'\r\n\r\nexport class SpaceInvoices {\r\n  /**\r\n   *\r\n   * @param {string} apiToken - Token needed for calling the API\r\n   * @param {string} accountId - Account for retreiving data from\r\n   * @param {string} host - Hostname for the API / default https://api.spaceinvoices.com/v1\r\n   */\r\n  constructor (apiToken, accountId, host = 'https://api.spaceinvoices.com/v1') {\r\n    requestService.init(host, apiToken, accountId)\r\n  }\r\n\r\n  /**\r\n   *\r\n   * @param {string} accountId\r\n   */\r\n  switchAccountId (accountId) {\r\n    requestService.accountId = accountId\r\n  }\r\n\r\n  /** @type {Account} */\r\n  get account () { return modules.account }\r\n  /** @type {Client} */\r\n  get client () { return modules.client }\r\n  /** @type {Company} */\r\n  get company () { return modules.company }\r\n  /** @type {Currency} */\r\n  get currency () { return modules.currency }\r\n  /** @type {Document} */\r\n  get document () { return modules.document }\r\n  /** @type {Item} */\r\n  get item () { return modules.item }\r\n  /** @type {Organization} */\r\n  get organization () { return modules.organization }\r\n}\r\n/**\r\n * Creates a new filter builder instance\r\n * @returns {FilterBuilder}\r\n */\r\nexport function siFilter () {\r\n  return new FilterBuilder()\r\n}\r\n",
@@ -6202,7 +6182,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 279,
+    "__docId__": 278,
     "kind": "class",
     "name": "SpaceInvoices",
     "memberof": "src/spaceInvoices.js",
@@ -6218,7 +6198,7 @@
     "interface": false
   },
   {
-    "__docId__": 280,
+    "__docId__": 279,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/spaceInvoices.js~SpaceInvoices",
@@ -6263,7 +6243,7 @@
     ]
   },
   {
-    "__docId__": 281,
+    "__docId__": 280,
     "kind": "method",
     "name": "switchAccountId",
     "memberof": "src/spaceInvoices.js~SpaceInvoices",
@@ -6289,7 +6269,7 @@
     "return": null
   },
   {
-    "__docId__": 282,
+    "__docId__": 281,
     "kind": "get",
     "name": "account",
     "memberof": "src/spaceInvoices.js~SpaceInvoices",
@@ -6310,7 +6290,7 @@
     }
   },
   {
-    "__docId__": 283,
+    "__docId__": 282,
     "kind": "get",
     "name": "client",
     "memberof": "src/spaceInvoices.js~SpaceInvoices",
@@ -6331,7 +6311,7 @@
     }
   },
   {
-    "__docId__": 284,
+    "__docId__": 283,
     "kind": "get",
     "name": "company",
     "memberof": "src/spaceInvoices.js~SpaceInvoices",
@@ -6352,7 +6332,7 @@
     }
   },
   {
-    "__docId__": 285,
+    "__docId__": 284,
     "kind": "get",
     "name": "currency",
     "memberof": "src/spaceInvoices.js~SpaceInvoices",
@@ -6373,7 +6353,7 @@
     }
   },
   {
-    "__docId__": 286,
+    "__docId__": 285,
     "kind": "get",
     "name": "document",
     "memberof": "src/spaceInvoices.js~SpaceInvoices",
@@ -6394,7 +6374,7 @@
     }
   },
   {
-    "__docId__": 287,
+    "__docId__": 286,
     "kind": "get",
     "name": "item",
     "memberof": "src/spaceInvoices.js~SpaceInvoices",
@@ -6415,7 +6395,7 @@
     }
   },
   {
-    "__docId__": 288,
+    "__docId__": 287,
     "kind": "get",
     "name": "organization",
     "memberof": "src/spaceInvoices.js~SpaceInvoices",
@@ -6436,7 +6416,7 @@
     }
   },
   {
-    "__docId__": 289,
+    "__docId__": 288,
     "kind": "function",
     "name": "siFilter",
     "memberof": "src/spaceInvoices.js",
@@ -6476,7 +6456,7 @@
   },
   {
     "kind": "packageJSON",
-    "content": "{\r\n  \"name\": \"spaceinvoices-api-client\",\r\n  \"version\": \"1.0.0\",\r\n  \"description\": \"\",\r\n  \"main\": \"lib/spaceInvoices.js\",\r\n  \"scripts\": {\r\n    \"test\": \"mocha --require babel-register ./test/**/*.test.js\",\r\n    \"lint\": \"standard-markdown && standard ./src/**/*.js ./test/**/*.js\",\r\n    \"test:full\": \"yarn lint && yarn test\",\r\n    \"coverage\": \"cross-env NODE_ENV=test nyc --reporter=text --reporter=text-summary mocha test/**/*.js\",\r\n    \"coverage:travis\": \"cross-env NODE_ENV=test nyc --reporter=lcovonly mocha ./test/**/*.js && codecov\",\r\n    \"docs\": \"esdoc\",\r\n    \"runrun\": \"babel-node ./index.js\",\r\n    \"clean\": \"rimraf lib/*\",\r\n    \"precompile\": \"yarn run clean\",\r\n    \"compile\": \"babel src --out-dir lib\",\r\n    \"commit\": \"git add . && git-cz\",\r\n    \"pregit\": \"yarn test && yarn compile && yarn docs\",\r\n    \"gitit\": \"pregit && yarn commit\"\r\n  },\r\n  \"author\": \"Robert Tajnšek\",\r\n  \"license\": \"MIT\",\r\n  \"dependencies\": {\r\n    \"es6-error\": \"^4.1.1\",\r\n    \"request\": \"^2.83.0\",\r\n    \"request-promise\": \"^4.2.2\",\r\n    \"urijs\": \"^1.19.1\"\r\n  },\r\n  \"devDependencies\": {\r\n    \"babel-cli\": \"^6.26.0\",\r\n    \"babel-core\": \"^6.26.0\",\r\n    \"babel-plugin-istanbul\": \"^4.1.5\",\r\n    \"babel-preset-env\": \"^1.6.1\",\r\n    \"babel-register\": \"^6.26.0\",\r\n    \"chai\": \"^4.1.2\",\r\n    \"chai-as-promised\": \"^7.1.1\",\r\n    \"codecov\": \"^3.0.0\",\r\n    \"cross-env\": \"^5.1.3\",\r\n    \"dotenv\": \"^5.0.1\",\r\n    \"esdoc\": \"^1.0.4\",\r\n    \"esdoc-standard-plugin\": \"^1.0.0\",\r\n    \"eslint\": \"^4.18.2\",\r\n    \"istanbul\": \"^0.4.5\",\r\n    \"mocha\": \"^5.0.1\",\r\n    \"nyc\": \"^11.4.1\",\r\n    \"rimraf\": \"^2.6.2\",\r\n    \"standard\": \"^11.0.0\",\r\n    \"standard-markdown\": \"^4.0.2\"\r\n  },\r\n  \"config\": {\r\n    \"commitizen\": {\r\n      \"path\": \"cz-conventional-changelog\"\r\n    }\r\n  },\r\n  \"standard\": {\r\n    \"env\": [\r\n      \"mocha\"\r\n    ],\r\n    \"ignore\": [\r\n      \"lib\"\r\n    ]\r\n  }\r\n}\r\n",
+    "content": "{\r\n  \"name\": \"spaceinvoices-api-client\",\r\n  \"version\": \"1.0.0\",\r\n  \"description\": \"\",\r\n  \"main\": \"lib/spaceInvoices.js\",\r\n  \"scripts\": {\r\n    \"test\": \"mocha --require babel-register ./test/**/*.test.js\",\r\n    \"lint\": \"standard-markdown && standard ./src/**/*.js ./test/**/*.js\",\r\n    \"test:full\": \"yarn lint && yarn test\",\r\n    \"coverage\": \"cross-env NODE_ENV=test nyc --reporter=html mocha test/**/*.js\",\r\n    \"coverage:travis\": \"cross-env NODE_ENV=test nyc --reporter=lcovonly mocha ./test/**/*.js && codecov\",\r\n    \"docs\": \"esdoc\",\r\n    \"runrun\": \"babel-node ./index.js\",\r\n    \"clean\": \"rimraf lib/*\",\r\n    \"precompile\": \"yarn run clean\",\r\n    \"compile\": \"babel src --out-dir lib\",\r\n    \"precommit\": \"yarn test && yarn compile && yarn docs\",\r\n    \"commit\": \"git add . && git-cz\"\r\n  },\r\n  \"author\": \"Robert Tajnšek\",\r\n  \"license\": \"MIT\",\r\n  \"dependencies\": {\r\n    \"es6-error\": \"^4.1.1\",\r\n    \"request\": \"^2.83.0\",\r\n    \"request-promise\": \"^4.2.2\",\r\n    \"urijs\": \"^1.19.1\"\r\n  },\r\n  \"devDependencies\": {\r\n    \"babel-cli\": \"^6.26.0\",\r\n    \"babel-core\": \"^6.26.0\",\r\n    \"babel-plugin-istanbul\": \"^4.1.5\",\r\n    \"babel-preset-env\": \"^1.6.1\",\r\n    \"babel-register\": \"^6.26.0\",\r\n    \"chai\": \"^4.1.2\",\r\n    \"chai-as-promised\": \"^7.1.1\",\r\n    \"codecov\": \"^3.0.0\",\r\n    \"cross-env\": \"^5.1.3\",\r\n    \"dotenv\": \"^5.0.1\",\r\n    \"esdoc\": \"^1.0.4\",\r\n    \"esdoc-standard-plugin\": \"^1.0.0\",\r\n    \"eslint\": \"^4.18.2\",\r\n    \"istanbul\": \"^0.4.5\",\r\n    \"mocha\": \"^5.0.1\",\r\n    \"nyc\": \"^11.4.1\",\r\n    \"rimraf\": \"^2.6.2\",\r\n    \"standard\": \"^11.0.0\",\r\n    \"standard-markdown\": \"^4.0.2\"\r\n  },\r\n  \"config\": {\r\n    \"commitizen\": {\r\n      \"path\": \"cz-conventional-changelog\"\r\n    }\r\n  },\r\n  \"standard\": {\r\n    \"env\": [\r\n      \"mocha\"\r\n    ],\r\n    \"ignore\": [\r\n      \"lib\"\r\n    ]\r\n  }\r\n}\r\n",
     "longname": "C:\\Users\\Ronzy\\Development\\personal\\spaceinvoices-api-client\\package.json",
     "name": "package.json",
     "static": true,

@@ -1,7 +1,7 @@
 import BaseModule from './baseModule'
 import { MPayment } from '../models'
 
-class Payment extends BaseModule {
+export default class Payment extends BaseModule {
   constructor () {
     super()
     this.TransformModel = MPayment
@@ -54,5 +54,3 @@ class Payment extends BaseModule {
     return this.call(`/payments/${paymentId}`, null, 'DELETE')
   }
 }
-
-export default new Payment()

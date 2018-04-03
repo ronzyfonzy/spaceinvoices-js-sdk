@@ -1,7 +1,7 @@
 import BaseModule from './baseModule'
 import { MItem } from '../models'
 
-class Item extends BaseModule {
+export default class Item extends BaseModule {
   constructor () {
     super()
     this.TransformModel = MItem
@@ -60,5 +60,3 @@ class Item extends BaseModule {
     return this.call(`/items/${itemId}`, null, 'DELETE')
   }
 }
-
-export default new Item()
