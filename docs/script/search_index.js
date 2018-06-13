@@ -1,248 +1,248 @@
 window.esdocSearchIndex = [
   [
-    "spaceinvoices-api-client/src/errors.js~apierror",
+    "spaceinvoices-js-sdk/src/errors.js~apierror",
     "class/src/errors.js~APIError.html",
-    "<span>APIError</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/errors.js</span>",
+    "<span>APIError</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/errors.js</span>",
     "class"
   ],
   [
-    "spaceinvoices-api-client/src/modules/account.js~account",
+    "spaceinvoices-js-sdk/src/modules/account.js~account",
     "class/src/modules/account.js~Account.html",
-    "<span>Account</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/modules/account.js</span>",
+    "<span>Account</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/modules/account.js</span>",
     "class"
   ],
   [
-    "spaceinvoices-api-client/src/models/basemodel.js~basemodel",
+    "spaceinvoices-js-sdk/src/models/basemodel.js~basemodel",
     "class/src/models/baseModel.js~BaseModel.html",
-    "<span>BaseModel</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/models/baseModel.js</span>",
+    "<span>BaseModel</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/models/baseModel.js</span>",
     "class"
   ],
   [
-    "spaceinvoices-api-client/src/modules/basemodule.js~basemodule",
+    "spaceinvoices-js-sdk/src/modules/basemodule.js~basemodule",
     "class/src/modules/baseModule.js~BaseModule.html",
-    "<span>BaseModule</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/modules/baseModule.js</span>",
+    "<span>BaseModule</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/modules/baseModule.js</span>",
     "class"
   ],
   [
-    "spaceinvoices-api-client/src/modules/client.js~client",
+    "spaceinvoices-js-sdk/src/modules/client.js~client",
     "class/src/modules/client.js~Client.html",
-    "<span>Client</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/modules/client.js</span>",
+    "<span>Client</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/modules/client.js</span>",
     "class"
   ],
   [
-    "spaceinvoices-api-client/src/modules/company.js~company",
+    "spaceinvoices-js-sdk/src/modules/company.js~company",
     "class/src/modules/company.js~Company.html",
-    "<span>Company</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/modules/company.js</span>",
+    "<span>Company</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/modules/company.js</span>",
     "class"
   ],
   [
-    "spaceinvoices-api-client/src/modules/currency.js~currency",
+    "spaceinvoices-js-sdk/src/modules/currency.js~currency",
     "class/src/modules/currency.js~Currency.html",
-    "<span>Currency</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/modules/currency.js</span>",
+    "<span>Currency</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/modules/currency.js</span>",
     "class"
   ],
   [
-    "spaceinvoices-api-client/src/modules/document.js~document",
+    "spaceinvoices-js-sdk/src/modules/document.js~document",
     "class/src/modules/document.js~Document.html",
-    "<span>Document</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/modules/document.js</span>",
+    "<span>Document</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/modules/document.js</span>",
     "class"
   ],
   [
-    "spaceinvoices-api-client/src/services/filterbuilder.js~filterbuilder",
+    "spaceinvoices-js-sdk/src/services/filterbuilder.js~filterbuilder",
     "class/src/services/filterBuilder.js~FilterBuilder.html",
-    "<span>FilterBuilder</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/services/filterBuilder.js</span>",
+    "<span>FilterBuilder</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/services/filterBuilder.js</span>",
     "class"
   ],
   [
-    "spaceinvoices-api-client/src/modules/item.js~item",
+    "spaceinvoices-js-sdk/src/modules/item.js~item",
     "class/src/modules/item.js~Item.html",
-    "<span>Item</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/modules/item.js</span>",
+    "<span>Item</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/modules/item.js</span>",
     "class"
   ],
   [
-    "spaceinvoices-api-client/src/models/account.js~maccount",
+    "spaceinvoices-js-sdk/src/models/account.js~maccount",
     "class/src/models/account.js~MAccount.html",
-    "<span>MAccount</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/models/account.js</span>",
+    "<span>MAccount</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/models/account.js</span>",
     "class"
   ],
   [
-    "spaceinvoices-api-client/src/models/client.js~mclient",
+    "spaceinvoices-js-sdk/src/models/client.js~mclient",
     "class/src/models/client.js~MClient.html",
-    "<span>MClient</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/models/client.js</span>",
+    "<span>MClient</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/models/client.js</span>",
     "class"
   ],
   [
-    "spaceinvoices-api-client/src/models/company.js~mcompany",
+    "spaceinvoices-js-sdk/src/models/company.js~mcompany",
     "class/src/models/company.js~MCompany.html",
-    "<span>MCompany</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/models/company.js</span>",
+    "<span>MCompany</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/models/company.js</span>",
     "class"
   ],
   [
-    "spaceinvoices-api-client/src/models/currency.js~mcurrency",
+    "spaceinvoices-js-sdk/src/models/currency.js~mcurrency",
     "class/src/models/currency.js~MCurrency.html",
-    "<span>MCurrency</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/models/currency.js</span>",
+    "<span>MCurrency</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/models/currency.js</span>",
     "class"
   ],
   [
-    "spaceinvoices-api-client/src/models/document.js~mdocument",
+    "spaceinvoices-js-sdk/src/models/document.js~mdocument",
     "class/src/models/document.js~MDocument.html",
-    "<span>MDocument</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/models/document.js</span>",
+    "<span>MDocument</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/models/document.js</span>",
     "class"
   ],
   [
-    "spaceinvoices-api-client/src/models/item.js~mitem",
+    "spaceinvoices-js-sdk/src/models/item.js~mitem",
     "class/src/models/item.js~MItem.html",
-    "<span>MItem</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/models/item.js</span>",
+    "<span>MItem</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/models/item.js</span>",
     "class"
   ],
   [
-    "spaceinvoices-api-client/src/models/organization.js~morganization",
+    "spaceinvoices-js-sdk/src/models/organization.js~morganization",
     "class/src/models/organization.js~MOrganization.html",
-    "<span>MOrganization</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/models/organization.js</span>",
+    "<span>MOrganization</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/models/organization.js</span>",
     "class"
   ],
   [
-    "spaceinvoices-api-client/src/models/payment.js~mpayment",
+    "spaceinvoices-js-sdk/src/models/payment.js~mpayment",
     "class/src/models/payment.js~MPayment.html",
-    "<span>MPayment</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/models/payment.js</span>",
+    "<span>MPayment</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/models/payment.js</span>",
     "class"
   ],
   [
-    "spaceinvoices-api-client/src/models/recurrence.js~mrecurrence",
+    "spaceinvoices-js-sdk/src/models/recurrence.js~mrecurrence",
     "class/src/models/recurrence.js~MRecurrence.html",
-    "<span>MRecurrence</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/models/recurrence.js</span>",
+    "<span>MRecurrence</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/models/recurrence.js</span>",
     "class"
   ],
   [
-    "spaceinvoices-api-client/src/models/tax.js~mtax",
+    "spaceinvoices-js-sdk/src/models/tax.js~mtax",
     "class/src/models/tax.js~MTax.html",
-    "<span>MTax</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/models/tax.js</span>",
+    "<span>MTax</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/models/tax.js</span>",
     "class"
   ],
   [
-    "spaceinvoices-api-client/src/modules/organization.js~organization",
+    "spaceinvoices-js-sdk/src/modules/organization.js~organization",
     "class/src/modules/organization.js~Organization.html",
-    "<span>Organization</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/modules/organization.js</span>",
+    "<span>Organization</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/modules/organization.js</span>",
     "class"
   ],
   [
-    "spaceinvoices-api-client/src/services/parambuilder.js~parambuilder",
+    "spaceinvoices-js-sdk/src/services/parambuilder.js~parambuilder",
     "class/src/services/paramBuilder.js~ParamBuilder.html",
-    "<span>ParamBuilder</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/services/paramBuilder.js</span>",
+    "<span>ParamBuilder</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/services/paramBuilder.js</span>",
     "class"
   ],
   [
-    "spaceinvoices-api-client/src/modules/payment.js~payment",
+    "spaceinvoices-js-sdk/src/modules/payment.js~payment",
     "class/src/modules/payment.js~Payment.html",
-    "<span>Payment</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/modules/payment.js</span>",
+    "<span>Payment</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/modules/payment.js</span>",
     "class"
   ],
   [
-    "spaceinvoices-api-client/src/modules/recurrence.js~recurrence",
+    "spaceinvoices-js-sdk/src/modules/recurrence.js~recurrence",
     "class/src/modules/recurrence.js~Recurrence.html",
-    "<span>Recurrence</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/modules/recurrence.js</span>",
+    "<span>Recurrence</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/modules/recurrence.js</span>",
     "class"
   ],
   [
-    "spaceinvoices-api-client/src/errors.js~requesterror",
+    "spaceinvoices-js-sdk/src/errors.js~requesterror",
     "class/src/errors.js~RequestError.html",
-    "<span>RequestError</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/errors.js</span>",
+    "<span>RequestError</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/errors.js</span>",
     "class"
   ],
   [
-    "spaceinvoices-api-client/src/services/requestservice.js~requestservice",
+    "spaceinvoices-js-sdk/src/services/requestservice.js~requestservice",
     "class/src/services/requestService.js~RequestService.html",
-    "<span>RequestService</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/services/requestService.js</span>",
+    "<span>RequestService</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/services/requestService.js</span>",
     "class"
   ],
   [
-    "spaceinvoices-api-client/src/errors.js~servererror",
+    "spaceinvoices-js-sdk/src/errors.js~servererror",
     "class/src/errors.js~ServerError.html",
-    "<span>ServerError</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/errors.js</span>",
+    "<span>ServerError</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/errors.js</span>",
     "class"
   ],
   [
-    "spaceinvoices-api-client/src/spaceinvoices.js~spaceinvoices",
+    "spaceinvoices-js-sdk/src/spaceinvoices.js~spaceinvoices",
     "class/src/spaceInvoices.js~SpaceInvoices.html",
-    "<span>SpaceInvoices</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/spaceInvoices.js</span>",
+    "<span>SpaceInvoices</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/spaceInvoices.js</span>",
     "class"
   ],
   [
-    "spaceinvoices-api-client/src/modules/tax.js~tax",
+    "spaceinvoices-js-sdk/src/modules/tax.js~tax",
     "class/src/modules/tax.js~Tax.html",
-    "<span>Tax</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/modules/tax.js</span>",
+    "<span>Tax</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/modules/tax.js</span>",
     "class"
   ],
   [
-    "spaceinvoices-api-client/src/modules/index.js~account",
+    "spaceinvoices-js-sdk/src/modules/index.js~account",
     "variable/index.html#static-variable-account",
-    "<span>account</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/modules/index.js</span>",
+    "<span>account</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/modules/index.js</span>",
     "variable"
   ],
   [
-    "spaceinvoices-api-client/src/modules/index.js~client",
+    "spaceinvoices-js-sdk/src/modules/index.js~client",
     "variable/index.html#static-variable-client",
-    "<span>client</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/modules/index.js</span>",
+    "<span>client</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/modules/index.js</span>",
     "variable"
   ],
   [
-    "spaceinvoices-api-client/src/modules/index.js~company",
+    "spaceinvoices-js-sdk/src/modules/index.js~company",
     "variable/index.html#static-variable-company",
-    "<span>company</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/modules/index.js</span>",
+    "<span>company</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/modules/index.js</span>",
     "variable"
   ],
   [
-    "spaceinvoices-api-client/src/modules/index.js~currency",
+    "spaceinvoices-js-sdk/src/modules/index.js~currency",
     "variable/index.html#static-variable-currency",
-    "<span>currency</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/modules/index.js</span>",
+    "<span>currency</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/modules/index.js</span>",
     "variable"
   ],
   [
-    "spaceinvoices-api-client/src/modules/index.js~document",
+    "spaceinvoices-js-sdk/src/modules/index.js~document",
     "variable/index.html#static-variable-document",
-    "<span>document</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/modules/index.js</span>",
+    "<span>document</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/modules/index.js</span>",
     "variable"
   ],
   [
-    "spaceinvoices-api-client/src/modules/index.js~item",
+    "spaceinvoices-js-sdk/src/modules/index.js~item",
     "variable/index.html#static-variable-item",
-    "<span>item</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/modules/index.js</span>",
+    "<span>item</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/modules/index.js</span>",
     "variable"
   ],
   [
-    "spaceinvoices-api-client/src/modules/index.js~organization",
+    "spaceinvoices-js-sdk/src/modules/index.js~organization",
     "variable/index.html#static-variable-organization",
-    "<span>organization</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/modules/index.js</span>",
+    "<span>organization</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/modules/index.js</span>",
     "variable"
   ],
   [
-    "spaceinvoices-api-client/src/modules/index.js~payment",
+    "spaceinvoices-js-sdk/src/modules/index.js~payment",
     "variable/index.html#static-variable-payment",
-    "<span>payment</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/modules/index.js</span>",
+    "<span>payment</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/modules/index.js</span>",
     "variable"
   ],
   [
-    "spaceinvoices-api-client/src/modules/index.js~recurrence",
+    "spaceinvoices-js-sdk/src/modules/index.js~recurrence",
     "variable/index.html#static-variable-recurrence",
-    "<span>recurrence</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/modules/index.js</span>",
+    "<span>recurrence</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/modules/index.js</span>",
     "variable"
   ],
   [
-    "spaceinvoices-api-client/src/services/requestservice.js~requestservice",
+    "spaceinvoices-js-sdk/src/services/requestservice.js~requestservice",
     "variable/index.html#static-variable-requestService",
-    "<span>requestService</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/services/requestService.js</span>",
+    "<span>requestService</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/services/requestService.js</span>",
     "variable"
   ],
   [
-    "spaceinvoices-api-client/src/spaceinvoices.js~sifilter",
+    "spaceinvoices-js-sdk/src/spaceinvoices.js~sifilter",
     "function/index.html#static-function-siFilter",
-    "<span>siFilter</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/spaceInvoices.js</span>",
+    "<span>siFilter</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/spaceInvoices.js</span>",
     "function"
   ],
   [
-    "spaceinvoices-api-client/src/modules/index.js~tax",
+    "spaceinvoices-js-sdk/src/modules/index.js~tax",
     "variable/index.html#static-variable-tax",
-    "<span>tax</span> <span class=\"search-result-import-path\">spaceinvoices-api-client/src/modules/index.js</span>",
+    "<span>tax</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/modules/index.js</span>",
     "variable"
   ],
   [

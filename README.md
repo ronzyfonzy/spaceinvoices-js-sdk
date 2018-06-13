@@ -1,9 +1,9 @@
-# spaceinvoices-api-client
+# spaceinvoices-js-sdk
 
-[![Build Status](https://travis-ci.org/ronzyfonzy/spaceinvoices-api-client.svg?branch=master)](https://travis-ci.org/ronzyfonzy/spaceinvoices-api-client)
-[![codecov](https://codecov.io/gh/ronzyfonzy/spaceinvoices-api-client/branch/master/graph/badge.svg)](https://codecov.io/gh/ronzyfonzy/spaceinvoices-api-client)
-[![dependencies Status](https://david-dm.org/ronzyfonzy/spaceinvoices-api-client/status.svg)](https://david-dm.org/ronzyfonzy/spaceinvoices-api-client)
-[![devDependencies Status](https://david-dm.org/ronzyfonzy/spaceinvoices-api-client/dev-status.svg)](https://david-dm.org/ronzyfonzy/spaceinvoices-api-client?type=dev)
+[![Build Status](https://travis-ci.org/ronzyfonzy/spaceinvoices-js-sdk.svg?branch=master)](https://travis-ci.org/ronzyfonzy/spaceinvoices-js-sdk)
+[![codecov](https://codecov.io/gh/ronzyfonzy/spaceinvoices-js-sdk/branch/master/graph/badge.svg)](https://codecov.io/gh/ronzyfonzy/spaceinvoices-js-sdk)
+[![dependencies Status](https://david-dm.org/ronzyfonzy/spaceinvoices-js-sdk/status.svg)](https://david-dm.org/ronzyfonzy/spaceinvoices-js-sdk)
+[![devDependencies Status](https://david-dm.org/ronzyfonzy/spaceinvoices-js-sdk/dev-status.svg)](https://david-dm.org/ronzyfonzy/spaceinvoices-js-sdk?type=dev)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
@@ -15,7 +15,6 @@ yarn
 
 ### Usage
 
-Include module
 ```javascript
 import dotenv from 'dotenv'
 import { SpaceInvoices, siFilter } from './src/spaceInvoices'
@@ -39,7 +38,7 @@ spaceInvoices.account.authenticate(process.env.TEST_EMAIL, process.env.TEST_PASS
     }
   })
 
-  // Example 1: List Filtered Organizations
+  // Example 2: List Filtered Organizations
 
   let filter = siFilter()
     .where('locale').eq('en')
@@ -64,6 +63,17 @@ yarn compile
 ```
 yarn test
 ```
+
+### Contribution guide
+
+#### Developing spaceinvoices-js-sdk
+
+You consider contributing changes to spaceinvoices-js-sdk – thank you! Please consider these guidelines when filing a pull request:
+
+*  Project uses [standard](https://standardjs.com/) JavaScript style guide, linter, and formatter. Use it and save yourselve some time
+*  Commits follow the [Angular commit convention](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines). The project uses [commitizen](http://commitizen.github.io/cz-cli/) library
+*  JavaScript is written using ES6 features
+*  Features and bug fixes should be covered by test cases
 
 ## License
 
