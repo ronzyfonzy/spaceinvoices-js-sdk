@@ -1,8 +1,8 @@
 window.esdocSearchIndex = [
   [
-    "spaceinvoices-js-sdk/src/errors.js~apierror",
-    "class/src/errors.js~APIError.html",
-    "<span>APIError</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/errors.js</span>",
+    "spaceinvoices-js-sdk/src/services/errors.js~apierror",
+    "class/src/services/errors.js~APIError.html",
+    "<span>APIError</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/services/errors.js</span>",
     "class"
   ],
   [
@@ -144,9 +144,9 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "spaceinvoices-js-sdk/src/errors.js~requesterror",
-    "class/src/errors.js~RequestError.html",
-    "<span>RequestError</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/errors.js</span>",
+    "spaceinvoices-js-sdk/src/services/errors.js~requesterror",
+    "class/src/services/errors.js~RequestError.html",
+    "<span>RequestError</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/services/errors.js</span>",
     "class"
   ],
   [
@@ -156,9 +156,9 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "spaceinvoices-js-sdk/src/errors.js~servererror",
-    "class/src/errors.js~ServerError.html",
-    "<span>ServerError</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/errors.js</span>",
+    "spaceinvoices-js-sdk/src/services/errors.js~servererror",
+    "class/src/services/errors.js~ServerError.html",
+    "<span>ServerError</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/services/errors.js</span>",
     "class"
   ],
   [
@@ -174,60 +174,6 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "spaceinvoices-js-sdk/src/modules/index.js~account",
-    "variable/index.html#static-variable-account",
-    "<span>account</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/modules/index.js</span>",
-    "variable"
-  ],
-  [
-    "spaceinvoices-js-sdk/src/modules/index.js~client",
-    "variable/index.html#static-variable-client",
-    "<span>client</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/modules/index.js</span>",
-    "variable"
-  ],
-  [
-    "spaceinvoices-js-sdk/src/modules/index.js~company",
-    "variable/index.html#static-variable-company",
-    "<span>company</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/modules/index.js</span>",
-    "variable"
-  ],
-  [
-    "spaceinvoices-js-sdk/src/modules/index.js~currency",
-    "variable/index.html#static-variable-currency",
-    "<span>currency</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/modules/index.js</span>",
-    "variable"
-  ],
-  [
-    "spaceinvoices-js-sdk/src/modules/index.js~document",
-    "variable/index.html#static-variable-document",
-    "<span>document</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/modules/index.js</span>",
-    "variable"
-  ],
-  [
-    "spaceinvoices-js-sdk/src/modules/index.js~item",
-    "variable/index.html#static-variable-item",
-    "<span>item</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/modules/index.js</span>",
-    "variable"
-  ],
-  [
-    "spaceinvoices-js-sdk/src/modules/index.js~organization",
-    "variable/index.html#static-variable-organization",
-    "<span>organization</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/modules/index.js</span>",
-    "variable"
-  ],
-  [
-    "spaceinvoices-js-sdk/src/modules/index.js~payment",
-    "variable/index.html#static-variable-payment",
-    "<span>payment</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/modules/index.js</span>",
-    "variable"
-  ],
-  [
-    "spaceinvoices-js-sdk/src/modules/index.js~recurrence",
-    "variable/index.html#static-variable-recurrence",
-    "<span>recurrence</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/modules/index.js</span>",
-    "variable"
-  ],
-  [
     "spaceinvoices-js-sdk/src/services/requestservice.js~requestservice",
     "variable/index.html#static-variable-requestService",
     "<span>requestService</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/services/requestService.js</span>",
@@ -240,10 +186,202 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
-    "spaceinvoices-js-sdk/src/modules/index.js~tax",
-    "variable/index.html#static-variable-tax",
-    "<span>tax</span> <span class=\"search-result-import-path\">spaceinvoices-js-sdk/src/modules/index.js</span>",
-    "variable"
+    "filterbuilder src/services/filterbuilder.js~filterbuilder,filterbuilder",
+    "test-file/test/filterBuilder.test.js.html#lineNumber5",
+    "FilterBuilder Test",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/filterBuilder.test.js.html#lineNumber67",
+    "FilterBuilder Test filter between",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/filterBuilder.test.js.html#lineNumber187",
+    "FilterBuilder Test filter deleted",
+    "test"
+  ],
+  [
+    "filterbuilder#where src/services/filterbuilder.js~filterbuilder#where,filterbuilder#where",
+    "test-file/test/filterBuilder.test.js.html#lineNumber7",
+    "FilterBuilder Test filter eq",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/filterBuilder.test.js.html#lineNumber147",
+    "FilterBuilder Test filter fields",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/filterBuilder.test.js.html#lineNumber27",
+    "FilterBuilder Test filter gt",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/filterBuilder.test.js.html#lineNumber37",
+    "FilterBuilder Test filter gte",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/filterBuilder.test.js.html#lineNumber137",
+    "FilterBuilder Test filter include",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/filterBuilder.test.js.html#lineNumber77",
+    "FilterBuilder Test filter inq",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/filterBuilder.test.js.html#lineNumber107",
+    "FilterBuilder Test filter like",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/filterBuilder.test.js.html#lineNumber167",
+    "FilterBuilder Test filter limit",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/filterBuilder.test.js.html#lineNumber47",
+    "FilterBuilder Test filter lt",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/filterBuilder.test.js.html#lineNumber57",
+    "FilterBuilder Test filter lte",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/filterBuilder.test.js.html#lineNumber97",
+    "FilterBuilder Test filter near",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/filterBuilder.test.js.html#lineNumber17",
+    "FilterBuilder Test filter neq",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/filterBuilder.test.js.html#lineNumber87",
+    "FilterBuilder Test filter nin",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/filterBuilder.test.js.html#lineNumber117",
+    "FilterBuilder Test filter not like",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/filterBuilder.test.js.html#lineNumber157",
+    "FilterBuilder Test filter order",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/filterBuilder.test.js.html#lineNumber127",
+    "FilterBuilder Test filter regexp",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/filterBuilder.test.js.html#lineNumber177",
+    "FilterBuilder Test filter skip",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/filterBuilder.test.js.html#lineNumber207",
+    "FilterBuilder Test filter uri encoded",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/filterBuilder.test.js.html#lineNumber197",
+    "FilterBuilder Test filter uri with default query",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/filterBuilder.test.js.html#lineNumber217",
+    "FilterBuilder Test long uri build with and",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/filterBuilder.test.js.html#lineNumber242",
+    "FilterBuilder Test long uri build with or",
+    "test"
+  ],
+  [
+    "spaceinvoices#account src/spaceinvoices.js~spaceinvoices#account,spaceinvoices#account",
+    "test-file/test/modules.account.test.js.html#lineNumber12",
+    "SpaceInvoices Modules Test / Account",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/modules.account.test.js.html#lineNumber23",
+    "SpaceInvoices Modules Test / Account authenticate right cridentials",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/modules.account.test.js.html#lineNumber19",
+    "SpaceInvoices Modules Test / Account authenticate wrong cridentials",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/modules.account.test.js.html#lineNumber30",
+    "SpaceInvoices Modules Test / Account get request",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/modules.account.test.js.html#lineNumber34",
+    "SpaceInvoices Modules Test / Account is email unique",
+    "test"
+  ],
+  [
+    "spaceinvoices#organization src/spaceinvoices.js~spaceinvoices#organization,spaceinvoices#organization",
+    "test-file/test/modules.organization.test.js.html#lineNumber23",
+    "SpaceInvoices Modules Test / Organization",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/modules.organization.test.js.html#lineNumber48",
+    "SpaceInvoices Modules Test / Organization all organizations instance",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/modules.organization.test.js.html#lineNumber41",
+    "SpaceInvoices Modules Test / Organization get all organizations",
+    "test"
+  ],
+  [
+    "",
+    "test-file/test/modules.organization.test.js.html#lineNumber56",
+    "SpaceInvoices Modules Test / Organization get all organizations from account instance",
+    "test"
   ],
   [
     "src/.external-ecmascript.js~array",
@@ -528,46 +666,16 @@ window.esdocSearchIndex = [
     "external"
   ],
   [
-    "src/errors.js",
-    "file/src/errors.js.html",
-    "src/errors.js",
-    "file"
-  ],
-  [
-    "src/errors.js~apierror#code",
-    "class/src/errors.js~APIError.html#instance-member-code",
-    "src/errors.js~APIError#code",
-    "member"
-  ],
-  [
-    "src/errors.js~apierror#constructor",
-    "class/src/errors.js~APIError.html#instance-constructor-constructor",
-    "src/errors.js~APIError#constructor",
-    "method"
-  ],
-  [
-    "src/errors.js~apierror#stackapi",
-    "class/src/errors.js~APIError.html#instance-member-stackApi",
-    "src/errors.js~APIError#stackApi",
-    "member"
-  ],
-  [
-    "src/errors.js~apierror#statuscode",
-    "class/src/errors.js~APIError.html#instance-member-statusCode",
-    "src/errors.js~APIError#statusCode",
-    "member"
-  ],
-  [
-    "src/errors.js~apierror#tostring",
-    "class/src/errors.js~APIError.html#instance-method-toString",
-    "src/errors.js~APIError#toString",
-    "method"
-  ],
-  [
     "src/models/account.js",
     "file/src/models/account.js.html",
     "src/models/account.js",
     "file"
+  ],
+  [
+    "src/models/account.js~maccount#constructor",
+    "class/src/models/account.js~MAccount.html#instance-constructor-constructor",
+    "src/models/account.js~MAccount#constructor",
+    "method"
   ],
   [
     "src/models/account.js~maccount#createorganization",
@@ -586,6 +694,12 @@ window.esdocSearchIndex = [
     "class/src/models/account.js~MAccount.html#instance-method-listOrganizations",
     "src/models/account.js~MAccount#listOrganizations",
     "method"
+  ],
+  [
+    "src/models/account.js~maccount#module",
+    "class/src/models/account.js~MAccount.html#instance-member-module",
+    "src/models/account.js~MAccount#module",
+    "member"
   ],
   [
     "src/models/account.js~maccount#setid",
@@ -654,10 +768,34 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/models/client.js~mclient#constructor",
+    "class/src/models/client.js~MClient.html#instance-constructor-constructor",
+    "src/models/client.js~MClient#constructor",
+    "method"
+  ],
+  [
+    "src/models/client.js~mclient#module",
+    "class/src/models/client.js~MClient.html#instance-member-module",
+    "src/models/client.js~MClient#module",
+    "member"
+  ],
+  [
     "src/models/company.js",
     "file/src/models/company.js.html",
     "src/models/company.js",
     "file"
+  ],
+  [
+    "src/models/company.js~mcompany#constructor",
+    "class/src/models/company.js~MCompany.html#instance-constructor-constructor",
+    "src/models/company.js~MCompany#constructor",
+    "method"
+  ],
+  [
+    "src/models/company.js~mcompany#module",
+    "class/src/models/company.js~MCompany.html#instance-member-module",
+    "src/models/company.js~MCompany#module",
+    "member"
   ],
   [
     "src/models/currency.js",
@@ -666,10 +804,76 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/models/currency.js~mcurrency#constructor",
+    "class/src/models/currency.js~MCurrency.html#instance-constructor-constructor",
+    "src/models/currency.js~MCurrency#constructor",
+    "method"
+  ],
+  [
+    "src/models/currency.js~mcurrency#id",
+    "class/src/models/currency.js~MCurrency.html#instance-member-id",
+    "src/models/currency.js~MCurrency#id",
+    "member"
+  ],
+  [
+    "src/models/currency.js~mcurrency#module",
+    "class/src/models/currency.js~MCurrency.html#instance-member-module",
+    "src/models/currency.js~MCurrency#module",
+    "member"
+  ],
+  [
+    "src/models/currency.js~mcurrency#name",
+    "class/src/models/currency.js~MCurrency.html#instance-member-name",
+    "src/models/currency.js~MCurrency#name",
+    "member"
+  ],
+  [
+    "src/models/currency.js~mcurrency#symbol",
+    "class/src/models/currency.js~MCurrency.html#instance-member-symbol",
+    "src/models/currency.js~MCurrency#symbol",
+    "member"
+  ],
+  [
+    "src/models/currency.js~mcurrency#type",
+    "class/src/models/currency.js~MCurrency.html#instance-member-type",
+    "src/models/currency.js~MCurrency#type",
+    "member"
+  ],
+  [
     "src/models/document.js",
     "file/src/models/document.js.html",
     "src/models/document.js",
     "file"
+  ],
+  [
+    "src/models/document.js~mdocument#_documentclient",
+    "class/src/models/document.js~MDocument.html#instance-member-_documentClient",
+    "src/models/document.js~MDocument#_documentClient",
+    "member"
+  ],
+  [
+    "src/models/document.js~mdocument#_documentissuer",
+    "class/src/models/document.js~MDocument.html#instance-member-_documentIssuer",
+    "src/models/document.js~MDocument#_documentIssuer",
+    "member"
+  ],
+  [
+    "src/models/document.js~mdocument#_documentitems",
+    "class/src/models/document.js~MDocument.html#instance-member-_documentItems",
+    "src/models/document.js~MDocument#_documentItems",
+    "member"
+  ],
+  [
+    "src/models/document.js~mdocument#clientid",
+    "class/src/models/document.js~MDocument.html#instance-member-clientId",
+    "src/models/document.js~MDocument#clientId",
+    "member"
+  ],
+  [
+    "src/models/document.js~mdocument#constructor",
+    "class/src/models/document.js~MDocument.html#instance-constructor-constructor",
+    "src/models/document.js~MDocument#constructor",
+    "method"
   ],
   [
     "src/models/document.js~mdocument#createpayment",
@@ -684,6 +888,54 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/models/document.js~mdocument#currencyid",
+    "class/src/models/document.js~MDocument.html#instance-member-currencyId",
+    "src/models/document.js~MDocument#currencyId",
+    "member"
+  ],
+  [
+    "src/models/document.js~mdocument#date",
+    "class/src/models/document.js~MDocument.html#instance-member-date",
+    "src/models/document.js~MDocument#date",
+    "member"
+  ],
+  [
+    "src/models/document.js~mdocument#datedue",
+    "class/src/models/document.js~MDocument.html#instance-member-dateDue",
+    "src/models/document.js~MDocument#dateDue",
+    "member"
+  ],
+  [
+    "src/models/document.js~mdocument#dateservice",
+    "class/src/models/document.js~MDocument.html#instance-member-dateService",
+    "src/models/document.js~MDocument#dateService",
+    "member"
+  ],
+  [
+    "src/models/document.js~mdocument#dateserviceto",
+    "class/src/models/document.js~MDocument.html#instance-member-dateServiceTo",
+    "src/models/document.js~MDocument#dateServiceTo",
+    "member"
+  ],
+  [
+    "src/models/document.js~mdocument#decimalplaces",
+    "class/src/models/document.js~MDocument.html#instance-member-decimalPlaces",
+    "src/models/document.js~MDocument#decimalPlaces",
+    "member"
+  ],
+  [
+    "src/models/document.js~mdocument#draft",
+    "class/src/models/document.js~MDocument.html#instance-member-draft",
+    "src/models/document.js~MDocument#draft",
+    "member"
+  ],
+  [
+    "src/models/document.js~mdocument#footer",
+    "class/src/models/document.js~MDocument.html#instance-member-footer",
+    "src/models/document.js~MDocument#footer",
+    "member"
+  ],
+  [
     "src/models/document.js~mdocument#listpayments",
     "class/src/models/document.js~MDocument.html#instance-method-listPayments",
     "src/models/document.js~MDocument#listPayments",
@@ -696,16 +948,52 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/models/index.js",
-    "file/src/models/index.js.html",
-    "src/models/index.js",
-    "file"
+    "src/models/document.js~mdocument#module",
+    "class/src/models/document.js~MDocument.html#instance-member-module",
+    "src/models/document.js~MDocument#module",
+    "member"
+  ],
+  [
+    "src/models/document.js~mdocument#note",
+    "class/src/models/document.js~MDocument.html#instance-member-note",
+    "src/models/document.js~MDocument#note",
+    "member"
+  ],
+  [
+    "src/models/document.js~mdocument#number",
+    "class/src/models/document.js~MDocument.html#instance-member-number",
+    "src/models/document.js~MDocument#number",
+    "member"
+  ],
+  [
+    "src/models/document.js~mdocument#signature",
+    "class/src/models/document.js~MDocument.html#instance-member-signature",
+    "src/models/document.js~MDocument#signature",
+    "member"
+  ],
+  [
+    "src/models/document.js~mdocument#type",
+    "class/src/models/document.js~MDocument.html#instance-member-type",
+    "src/models/document.js~MDocument#type",
+    "member"
   ],
   [
     "src/models/item.js",
     "file/src/models/item.js.html",
     "src/models/item.js",
     "file"
+  ],
+  [
+    "src/models/item.js~mitem#constructor",
+    "class/src/models/item.js~MItem.html#instance-constructor-constructor",
+    "src/models/item.js~MItem#constructor",
+    "method"
+  ],
+  [
+    "src/models/item.js~mitem#module",
+    "class/src/models/item.js~MItem.html#instance-member-module",
+    "src/models/item.js~MItem#module",
+    "member"
   ],
   [
     "src/models/organization.js",
@@ -726,9 +1014,9 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/models/organization.js~morganization#bank",
-    "class/src/models/organization.js~MOrganization.html#instance-member-bank",
-    "src/models/organization.js~MOrganization#bank",
+    "src/models/organization.js~morganization#address2",
+    "class/src/models/organization.js~MOrganization.html#instance-member-address2",
+    "src/models/organization.js~MOrganization#address2",
     "member"
   ],
   [
@@ -741,6 +1029,12 @@ window.esdocSearchIndex = [
     "src/models/organization.js~morganization#city",
     "class/src/models/organization.js~MOrganization.html#instance-member-city",
     "src/models/organization.js~MOrganization#city",
+    "member"
+  ],
+  [
+    "src/models/organization.js~morganization#companynumber",
+    "class/src/models/organization.js~MOrganization.html#instance-member-companyNumber",
+    "src/models/organization.js~MOrganization#companyNumber",
     "member"
   ],
   [
@@ -846,9 +1140,27 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/models/organization.js~morganization#supportpin",
-    "class/src/models/organization.js~MOrganization.html#instance-member-supportPin",
-    "src/models/organization.js~MOrganization#supportPin",
+    "src/models/organization.js~morganization#taxnumber",
+    "class/src/models/organization.js~MOrganization.html#instance-member-taxNumber",
+    "src/models/organization.js~MOrganization#taxNumber",
+    "member"
+  ],
+  [
+    "src/models/organization.js~morganization#taxsubject",
+    "class/src/models/organization.js~MOrganization.html#instance-member-taxSubject",
+    "src/models/organization.js~MOrganization#taxSubject",
+    "member"
+  ],
+  [
+    "src/models/organization.js~morganization#website",
+    "class/src/models/organization.js~MOrganization.html#instance-member-website",
+    "src/models/organization.js~MOrganization#website",
+    "member"
+  ],
+  [
+    "src/models/organization.js~morganization#zip",
+    "class/src/models/organization.js~MOrganization.html#instance-member-zip",
+    "src/models/organization.js~MOrganization#zip",
     "member"
   ],
   [
@@ -858,16 +1170,52 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/models/payment.js~mpayment#constructor",
+    "class/src/models/payment.js~MPayment.html#instance-constructor-constructor",
+    "src/models/payment.js~MPayment#constructor",
+    "method"
+  ],
+  [
+    "src/models/payment.js~mpayment#module",
+    "class/src/models/payment.js~MPayment.html#instance-member-module",
+    "src/models/payment.js~MPayment#module",
+    "member"
+  ],
+  [
     "src/models/recurrence.js",
     "file/src/models/recurrence.js.html",
     "src/models/recurrence.js",
     "file"
   ],
   [
+    "src/models/recurrence.js~mrecurrence#constructor",
+    "class/src/models/recurrence.js~MRecurrence.html#instance-constructor-constructor",
+    "src/models/recurrence.js~MRecurrence#constructor",
+    "method"
+  ],
+  [
+    "src/models/recurrence.js~mrecurrence#module",
+    "class/src/models/recurrence.js~MRecurrence.html#instance-member-module",
+    "src/models/recurrence.js~MRecurrence#module",
+    "member"
+  ],
+  [
     "src/models/tax.js",
     "file/src/models/tax.js.html",
     "src/models/tax.js",
     "file"
+  ],
+  [
+    "src/models/tax.js~mtax#constructor",
+    "class/src/models/tax.js~MTax.html#instance-constructor-constructor",
+    "src/models/tax.js~MTax#constructor",
+    "method"
+  ],
+  [
+    "src/models/tax.js~mtax#module",
+    "class/src/models/tax.js~MTax.html#instance-member-module",
+    "src/models/tax.js~MTax#module",
+    "member"
   ],
   [
     "src/modules/account.js",
@@ -1078,12 +1426,6 @@ window.esdocSearchIndex = [
     "class/src/modules/document.js~Document.html#instance-method-update",
     "src/modules/document.js~Document#update",
     "method"
-  ],
-  [
-    "src/modules/index.js",
-    "file/src/modules/index.js.html",
-    "src/modules/index.js",
-    "file"
   ],
   [
     "src/modules/item.js",
@@ -1326,6 +1668,42 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/services/errors.js",
+    "file/src/services/errors.js.html",
+    "src/services/errors.js",
+    "file"
+  ],
+  [
+    "src/services/errors.js~apierror#code",
+    "class/src/services/errors.js~APIError.html#instance-member-code",
+    "src/services/errors.js~APIError#code",
+    "member"
+  ],
+  [
+    "src/services/errors.js~apierror#constructor",
+    "class/src/services/errors.js~APIError.html#instance-constructor-constructor",
+    "src/services/errors.js~APIError#constructor",
+    "method"
+  ],
+  [
+    "src/services/errors.js~apierror#stackapi",
+    "class/src/services/errors.js~APIError.html#instance-member-stackApi",
+    "src/services/errors.js~APIError#stackApi",
+    "member"
+  ],
+  [
+    "src/services/errors.js~apierror#statuscode",
+    "class/src/services/errors.js~APIError.html#instance-member-statusCode",
+    "src/services/errors.js~APIError#statusCode",
+    "member"
+  ],
+  [
+    "src/services/errors.js~apierror#tostring",
+    "class/src/services/errors.js~APIError.html#instance-method-toString",
+    "src/services/errors.js~APIError#toString",
+    "method"
+  ],
+  [
     "src/services/filterbuilder.js",
     "file/src/services/filterBuilder.js.html",
     "src/services/filterBuilder.js",
@@ -1468,12 +1846,6 @@ window.esdocSearchIndex = [
     "class/src/services/filterBuilder.js~FilterBuilder.html#instance-method-where",
     "src/services/filterBuilder.js~FilterBuilder#where",
     "method"
-  ],
-  [
-    "src/services/index.js",
-    "file/src/services/index.js.html",
-    "src/services/index.js",
-    "file"
   ],
   [
     "src/services/parambuilder.js",
@@ -1678,5 +2050,23 @@ window.esdocSearchIndex = [
     "class/src/spaceInvoices.js~SpaceInvoices.html#instance-method-switchAccountId",
     "src/spaceInvoices.js~SpaceInvoices#switchAccountId",
     "method"
+  ],
+  [
+    "test/filterbuilder.test.js",
+    "test-file/test/filterBuilder.test.js.html",
+    "test/filterBuilder.test.js",
+    "testFile"
+  ],
+  [
+    "test/modules.account.test.js",
+    "test-file/test/modules.account.test.js.html",
+    "test/modules.account.test.js",
+    "testFile"
+  ],
+  [
+    "test/modules.organization.test.js",
+    "test-file/test/modules.organization.test.js.html",
+    "test/modules.organization.test.js",
+    "testFile"
   ]
 ]

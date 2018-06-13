@@ -9,19 +9,6 @@ import Payment from './payment'
 import Recurrence from './recurrence'
 import Tax from './tax'
 
-// export default {
-//   account: new Account(),
-//   client: new Client(),
-//   company: new Company(),
-//   currency: new Currency(),
-//   document: new Document(),
-//   item: new Item(),
-//   organization: new Organization(),
-//   payment: new Payment(),
-//   recurrence: new Recurrence(),
-//   tax: new Tax()
-// }
-
 export const account = new Account()
 export const client = new Client()
 export const company = new Company()

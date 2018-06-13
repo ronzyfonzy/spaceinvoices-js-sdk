@@ -1,9 +1,9 @@
 export default class BaseModel {
+
   /**
-   *
-   * @param {object} data
+   * @param {null|object} data 
    */
-  constructor (data) {
+  constructor (data = null) {
     this.data = data
     this.module = null
     this.parseData()
@@ -13,7 +13,7 @@ export default class BaseModel {
     this.setId()
   }
 
-  setId (data) {
+  setId () {
     this.id = this.data.id
   }
 

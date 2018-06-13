@@ -19,6 +19,7 @@ let expect = chai.use(chaiAsPromised).expect
 //   }
 // }
 
+/** @test {SpaceInvoices#organization} */
 describe('SpaceInvoices Modules Test / Organization', () => {
   let spaceInvoices = new SpaceInvoices(process.env.API_TOKEN)
   /**

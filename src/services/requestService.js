@@ -1,4 +1,4 @@
-import { RequestError, ServerError } from '../errors'
+import { RequestError, ServerError } from '../services/errors'
 import FilterBuilder from './filterBuilder' // eslint-disable-line no-unused-vars
 import rp from 'request-promise'
 

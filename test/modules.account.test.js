@@ -3,11 +3,12 @@ import chai from 'chai'
 import chaiAsPromised from 'chai-as-promised'
 import { SpaceInvoices } from '../src/spaceInvoices'
 import { MAccount } from '../src/models'
-import { RequestError } from '../src/errors'
+import { RequestError } from '../src/services/errors'
 
 dotenv.config()
 let expect = chai.use(chaiAsPromised).expect
 
+/** @test {SpaceInvoices#account} */
 describe('SpaceInvoices Modules Test / Account', () => {
   let spaceInvoices = new SpaceInvoices(process.env.API_TOKEN)
   /**

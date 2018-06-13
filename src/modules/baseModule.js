@@ -1,6 +1,6 @@
 import { requestService, FilterBuilder } from '../services' // eslint-disable-line no-unused-vars
 export default class BaseModule {
-  constructor () {
+  constructor() {
     this.TransformModel = null
   }
 
@@ -13,7 +13,7 @@ export default class BaseModule {
    *
    * @returns {Promise}
    */
-  call (endpoint, data = null, method = 'GET', autoTransform = true) {
+  call(endpoint, data = null, method = 'GET', autoTransform = true) {
     let filter = null
     if (data !== null && data.constructor !== undefined && data.constructor.name === 'FilterBuilder') {
       filter = data
@@ -29,7 +29,7 @@ export default class BaseModule {
     })
   }
 
-  _transform (data) {
+  _transform(data) {
     if (Array.isArray(data)) {
       return data.map((item) => {
         return new this.TransformModel(item)

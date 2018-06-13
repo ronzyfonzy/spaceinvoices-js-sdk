@@ -1,11 +1,20 @@
 import BaseModel from './baseModel'
-import { organization } from '../modules'
+import { account, organization } from '../modules'
 
 export default class MAccount extends BaseModel {
+
+  /**
+   * @param {null|object} data 
+   */
+  constructor(data = null) {
+    super(data)
+    this.module = account
+  }
+
   /**
    * @inheritDoc
    */
-  setId () {
+  setId() {
     this.id = this.data.userId
   }
 
@@ -14,7 +23,7 @@ export default class MAccount extends BaseModel {
    *
    * @returns {Promise<MOrganization[]>}
    */
-  listOrganizations (filter = null) {
+  listOrganizations(filter = null) {
     return organization.list(this.id, filter)
   }
 
@@ -24,7 +33,7 @@ export default class MAccount extends BaseModel {
    *
    * @returns {Promise<MOrganization>}
    */
-  createOrganization (data) {
+  createOrganization(data) {
     return organization.create(this.id, data)
   }
 }

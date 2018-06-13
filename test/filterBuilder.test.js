@@ -1,7 +1,9 @@
 import { expect } from 'chai'
 import { siFilter } from '../src/spaceInvoices'
 
+/** @test {FilterBuilder} */
 describe('FilterBuilder Test', () => {
+  /** @test {FilterBuilder#where} */
   it('filter eq', () => {
     let uri = siFilter()
       .where('test').eq(1)

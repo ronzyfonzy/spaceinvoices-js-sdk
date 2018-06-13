@@ -1,9 +1,25 @@
 {
   "source": "./src",
   "destination": "./docs",
+  "excludes": [
+    "index\\.js$"
+  ],
   "plugins": [
     {
-      "name": "esdoc-standard-plugin"
+      "name": "esdoc-standard-plugin",
+      "brand": {
+        "title": "Space Invoices API",
+        "description": "Javascript SDK for Space Invoices API",
+        "repository": "https://github.com/ronzyfonzy/spaceinvoices-js-sdk",
+        "site": "https://ronzyfonzy.github.io/spaceinvoices-js-sdk/",
+        "author": "https://twitter.com/RonzyFonzy",
+        "image": "https://docs.spaceinvoices.com/images/logo.png"
+      },
+      "option": {
+        "test": {
+          "source": "./test"
+        }
+      }
     }
   ]
 }

@@ -5,7 +5,7 @@ import { MAccount } from '../models'
  * @extends {BaseModule}
  */
 export default class Account extends BaseModule {
-  constructor () {
+  constructor() {
     super()
     this.TransformModel = MAccount
   }
@@ -16,7 +16,7 @@ export default class Account extends BaseModule {
   *
   * @returns {Promise<object>}
   */
-  get (accountId) {
+  get(accountId) {
     return this.call(`/accounts/${accountId}`)
   }
 
@@ -27,7 +27,7 @@ export default class Account extends BaseModule {
   *
   * @returns {Promise<MAccount>}
   */
-  authenticate (email, password) {
+  authenticate(email, password) {
     return this.call('/accounts/login', { email, password }, 'POST')
   }
 
@@ -38,7 +38,7 @@ export default class Account extends BaseModule {
   *
   * @returns {Promise<object>}
   */
-  create (email, password) {
+  create(email, password) {
     return this.call('/accounts', { email, password }, 'POST')
   }
 
@@ -48,7 +48,7 @@ export default class Account extends BaseModule {
 
   * @returns {Promise<boolean>}
   */
-  isEmailUnique (email) {
+  isEmailUnique(email) {
     return this.call(`/accounts/is-unique?email=${email}`, null, 'GET', false).then((data) => {
       return data.isUnique
     })
