@@ -1,8 +1,20 @@
 {
   "name": "spaceinvoices-js-sdk",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
+  "author": "Robert Tajnšek <robi.tajnsek@gmail.com>",
+  "license": "MIT", 
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ronzyfonzy/spaceinvoices-js-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ronzyfonzy/spaceinvoices-js-sdk/issues"
+  },
   "main": "lib/spaceInvoices.js",
+  "files": [
+    "lib/"
+  ],
   "scripts": {
     "test": "mocha --require babel-register ./test/**/*.test.js",
     "lint": "standard-markdown && standard ./src/**/*.js ./test/**/*.js",
@@ -17,8 +29,6 @@
     "precommit": "yarn test && yarn compile && yarn docs",
     "commit": "git add . && git-cz"
   },
-  "author": "Robert Tajnšek",
-  "license": "MIT",
   "dependencies": {
     "es6-error": "^4.1.1",
     "request": "2.87.0",
