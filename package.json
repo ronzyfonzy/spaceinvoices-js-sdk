@@ -43,7 +43,7 @@
     "babel-register": "^6.26.0",
     "chai": "4.2.0",
     "chai-as-promised": "^7.1.1",
-    "codecov": "3.6.5",
+    "codecov": "3.7.1",
     "cross-env": "7.0.2",
     "dotenv": "8.2.0",
     "esdoc": "1.1.0",
