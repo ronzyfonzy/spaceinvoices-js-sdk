@@ -33,7 +33,7 @@
     "es6-error": "^4.1.1",
     "request": "2.88.2",
     "request-promise": "4.2.6",
-    "urijs": "1.19.6"
+    "urijs": "1.19.7"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
