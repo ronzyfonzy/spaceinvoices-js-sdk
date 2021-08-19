@@ -12,6 +12,9 @@
     "url": "https://github.com/ronzyfonzy/spaceinvoices-js-sdk/issues"
   },
   "main": "lib/spaceInvoices.js",
+  "engines": {
+    "node": "10"
+  },
   "files": [
     "lib/"
   ],
@@ -33,7 +36,7 @@
     "es6-error": "^4.1.1",
     "request": "2.88.2",
     "request-promise": "4.2.6",
-    "urijs": "1.19.6"
+    "urijs": "1.19.7"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -43,12 +46,12 @@
     "babel-register": "^6.26.0",
     "chai": "4.3.4",
     "chai-as-promised": "^7.1.1",
-    "codecov": "3.8.2",
+    "codecov": "3.8.3",
     "cross-env": "7.0.3",
     "dotenv": "9.0.0",
     "esdoc": "1.1.0",
     "esdoc-standard-plugin": "^1.0.0",
-    "eslint": "7.26.0",
+    "eslint": "7.32.0",
     "istanbul": "^0.4.5",
     "mocha": "8.4.0",
     "nyc": "15.1.0",
